@@ -654,16 +654,26 @@ aside.world_news {}
 
 	.employee_entry .related .block ul li {}
 	
-	
+/***** CALENDAR STUFF - ALMOST DEFINITIELY POINTLESS *****/
 	aside.widget_my_calendar_upcoming_widget {display: block; overflow: hidden; padding: 0px; margin: 20px 0; color: #555;}
 	aside.widget_my_calendar_upcoming_widget h3 {font-size: 17px; font-weight: bold;}
 	ul#upcoming-events {display: block; overflow: hidden; padding: 0px; margin: 10px 0; font-size: 14px; line-height: 17px;}
 	ul#upcoming-events li {display: block; overflow: hidden; padding:0px; margin: 0 0 10px 0;}
 	ul#upcoming-events li.past-event {color: #aaa;}
 	
-	
-	ul.group-news-list {display: block; overflow: hidden; margin: 0; padding: 0;}
-	ul.group-news-list li {display: block; overflow: hidden; margin: 0 0 20px 0; padding: 0; line-height: 17px; border-bottom: 1px dotted #222;}
+/***** GROUP NEWS *****/
+
+.group-news-list {
+    /* Silence is golden */
+}
+	.group-news-list li {
+        display: block;
+        overflow: hidden;
+        line-height: 17px;
+        margin: 0 0 20px 0;
+        padding: 0;
+        border-bottom: 1px dotted #222;
+    }
 	ul.group-news-list li p.date {display: block; overflow: hidden; width: 35px; margin:0 15px 0 0; float: left; color: #fff; font-size: 14px; padding: 10px; text-align: center;}
 	ul.group-news-list li p.date span {display: block; overflow: hidden;}
 	ul.group-news-list li p.date span.day {font-weight: bold; font-size: 22px; margin-bottom: 5px;}
