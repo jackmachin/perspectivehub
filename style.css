@@ -106,6 +106,10 @@ h1.entry-title { // This is probably unneccessary here
         margin: 20px auto 50px auto;
     }
 
+    header.entry-header {
+        margin-bottom: 20px;
+    }
+
     h1#site-title a {
         display: block;
         overflow: hidden;
