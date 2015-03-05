@@ -30,7 +30,9 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 	outline: 0;
 	padding: 0;
 	vertical-align: baseline;
+    display: block;
 }
+
 :focus {/* remember to define focus styles! */
 	outline: 0;
 }
@@ -274,14 +276,36 @@ nav#access a.assistive-text {
         margin-left: 17px;
     }
 
-    div.entry-content ul li ul li {
-        margin-left: 20px;
+        div.entry-content ul li ul li {
+            margin-left: 20px;
+        }
+
+    div.entry-content ol {
+        display: block;
+        list-style-type: decimal;
+        list-style-position: outside;
+        margin-left: 17px;
     }
-  div.entry-content ol {display: block; list-style-type: decimal; list-style-position: outside; margin-left: 17px}
-  div.entry-content ol li {margin-left: 20px;}
-	
-	ul.subpages {display: block; overflow: hidden;}
-	ul.subpages li {display: block; overflow: hidden; padding:0; margin: 0 20px 20px 0; width:230px; float: left; height: 120px; position: relative;}
+
+        div.entry-content ol li {
+            margin-left: 20px;
+        }
+
+    ul.subpages {
+        /* Such pointless */
+    }
+
+	   ul.subpages li {
+           display: block;
+           overflow: hidden;
+           padding:0;
+           margin: 0 20px 20px 0;
+           width:230px;
+           float: left;
+           height: 120px;
+           position: relative;
+       }
+
 	ul.subpages li.mod_4_0 {margin-right: 0px;}
 	ul.subpages li a.subpageTitle {width: 313px; height: 220px; color: #fff; font-weight: bold; font-size: 16px; }
 	ul.subpages li a.subpageTitle:hover span {background: #DA1445;}
