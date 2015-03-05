@@ -626,6 +626,7 @@ aside.world_news {}
         margin-bottom: 30px;
     }
         .employee_entry .contacts span {
+            display: block;
         }
 
         .employee_entry .contacts span.email {
