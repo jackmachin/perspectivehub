@@ -122,7 +122,7 @@ a:hover {
     line-height: 25px;
 }
 
-#page {
+#page { /* Unbelievably pointless */
     margin: 0;
 }
     header {
@@ -256,7 +256,7 @@ a:hover {
     margin-top: 1.5em;
 }
 
-#main {
+#main { /* ID, no class */
     width: 980px;
     margin-left: auto;
     margin-right: auto;
@@ -318,7 +318,7 @@ a:hover {
 
     .subpages li:nth-child(4n) { margin-right: 0;}
 
-        ul.subpages li a.subpageTitle {
+        .subpages li a.subpage-title {
             width: 230px;
             height: 120px;
             color: #fff;
@@ -326,18 +326,18 @@ a:hover {
             font-size: 16px;
         }
 
-        ul.subpages li a.subpageTitle:hover span {
+        .subpages li a.subpage-title:hover span {
             background: #DA1445;
         }
 
-        ul.subpages li a.subpageTitle img {
+        .subpages li a.subpage-title img {
             width: 230px;
             height: 120px;
             position:absolute;
             z-index:9;
         }
 
-        ul.subpages li a.subpageTitle span {
+        .subpages li a.subpage-title span {
             width: 210px;
             padding: 5px 10px;
             background: #222;
