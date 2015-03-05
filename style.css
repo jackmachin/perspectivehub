@@ -266,7 +266,7 @@ a:hover {
         /* The OWL */
     }
 
-	div.entry-content {
+	.entry-content {
         display: block;
         overflow: hidden;
         margin: 0 0 10px 0;
@@ -274,51 +274,49 @@ a:hover {
         line-height: 17px;
     }
 
-	div.entry-content p {
+	.entry-content p {
         display: block;
         overflow: hidden;
         padding:0;
         margin: 0 0 10px 0;
     }
 
-	div.entry-content ul {
+	.entry-content ul {
         display: block;
         list-style-type: disc;
         list-style-position: outside;
         margin-left: 17px;
     }
 
-        div.entry-content ul li ul li {
+        .entry-content ul li ul li {
             margin-left: 20px;
         }
 
-    div.entry-content ol {
+    .entry-content ol {
         display: block;
         list-style-type: decimal;
         list-style-position: outside;
         margin-left: 17px;
     }
 
-        div.entry-content ol li {
+        .entry-content ol li {
             margin-left: 20px;
         }
 /***** SUB PAGE LIST *****/
 
-ul.subpages {
+.subpages {
     /* Such pointless */
 }
 
-   ul.subpages li {
-       margin: 0 20px 20px 0;
-       width:230px;
-       float: left;
-       height: 120px;
-       position: relative;
+    .subpages li {
+        position: relative;
+        float: left;
+        width:230px;
+        height: 120px;
+        margin: 0 20px 20px 0;
    }
 
-    ul.subpages li.mod_4_0 {
-        margin-right: 0px;
-    }
+    .subpages li:nth-child(4n) { margin-right: 0;}
 
         ul.subpages li a.subpageTitle {
             width: 230px;
