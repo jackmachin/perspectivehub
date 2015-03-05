@@ -65,8 +65,13 @@ footer, header, hgroup, menu, nav, section {
 }
 
 
-/* =Structure
------------------------------------------------ */
+/***** STRUCTURE *****/
+
+
+*+* { /* LOBOTOMISED OWL  */
+    margin-top: 1.5em;
+}
+
 
 body {
     font-family: Arial, Verdana, sans-serif;
