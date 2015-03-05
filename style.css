@@ -643,9 +643,16 @@ aside.world_news {}
         overflow: hidden;
         margin: 0 10px 10px 0;
     }
-	div.employee_entry div.related div.block h2 {font-weight: bold; font-size: 16px; margin: 0 0 10px 0;}
-	div.employee_entry div.related div.block ul {display: block; overflow: hidden;}
-	div.employee_entry div.related div.block ul li {display: block; overflow: hidden; line-height: 16px;}
+
+    .employee_entry .related .block h2 {
+        font-weight: bold;
+        font-size: 16px;
+        margin: 0 0 10px 0;
+    }
+
+    .employee_entry .related .block ul {line-height:16px;}
+
+	.employee_entry .related .block ul li {}
 	
 	
 	aside.widget_my_calendar_upcoming_widget {display: block; overflow: hidden; padding: 0px; margin: 20px 0; color: #555;}
