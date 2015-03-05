@@ -536,7 +536,6 @@ aside.world_news {}
 
                 .letter_index li.letter_title ul.employees_list li span {
                     display: block;
-                    overflow: hidden;
                     color: #8b8b8b;
                     line-height: 20px;
                 }
@@ -621,11 +620,21 @@ aside.world_news {}
                 margin: 1em 0;
             }
 
-	.employee_entry div.contacts {font-size: 14px; margin-bottom: 30px;}
-	    div.employee_entry div.contacts span {display: block; overflow: hidden; line-height: 25px;}
-	    div.employee_entry div.contacts span.email {background: transparent url('./images/envelope.png') left 8px no-repeat; padding-left: 25px;}
+	.employee_entry .contacts {
+        font-size: 14px;
+        line-height: 25px;
+        margin-bottom: 30px;
+    }
+        .employee_entry .contacts span {
+        }
+
+        .employee_entry .contacts span.email {
+            background: transparent url('./images/envelope.png') left 8px no-repeat;
+            padding-left: 25px;
+        }
 	
-	div.employee_entry div.related {display: block; overflow: hidden; clear: both; margin: 0 0 15px 0;}
+    .employee_entry .related {
+        display: block; overflow: hidden; clear: both; margin: 0 0 15px 0;}
 	div.employee_entry div.related div.block {display: block; overflow: hidden; width: 49%; margin: 0 10px 10px 0;float: left;}
 	div.employee_entry div.related div.block h2 {font-weight: bold; font-size: 16px; margin: 0 0 10px 0;}
 	div.employee_entry div.related div.block ul {display: block; overflow: hidden;}
