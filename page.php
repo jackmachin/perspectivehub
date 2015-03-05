@@ -57,7 +57,7 @@ get_header(); ?>
 						// subpages-thumbs
 						$xhtml .= '<li class="mod_2_'.($incr%2).' mod_3_'.($incr%3).' mod_4_'.($incr%4).' mod_5_'.($incr%5).' ">
 						    
-							<a href="'.$subpage->guid.'" class="subpageTitle">
+							<a href="'.$subpage->guid.'" class="subpage-title">
 							'.(strlen(get_the_post_thumbnail( $subpage->ID, 'subpages-thumbs' ))>0?get_the_post_thumbnail( $subpage->ID, 'subpages-thumbs' ):'<img src="'.get_bloginfo('template_url').'/images/noimg.jpg" />').'
 							    <span>'.$subpage->post_title.'</span>
 							</a>
