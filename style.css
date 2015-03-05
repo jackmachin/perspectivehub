@@ -80,10 +80,7 @@ h1.entry-title {font-size: 22px; line-height: 25px; font-weight: bold; color: #d
 #page {margin: 0;}
     header {display: block; overflow: visible; width: 980px; margin: 20px auto 50px auto;}
     header.entry-header {margin-bottom: 20px;}
-	hgroup {display: block; overflow: hidden; float: left;}
-	hgroup h1#site-title {}
-	hgroup h1#site-title a {display: block; overflow: hidden; width: 224px; height: 93px; background: transparent url('./images/thehub-logo.jpg') left top no-repeat !important; text-indent: -5000px;}
-	hgroup h2#site-description {display: none;}
+    h1#site-title a {display: block; overflow: hidden; width: 224px; height: 93px; background: transparent url('./images/thehub-logo.jpg') left top no-repeat !important; text-indent: -5000px;}
     
 	nav#access {display: block; float: left; margin-top: 20px; width: 100%}
 	nav#access h3.assistive-text {display: none;}
