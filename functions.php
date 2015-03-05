@@ -850,7 +850,7 @@ function alphabetical_order_list($loop,$list_type)
 	    ';
 	    while ( $loop->have_posts() ) : $loop->the_post();
 		$css_clases = 'pos_'.($incrementor+1).' mod_2_'.($incrementor%2).' mod_3_'.($incrementor%3).' mod_4_'.($incrementor%4);
-		$xhtml .= '<li class="'.$css_clases.'">
+		$xhtml .= '<li class="'.$css_clases.' cf">
 		    <p class="date gradient"><span class="day">'.get_the_date('d').'</span><span class="month">'.get_the_date('M').'</span><span class="year">'.get_the_date('Y').'</span></p> 
 		    <div class="content">
 			<h2><a href="'.get_permalink().'">'.get_the_title().'</a></h2>
