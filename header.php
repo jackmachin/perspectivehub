@@ -8,7 +8,9 @@
  * @subpackage Twenty_Eleven
  * @since Twenty Eleven 1.0
  */
-?><!DOCTYPE html>
+?>
+
+<!DOCTYPE html>
 <!--[if IE 6]>
 <html id="ie6" <?php language_attributes(); ?>>
 <![endif]-->
@@ -75,45 +77,46 @@
         <h1 id="site-title"><span><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></span></h1>
 
         <nav id="access" role="navigation">
+
             <h3 class="assistive-text"><?php _e( 'Main menu', 'twentyeleven' ); ?></h3>
+
             <?php /*  Allow screen readers / text browsers to skip the navigation menu and get right to the good stuff. */ ?>
-            <div class="skip-link"><a class="assistive-text" href="#content" title="<?php esc_attr_e( 'Skip to primary content', 'twentyeleven' ); ?>"><?php _e( 'Skip to primary content', 'twentyeleven' ); ?></a></div>
-            <div class="skip-link"><a class="assistive-text" href="#secondary" title="<?php esc_attr_e( 'Skip to secondary content', 'twentyeleven' ); ?>"><?php _e( 'Skip to secondary content', 'twentyeleven' ); ?></a></div>
-            <?php /* Our navigation menu.  If one isn't filled out, wp_nav_menu falls back to wp_page_menu. The menu assiged to the primary position is the one used. If none is assigned, the menu with the lowest ID is used. */ ?>
-            <?php //wp_nav_menu( array( 'theme_location' => 'primary' ) ); ?>
+                <div class="skip-link">
+                    <a class="assistive-text" href="#content" title="<?php esc_attr_e( 'Skip to primary content', 'twentyeleven' ); ?>"><?php _e( 'Skip to primary content', 'twentyeleven' ); ?></a>
+                </div>
+
+                <div class="skip-link">
+                    <a class="assistive-text" href="#secondary" title="<?php esc_attr_e( 'Skip to secondary content', 'twentyeleven' ); ?>"><?php _e( 'Skip to secondary content', 'twentyeleven' ); ?></a>
+                </div>
+
+            <?php wp_nav_menu(array(
+                'container' => 'div',                           // contain the menu in a div
+                'container_class' => 'menu-container cf',       // class of container (should you choose to use it)
+                'menu' => __( 'The Main Menu', 'bonestheme' ),  // nav name
+                'menu_class' => 'nav top-nav cf',               // adding custom nav class
+                'theme_location' => 'main-nav',                 // where it's located in the theme
+                'before' => '',                                 // before the menu
+                'after' => '',                                  // after the menu
+                'link_before' => '',                            // before each link
+                'link_after' => '',                             // after each link
+                'depth' => 0,                                   // limit the depth of the nav
+                'fallback_cb' => ''                             // fallback function (if there is one)
+            )); ?>
 
         </nav><!-- #access -->
-      
-        <nav role="navigation">
-  
-  <?php wp_nav_menu(array(
-    'container' => 'div',                           // remove nav container
-    'container_class' => 'menu-container cf',                 // class of container (should you choose to use it)
-    'menu' => __( 'The Main Menu', 'bonestheme' ),  // nav name
-    'menu_class' => 'nav top-nav cf',               // adding custom nav class
-    'theme_location' => 'main-nav',                 // where it's located in the theme
-    'before' => '',                                 // before the menu
-    'after' => '',                                  // after the menu
-    'link_before' => '',                            // before each link
-    'link_after' => '',                             // after each link
-    'depth' => 0,                                   // limit the depth of the nav
-    'fallback_cb' => ''                             // fallback function (if there is one)
-  )); ?>
 
-</nav>
+        <?php if(is_front_page()) {
+          // if is home page do nothing
+        }
 
-    <?php if(is_front_page()) {  
-      // if is home page do nothing
-    } 
-    
-    else { //do breadcrums
-    
-      if(function_exists('bcn_display')) { ?>
-        <div class="breadcrumbs">
-            <?php bcn_display(); ?>
-        </div>
-      <?php }
-    } ?>
+        else { //do breadcrums
+
+          if(function_exists('bcn_display')) { ?>
+            <div class="breadcrumbs">
+                <?php bcn_display(); ?>
+            </div>
+          <?php }
+        } ?>
 	</header><!-- #branding -->
 
 <div id="main" <?php echo (get_post_type()=='post'?' class="blog"':''); ?>>
