@@ -163,8 +163,8 @@ a:hover {
 }
 
     ul.top-nav {
-        height: 40px;
         border: 2px solid #8B949F;
+        height: 40px;
     }
 
         ul.top-nav li {
@@ -378,10 +378,10 @@ ul.subpages {
 
             div#pageAttachments ul li {
                 display: block;
+                float: left;
+                width: 45%;
                 overflow: hidden;
                 margin: 0 25px 25px 0;
-                width: 45%;
-                float: left;
             }
 	
                 div#pageAttachments ul li p.tech {
@@ -389,8 +389,18 @@ ul.subpages {
                     overflow: hidden;
                 }
 
-                div#pageAttachments ul li span {display: block; overflow: hidden; line-height: 16px;}
-	div#pageAttachments ul li span.title {font-weight: bold; font-size: 15px; margin: 0 0 5px 0;}
+                div#pageAttachments ul li span {
+                    display: block;
+                    overflow: hidden;
+                    line-height: 16px;
+                }
+
+                div#pageAttachments ul li span.title {
+                    font-weight: bold;
+                    font-size: 15px;
+                    margin: 0 0 5px 0;
+                }
+
 	div#pageAttachments ul li span.filesize {font-style: italic;}
 	div#pageAttachments ul li span.mime {font-style: italic;}
 	    div#pageAttachments ul li span.download {}
@@ -515,15 +525,25 @@ ul.letter_index {}
         }
 
             ul.letter_index li.letter_title ul.employees_list li {
+                position: relative;
+                z-index: 11;
                 display: block;
-                overflow: hidden;
+                float: left;
                 width: 215px;
                 height: 140px;
                 margin: 0 10px 10px 0;
                 border: 1px solid #dadada;
-                float: left; padding: 10px; position: relative; z-index: 11; }
-ul.letter_index li.letter_title ul.employees_list li.mod_4_0 {margin-right: 0px;}
-ul.letter_index li.letter_title ul.employees_list li.mod_4_1 {clear: both;}
+                padding: 10px;
+            }
+
+            ul.letter_index li.letter_title ul.employees_list li:nth-child(4n) {
+                margin-right: 0;
+            }
+
+            ul.letter_index li.letter_title ul.employees_list li.nth-child(4n+1) {
+                clear: both;
+            }
+
 ul.letter_index li.letter_title ul.employees_list li span {display: block; overflow: hidden; color: #8b8b8b; line-height: 20px;}
 ul.letter_index li.letter_title ul.employees_list li span.fullname {font-size: 18px; font-weight: bold; margin: 15px 0 15px 0;}
 ul.letter_index li.letter_title ul.employees_list li span.fullname a { color: #444750; font-weight: bold;}
