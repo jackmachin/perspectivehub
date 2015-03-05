@@ -143,14 +143,14 @@ a:hover {
     
 /***** START NAV STUFF *****/
 
-nav#access {
-    / nothing of value here
+.access {
+    /* nothing of value here */
 }
 
-nav#access h3.assistive-text,
-nav#access a.assistive-text {
-    visibility: hidden;
-}
+    .access h3.assistive-text,
+    .access a.assistive-text {
+        visibility: hidden;
+    }
 
 .menu-container {
     background: #acb9c8;
