@@ -304,61 +304,94 @@ nav#access a.assistive-text {
         div.entry-content ol li {
             margin-left: 20px;
         }
+/***** SUB PAGE LIST *****/
 
-    ul.subpages {
-        /* Such pointless */
+ul.subpages {
+    /* Such pointless */
+}
+
+   ul.subpages li {
+       margin: 0 20px 20px 0;
+       width:230px;
+       float: left;
+       height: 120px;
+       position: relative;
+   }
+
+    ul.subpages li.mod_4_0 {
+        margin-right: 0px;
     }
 
-	   ul.subpages li {
-           margin: 0 20px 20px 0;
-           width:230px;
-           float: left;
-           height: 120px;
-           position: relative;
-       }
-
-        ul.subpages li.mod_4_0 {
-            margin-right: 0px;
+        ul.subpages li a.subpageTitle {
+            width: 230px;
+            height: 120px;
+            color: #fff;
+            font-weight: bold;
+            font-size: 16px;
         }
 
-            ul.subpages li a.subpageTitle {
-                width: 230px;
-                height: 120px;
-                color: #fff;
-                font-weight: bold;
-                font-size: 16px;
-            }
+        ul.subpages li a.subpageTitle:hover span {
+            background: #DA1445;
+        }
 
-            ul.subpages li a.subpageTitle:hover span {
-                background: #DA1445;
-            }
+        ul.subpages li a.subpageTitle img {
+            width: 230px;
+            height: 120px;
+            position:absolute;
+            z-index:9;
+        }
 
-	        ul.subpages li a.subpageTitle img {
-                width: 230px;
-                height: 120px;
-                position:absolute;
-                z-index:9;
-            }
+        ul.subpages li a.subpageTitle span {
+            width: 210px;
+            padding: 5px 10px;
+            background: #222;
+            position: absolute;
+            bottom: 0px;
+            z-index: 10;
+            opacity:0.9;
+            filter:alpha(opacity=90); /* For IE8 and earlier */
+        }
 
-            ul.subpages li a.subpageTitle span {
-                width: 210px;
-                padding: 5px 10px;
-                background: #222;
-                position: absolute;
-                bottom: 0px;
-                z-index: 10;
-                opacity:0.9;
-                filter:alpha(opacity=90); /* For IE8 and earlier */
+        ul.subpages li p.description {
+            line-height: 17px;
+            font-size: 13px;
+        }
+
+        ul.subpages li span.read-more a {
+            color: #DA1445;
+        }
+
+        ul.subpages li span.read-more a:hover {
+            color: #000;
+        }
+
+/***** PAGE ATTACHMENTS (PROBABLY POINTLESS) *****/
+	div#pageAttachments {
+        display: block;
+        overflow: hidden;
+        color: #555;
+    }
+
+        div#pageAttachments ul {
+            display: block;
+            overflow: hidden;
+            border: 0px solid #ddd;
+        }
+
+            div#pageAttachments ul li {
+                display: block;
+                overflow: hidden;
+                margin: 0 25px 25px 0;
+                width: 45%;
+                float: left;
             }
-	ul.subpages li p.description {line-height: 17px; font-size: 13px;}
-	ul.subpages li span.read-more a {color: #DA1445;}
-	ul.subpages li span.read-more a:hover {color: #000;}
 	
-	div#pageAttachments {display: block; overflow: hidden; color: #555;}
-	div#pageAttachments ul {display: block; overflow: hidden; border: 0px solid #ddd;}
-	div#pageAttachments ul li {display: block; overflow: hidden; margin: 0 25px 25px 0; width: 45%; float: left;}
-	div#pageAttachments ul li p.tech {display: block; overflow: hidden;}
-	div#pageAttachments ul li span {display: block; overflow: hidden; line-height: 16px;}
+                div#pageAttachments ul li p.tech {
+                    display: block;
+                    overflow: hidden;
+                }
+
+                div#pageAttachments ul li span {display: block; overflow: hidden; line-height: 16px;}
 	div#pageAttachments ul li span.title {font-weight: bold; font-size: 15px; margin: 0 0 5px 0;}
 	div#pageAttachments ul li span.filesize {font-style: italic;}
 	div#pageAttachments ul li span.mime {font-style: italic;}
@@ -366,32 +399,92 @@ nav#access a.assistive-text {
 	    div#pageAttachments ul li span.download a {color: #DA1445;}
 	    div#pageAttachments ul li span.download a:hover {color: #000;}
 	div#pageAttachments ul li p.description {font-size: 13px; line-height: 17px; margin: 0 0 5px 0;}
+
 	
 	
+/***** RSS Page *****/
+
+aside.rsspageblock {
+    display: block;
+    overflow: hidden;
+    width: 48%;
+    margin: 0 15px 20px 0;
+    float: left;
+}
+	aside.rsspageblock a {
+        color: #da1445;
+    }
 	
-	/* RSS Page */
-	aside.rsspageblock {display: block; overflow: hidden; width: 48%; margin: 0 15px 20px 0; float: left;}
-	aside.rsspageblock a {color: #da1445; }
-	aside.rsspageblock a:hover {color: #444750;}
-	aside.rsspageblock h3 {font-size: 16px; margin-bottom: 5px; background: #ececec; padding: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; border-radius: 5px;}
-	aside.rsspageblock ul {}
-	aside.rsspageblock ul li {margin-bottom: 10px; font-size: 13px; line-height: 17px;}
-	aside.rsspageblock ul li a.rsswidget {font-weight: bold;}
-	aside.rsspageblock ul li span.rss-date {font-style: italic;}
+    aside.rsspageblock a:hover {
+        color: #444750;
+    }
 	
+    aside.rsspageblock h3 {
+        font-size: 16px;
+        margin-bottom: 5px;
+        background: #ececec;
+        padding: 5px;
+        -moz-border-radius: 5px;
+        -webkit-border-radius: 5px;
+        border-radius: 5px;
+    }
+
+    aside.rsspageblock ul {}
 	
-	aside.world_news {}
-	aside.world_news h3 {}
-	aside.world_news h3 a.kbrsswidget {display: block; float: left; margin: 1px 10px 0 5px;}
-	aside.world_news li {}
-	aside.world_news li a {display: block; overflow: hidden; font-weight: bold;}
+        aside.rsspageblock ul li {
+            margin-bottom: 10px;
+            font-size: 13px;
+            line-height: 17px;
+        }
+
+            aside.rsspageblock ul li a.rsswidget {
+                font-weight: bold;
+            }
+
+            aside.rsspageblock ul li span.rss-date {
+                font-style: italic;
+            }
 	
+aside.world_news {}
+
+    aside.world_news h3 {}
+
+        aside.world_news h3 a.kbrsswidget {
+            display: block;
+            float: left;
+            margin: 1px 10px 0 5px;
+        }
+
+    aside.world_news li {}
+
+        aside.world_news li a {
+            display: block;
+            overflow: hidden;
+            font-weight: bold;
+        }
 	
-	/* Directory listing */	
-	ul.alphaIndex {display: block; overflow: hidden; background: #f5f5f5; padding: 5px; margin: 0 0 20px 0; text-align: center;}
-	    ul.alphaIndex li.letter {display: inline; overflow: hidden; width: auto; margin: 0 10px 0 0; font-size: 22px; color: #bbb;}
-	    ul.alphaIndex li.letter a {color: #da1445; }
-	    ul.alphaIndex li.letter a:hover { color: #000;}
+/***** Directory listing *****/
+
+ul.alphaIndex {
+    display: block;
+    overflow: hidden;
+    background: #f5f5f5;
+    padding: 5px;
+    margin: 0 0 20px 0;
+    text-align: center;
+}
+
+    ul.alphaIndex li.letter {
+        display: inline;
+        overflow: hidden;
+        width: auto;
+        margin: 0 10px 0 0;
+        font-size: 22px;
+        color: #bbb;
+    }
+
+        ul.alphaIndex li.letter a {color: #da1445; }
+        ul.alphaIndex li.letter a:hover { color: #000;}
 	
 	ul.letter_index {}
 	    ul.letter_index li.letter_title {position: relative; margin-bottom: 50px;}
