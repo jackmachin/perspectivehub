@@ -310,7 +310,6 @@ nav#access a.assistive-text {
     }
 
 	   ul.subpages li {
-           overflow: hidden;
            margin: 0 20px 20px 0;
            width:230px;
            float: left;
@@ -335,14 +334,22 @@ nav#access a.assistive-text {
             }
 
 	        ul.subpages li a.subpageTitle img {
-                display: block;
-                overflow: hidden;
                 width: 230px;
                 height: 120px;
                 position:absolute;
                 z-index:9;
             }
-	ul.subpages li a.subpageTitle span {display: block; overflow: hidden; width: 230px; padding: 5px 10px; background: #222; position: absolute; bottom: 0px; z-index: 10; opacity:0.9; filter:alpha(opacity=90); /* For IE8 and earlier */}
+
+            ul.subpages li a.subpageTitle span {
+                width: 210px;
+                padding: 5px 10px;
+                background: #222;
+                position: absolute;
+                bottom: 0px;
+                z-index: 10;
+                opacity:0.9;
+                filter:alpha(opacity=90); /* For IE8 and earlier */
+            }
 	ul.subpages li p.description {line-height: 17px; font-size: 13px;}
 	ul.subpages li span.read-more a {color: #DA1445;}
 	ul.subpages li span.read-more a:hover {color: #000;}
