@@ -102,7 +102,7 @@ function twentyeleven_setup() {
     array (
         'primary', __( 'Primary Menu', 'twentyeleven' ),
         'main-nav' => __( 'The Main Menu', 'perspectivehub' ),   // main nav in header
-        'home-portal' => __ ( 'The Portal on the Home Page' ) // Home page portal
+        'home-portal' => __ ( 'Home Portal' ) // Home page portal
     )
   );
 
