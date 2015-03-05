@@ -618,12 +618,18 @@ aside.world_news {}
         }
 
         .employee_entry .description {
+            font-size: 14px;
+            line-height: 20px;
             background: transparent url('./images/hr.png') left bottom repeat-x;
             padding-bottom: 30px;
             margin-bottom: 30px;
         }
-	div.employee_entry div.description  p {font-size: 14px; line-height: 20px; margin: 1em 0;}
-	div.employee_entry div.contacts {font-size: 14px; margin-bottom: 30px;}
+
+            .employee_entry .description  p {
+                margin: 1em 0;
+            }
+
+	.employee_entry div.contacts {font-size: 14px; margin-bottom: 30px;}
 	    div.employee_entry div.contacts span {display: block; overflow: hidden; line-height: 25px;}
 	    div.employee_entry div.contacts span.email {background: transparent url('./images/envelope.png') left 8px no-repeat; padding-left: 25px;}
 	
