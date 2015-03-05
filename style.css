@@ -540,7 +540,7 @@ ul.letter_index {}
                 margin-right: 0;
             }
 
-            ul.letter_index li.letter_title ul.employees_list li.nth-child(4n+1) {
+            ul.letter_index li.letter_title ul.employees_list li:nth-child(4n+1) {
                 clear: both;
             }
 
