@@ -116,11 +116,10 @@ h1.entry-title {
         overflow: hidden;
         width: 224px;
         height: 93px;
-        background: transparent url('./images/thehub-logo.jpg') left top no-repeat !important;
-        text-indent: -5000px;
     }
     
-	nav#access {display: block; float: left; margin-top: 20px; width: 100%}
+	nav#access {
+        display: block; float: left; margin-top: 20px; width: 100%}
 	nav#access h3.assistive-text {display: none;}
 	
 	.skip-link {display: none !important;}
