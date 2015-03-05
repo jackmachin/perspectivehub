@@ -471,7 +471,7 @@ aside.world_news {}
             font-weight: bold;
         }
 	
-/***** Directory listing *****/
+/***** ALPHABET LISTING *****/
 
 .alphaIndex {
     display: block;
@@ -493,15 +493,17 @@ aside.world_news {}
 
         .alphaIndex li.letter a {color: #da1445; }
         .alphaIndex li.letter a:hover { color: #000;}
-	
-ul.letter_index {}
 
-    ul.letter_index li.letter_title {
+/***** INDIVIDUAL LISTING *****/
+	
+.letter_index {}
+
+    .letter_index li.letter_title {
         position: relative;
         margin-bottom: 50px;
     }
 
-        ul.letter_index li.letter_title h3 {
+        .letter_index li.letter_title h3 {
             display: block;
             overflow: hidden;
             color: #fff;
@@ -516,7 +518,7 @@ ul.letter_index {}
             z-index: 10;
         }
 
-        ul.letter_index li.letter_title ul.employees_list {
+        .letter_index li.letter_title ul.employees_list {
             display: block;
             overflow: hidden;
             margin: 0 0 20px 0;
@@ -524,7 +526,7 @@ ul.letter_index {}
             letter-spacing: 0.3px;
         }
 
-            ul.letter_index li.letter_title ul.employees_list li {
+            .letter_index li.letter_title ul.employees_list li {
                 position: relative;
                 z-index: 11;
                 display: block;
@@ -536,46 +538,46 @@ ul.letter_index {}
                 padding: 10px;
             }
 
-            ul.letter_index li.letter_title ul.employees_list li:nth-child(4n) {
+            .letter_index li.letter_title ul.employees_list li:nth-child(4n) {
                 margin-right: 0;
             }
 
-            ul.letter_index li.letter_title ul.employees_list li:nth-child(4n+1) {
+            .letter_index li.letter_title ul.employees_list li:nth-child(4n+1) {
                 clear: both;
             }
 
-                ul.letter_index li.letter_title ul.employees_list li span {
+                .letter_index li.letter_title ul.employees_list li span {
                     display: block;
                     overflow: hidden;
                     color: #8b8b8b;
                     line-height: 20px;
                 }
 
-                ul.letter_index li.letter_title ul.employees_list li span.fullname {
+                .letter_index li.letter_title ul.employees_list li span.fullname {
                     font-size: 18px;
                     font-weight: bold;
                     margin: 15px 0 15px 0;
                 }
 
-                ul.letter_index li.letter_title ul.employees_list li span.fullname a {
+                .letter_index li.letter_title ul.employees_list li span.fullname a {
                     color: #444750;
                 }
 
-                ul.letter_index li.letter_title ul.employees_list li span.fullname a:hover {}
+                .letter_index li.letter_title ul.employees_list li span.fullname a:hover {}
 
-                ul.letter_index li.letter_title ul.employees_list li span.position {
+                .letter_index li.letter_title ul.employees_list li span.position {
                     font-size: 15px;
                 }
 
-                ul.letter_index li.letter_title ul.employees_list li span.email {}
+                .letter_index li.letter_title ul.employees_list li span.email {}
 
-                ul.letter_index li.letter_title ul.employees_list li span.email a {
+                .letter_index li.letter_title ul.employees_list li span.email a {
                     color: #8b8b8b;
                 }
 
-                ul.letter_index li.letter_title ul.employees_list li span.email a:hover {}
+                .letter_index li.letter_title ul.employees_list li span.email a:hover {}
 
-                ul.letter_index li.letter_title ul.employees_list li span.mobile {}
+                .letter_index li.letter_title ul.employees_list li span.mobile {}
 	    
 
 	div.employee_entry {position: relative; padding: 15px; z-index: 12; border: 1px solid #dadada; color: #595959;}
