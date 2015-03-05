@@ -106,55 +106,58 @@ h1.entry-title {
     margin: 0;
 }
     header {
-        display: block;
         overflow: visible;
         width: 980px;
         margin: 0 auto;
     }
 
-    header.entry-header {
-        margin-bottom: 20px;
-    }
+        header.entry-header {
+            margin-bottom: 20px;
+        }
 
-    h1#site-title a {
-        display: block;
-        overflow: hidden;
-        width: 224px;
-        height: 93px;
-    }
+        h1#site-title a {
+            overflow: hidden;
+            width: 224px;
+            height: 93px;
+        }
     
-	nav#access {
+        nav#access {
+            margin-top: 20px;
+            width: 100%
+        }
+
+        nav#access h3.assistive-text,
+        nav#access a.assistive-text {
+            visibility: hidden;
+        }
+
+            ul#menu-main-menu {
+                z-index:9999;
+                margin-top:0;
+            }
+        /*
+            ul#menu-main-menu li.menu-item {float: left; margin: 0 0 0 10px; padding: 0 25px 0 0; background: transparent url('./images/menu-separator.jpg') right top no-repeat;}
+
+            ul#menu-main-menu li.menu-item a {color: #a9b1bc;  font-weight: bold; text-transform: lowercase; font-size: 14px;}
+            ul#menu-main-menu li.menu-item a:hover,
+            ul#menu-main-menu li.current-page-parent a,
+            ul#menu-main-menu li.current_page_item a {color: #da1445; background: transparent !important;}
+
+
+            ul#menu-main-menu li.menu-item ul.sub-menu {display: none; position: absolute; padding: 10px 5px 0; background: #eceff4 url('./images/menu-toparrow.jpg') left top no-repeat; width: auto;}
+            ul#menu-main-menu li.menu-item ul.sub-menu li {display: block !important; float: left; background-image: none; float: none !important; padding:3px 10px; margin: 0px;}
+            ul#menu-main-menu li.menu-item:hover ul.sub-menu {display: block;}
+            ul#menu-main-menu li.menu-item ul.sub-menu li a {color: #a9b1bc; background: transparent !important; font-weight: normal; font-size: 13px; text-transform: capitalize; line-height: 20px;}
+            ul#menu-main-menu li.menu-item ul.sub-menu li a:hover,
+            ul#menu-main-menu li.menu-item ul.sub-menu li.current_page_item a {color: #DA1445; background: transparent !important;}
+
+            li#menu-item-464 {margin-right: 0px !important;}
+         */
+
+    .breadcrumbs {
         display: block;
         margin-top: 20px;
-        width: 100%
     }
-
-    nav#access h3.assistive-text,
-    nav#access a.assistive-text {
-        visibility: hidden;
-    }
-		
-	ul#menu-main-menu {position: relative; z-index:9999; margin-top: 70px;}
-/* 
-	ul#menu-main-menu li.menu-item {float: left; margin: 0 0 0 10px; padding: 0 25px 0 0; background: transparent url('./images/menu-separator.jpg') right top no-repeat;}
-
-	ul#menu-main-menu li.menu-item a {color: #a9b1bc;  font-weight: bold; text-transform: lowercase; font-size: 14px;}
-	ul#menu-main-menu li.menu-item a:hover,
-	ul#menu-main-menu li.current-page-parent a,
-	ul#menu-main-menu li.current_page_item a {color: #da1445; background: transparent !important;}
-	
-	
-	ul#menu-main-menu li.menu-item ul.sub-menu {display: none; position: absolute; padding: 10px 5px 0; background: #eceff4 url('./images/menu-toparrow.jpg') left top no-repeat; width: auto;}
-	ul#menu-main-menu li.menu-item ul.sub-menu li {display: block !important; float: left; background-image: none; float: none !important; padding:3px 10px; margin: 0px;}
-	ul#menu-main-menu li.menu-item:hover ul.sub-menu {display: block;}
-	ul#menu-main-menu li.menu-item ul.sub-menu li a {color: #a9b1bc; background: transparent !important; font-weight: normal; font-size: 13px; text-transform: capitalize; line-height: 20px;}
-	ul#menu-main-menu li.menu-item ul.sub-menu li a:hover,
-	ul#menu-main-menu li.menu-item ul.sub-menu li.current_page_item a {color: #DA1445; background: transparent !important;}
-	
-	li#menu-item-464 {margin-right: 0px !important;}
- */	
- 
-    .breadcrumbs {display: block; float: left; margin-top: 20px;}
  
 	/* Pages elements */
 	div.entry-content {display: block; overflow: hidden; margin: 0 0 10px 0; font-size: 13px; line-height: 17px;}
@@ -628,8 +631,6 @@ form input {border: 1px solid #aaa; background: #EFEFEF; padding: 4px; color: #6
 }  
 
  ul.top-nav {
-  margin-top: 0 !important;
- 
  }
  
   ul.top-nav {
