@@ -30,7 +30,7 @@
                 <img src="<?php echo get_template_directory_uri();?>/images/homelogos.jpg" alt="Homepage Logo Bar" title="Home Logos" />
             </div>
 
-            <div id="homenews">
+            <div id="homenews" class="cf">
                 <p class="fancy-bar-title gradient rounded">News feeds</p>
                 <?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar("home-widgets") ) : ?>
                 <?php endif; ?>
