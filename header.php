@@ -109,17 +109,11 @@
     else { //do breadcrums
     
       if(function_exists('bcn_display')) { ?>
-      <div class="breadcrumbs">
-       <?php bcn_display(); ?>
+        <div class="breadcrumbs">
+            <?php bcn_display(); ?>
         </div>
       <?php }
-    
-    }
-    ?>
-
-			
+    } ?>
 	</header><!-- #branding -->
-
-
 
 <div id="main" <?php echo (get_post_type()=='post'?' class="blog"':''); ?>>
