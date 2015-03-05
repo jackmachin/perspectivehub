@@ -685,14 +685,29 @@ aside.world_news {}
             padding: 10px;
         }
 
-	ul.group-news-list li p.date span {display: block; overflow: hidden;}
-	ul.group-news-list li p.date span.day {font-weight: bold; font-size: 22px; margin-bottom: 5px;}
-	ul.group-news-list li p.date span.year {display: none !important;} 	
-	ul.group-news-list li div.content {display: block; overflow: hidden; float: left; width: 900px; font-size: 13px;}
-	ul.group-news-list li div.content h2 {font-size: 20px; font-weight: bold; line-height: 25px; margin-bottom: 10px;}
-	ul.group-news-list li div.content h2 a {color: #222;}
-	ul.group-news-list li div.content p.short_desc a {display: block; overflow: hidden; margin: 10px 0}
-	ul.group-news-list li div.content p.short_desc a span {display: none;}
+            .group-news-list li p.date span {display: block;}
+
+            .group-news-list li p.date span.day {
+                font-weight: bold;
+                font-size: 22px;
+                margin-bottom: 5px;
+            }
+
+    .group-news-list li .content {
+        font-size: 13px;
+    }
+
+	.group-news-list li .content h2 {
+        font-size: 20px;
+        font-weight: bold;
+        line-height: 25px;
+        margin-bottom: 10px;
+    }
+
+	.group-news-list li .content h2 a {color: #222;}
+
+	.group-news-list li .content p.short_desc a {}
+	.group-news-list li .content p.short_desc a span {display: none;} /* WTF IS THIS? */
 	
 	/*ul.group-news-list li a {color: #444; }
 	ul.group-news-list li a:hover {color:#DA1445;}
