@@ -106,7 +106,14 @@ h1.entry-title { // This is probably unneccessary here
         margin: 20px auto 50px auto;
     }
 
-    h1#site-title a {display: block; overflow: hidden; width: 224px; height: 93px; background: transparent url('./images/thehub-logo.jpg') left top no-repeat !important; text-indent: -5000px;}
+    h1#site-title a {
+        display: block;
+        overflow: hidden;
+        width: 224px;
+        height: 93px;
+        background: transparent url('./images/thehub-logo.jpg') left top no-repeat !important;
+        text-indent: -5000px;
+    }
     
 	nav#access {display: block; float: left; margin-top: 20px; width: 100%}
 	nav#access h3.assistive-text {display: none;}

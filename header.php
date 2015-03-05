@@ -74,7 +74,7 @@
 <div id="page" class="hfeed">
 	<header id="branding" role="banner">
 
-        <h1 id="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">img src="/images/thehub-logo.jpg" alt="<?php bloginfo( 'name' ); ?>"></a></h1>
+        <h1 id="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="/images/thehub-logo.jpg" alt="<?php bloginfo( 'name' ); ?>"></a></h1>
 
         <nav id="access" role="navigation">
 
