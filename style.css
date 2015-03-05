@@ -124,8 +124,7 @@ h1.entry-title {
 /***** START NAV STUFF *****/
 
 nav#access {
-    margin-top: 20px;
-    width: 100%
+    / nothing of value here
 }
 
 nav#access h3.assistive-text,
