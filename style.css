@@ -68,17 +68,43 @@ footer, header, hgroup, menu, nav, section {
 /* =Structure
 ----------------------------------------------- */
 
-body {font-family: Arial, Verdana, sans-serif; font-size: 12px; /*line-height: 16px;*/ padding:0px; margin: 0px; color: #444750;}
-strong {font-weight: bold;}
-em {font-style: italic;}
+body {
+    font-family: Arial, Verdana, sans-serif;
+    font-size: 12px;
+    /*line-height: 16px;*/
+    padding:0;
+    margin: 0;
+    color: #444750;
+}
+
+strong {
+    font-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
+
 a {color:#DA1445; text-decoration: none; !important;}
 a:hover {color: #444750;}
 
 /* common elements */
-h1.entry-title {font-size: 22px; line-height: 25px; font-weight: bold; color: #db1546;}
+h1.entry-title { // This is probably unneccessary here
+    font-size: 22px;
+    line-height: 25px;
+    font-weight: bold;
+    color: #db1546;
+}
 
-#page {margin: 0;}
-    header {display: block; overflow: visible; width: 980px; margin: 20px auto 50px auto;}
+#page {
+    margin: 0;
+}
+    header {
+        display: block;
+        overflow: visible;
+        width: 980px;
+        margin: 20px auto 50px auto;
+    }
     header.entry-header {margin-bottom: 20px;}
     h1#site-title a {display: block; overflow: hidden; width: 224px; height: 93px; background: transparent url('./images/thehub-logo.jpg') left top no-repeat !important; text-indent: -5000px;}
     
