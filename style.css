@@ -147,8 +147,7 @@ a:hover {
     /* nothing of value here */
 }
 
-    .access h3.assistive-text,
-    .access a.assistive-text {
+    .access .assistive-text {
         visibility: hidden;
     }
 
