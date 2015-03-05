@@ -667,25 +667,23 @@ aside.world_news {}
     /* Silence is golden */
 }
 	.group-news-list li {
-        overflow: hidden;
-        clear: both;
         line-height: 17px;
         margin: 0 0 20px 0;
         padding: 0;
         border-bottom: 1px dotted #222;
     }
 
-	ul.group-news-list li p.date {
-        display: block;
-        overflow: hidden;
-        width: 35px;
-        float: left;
-        color: #fff;
-        font-size: 14px;
-        text-align: center;
-        margin:0 15px 0 0;
-        padding: 10px;
-    }
+	   .group-news-list li p.date {
+            display: block;
+            overflow: hidden;
+            width: 35px;
+            float: left;
+            font-size: 14px;
+            color: #fff;
+            text-align: center;
+            margin:0 15px 0 0;
+            padding: 10px;
+        }
 
 	ul.group-news-list li p.date span {display: block; overflow: hidden;}
 	ul.group-news-list li p.date span.day {font-weight: bold; font-size: 22px; margin-bottom: 5px;}
