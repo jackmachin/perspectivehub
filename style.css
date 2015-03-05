@@ -110,7 +110,7 @@ h1.entry-title {
         display: block;
         overflow: visible;
         width: 980px;
-        margin: 20px auto 50px auto;
+        margin: 0 auto;
     }
 
     header.entry-header {
@@ -126,7 +126,6 @@ h1.entry-title {
     
 	nav#access {
         display: block;
-        float: left;
         margin-top: 20px;
         width: 100%
     }
