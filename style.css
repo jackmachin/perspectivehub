@@ -316,7 +316,7 @@ nav#access a.assistive-text {
                 font-size: 16px;
             }
 
-            ul.subpages li a.subpageTitle:hover {
+            ul.subpages li a.subpageTitle:hover span {
                 background: #DA1445;
             }
 
