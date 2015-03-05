@@ -635,8 +635,14 @@ aside.world_news {}
         }
 	
     .employee_entry .related {
-        display: block; overflow: hidden; clear: both; margin: 0 0 15px 0;}
-	div.employee_entry div.related div.block {display: block; overflow: hidden; width: 49%; margin: 0 10px 10px 0;float: left;}
+        margin: 0 0 15px 0;
+    }
+
+    .employee_entry .related .block {
+        display: block;
+        overflow: hidden;
+        margin: 0 10px 10px 0;
+    }
 	div.employee_entry div.related div.block h2 {font-weight: bold; font-size: 16px; margin: 0 0 10px 0;}
 	div.employee_entry div.related div.block ul {display: block; overflow: hidden;}
 	div.employee_entry div.related div.block ul li {display: block; overflow: hidden; line-height: 16px;}
