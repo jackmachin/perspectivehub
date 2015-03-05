@@ -776,8 +776,14 @@ aside.world_news {}
         margin: 0 0 10px 0;
     }
 
-#homenews #kb-advanced-rss-3 h2.widgettitle {display: block; overflow: hidden; width: 286px; height: 51px; background: transparent url('./images/moneymarketing.png') left top no-repeat; text-indent: -5000px; margin: 0 0 10px 0;}
-    #homenews #kb-advanced-rss-3 {margin-right: 0px !important;}
+    #homenews #kb-advanced-rss-3 h2.widgettitle {
+        width: 286px;
+        height: 51px;
+        margin: 0 0 10px 0;
+    }
+
+    #homenews #kb-advanced-rss-3 {margin-right: 0;}
+
     #homenews .widget_kbrss ul {}
     #homenews .widget_kbrss ul li {margin-bottom: 5px;}
     #homenews .widget_kbrss ul li a {font-weight: bold;  color: #555;}
