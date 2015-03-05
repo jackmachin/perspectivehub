@@ -100,7 +100,6 @@ function twentyeleven_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus ( 
     array (
-        'primary', __( 'Primary Menu', 'twentyeleven' ),
         'main-nav' => __( 'The Main Menu', 'perspectivehub' ),   // main nav in header
         'home-portal' => __ ( 'Home Portal' ) // Home page portal
     )
