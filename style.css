@@ -162,12 +162,12 @@ a:hover {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#acb9c8', endColorstr='#8a9aab', GradientType=0 );
 }
 
-    ul.top-nav {
+    .top-nav {
         border: 2px solid #8B949F;
         height: 40px;
     }
 
-        ul.top-nav li {
+        .top-nav li {
             float:left;
             list-style: none;
             font-size: 13px;
@@ -176,11 +176,11 @@ a:hover {
             padding: 0;
         }
 
-        ul.top-nav li.menu-item-has-children a:after {
+        .top-nav li.menu-item-has-children a:after {
             content: ' ▾';
         }
 
-            ul.top-nav li a {
+            .top-nav li a {
                 display: block;
                 text-decoration: none;
                 padding: 12px 25px 12px 25px;
@@ -188,8 +188,8 @@ a:hover {
                 text-shadow: 1px 1px 1px #000;
             }
 
-            ul.top-nav li a:hover,
-            ul.top-nav li a:focus {
+            .top-nav li a:hover,
+            .top-nav li a:focus {
                 background: #e2e2e2;
                 background: -moz-linear-gradient(top, #e2e2e2 0%, #fcfdfd 100%);
                 background: -webkit-gradient(left top, left bottom, color-stop(0%, #e2e2e2), color-stop(100%, #fcfdfd));
@@ -202,9 +202,9 @@ a:hover {
                 text-shadow: none;
             }
 
-            ul.top-nav li.current_page_item a {}
+            .top-nav li.current_page_item a {}
 
-                ul.top-nav li ul.sub-menu {
+                .top-nav li ul.sub-menu {
                     display: none;
                     background: #fff;
                     z-index: 8999;
@@ -218,20 +218,20 @@ a:hover {
                     border-right: 2px solid #e2e2e2;
                 }
 
-                    ul.top-nav li ul.sub-menu li {}
+                    .top-nav li ul.sub-menu li {}
 
-                    ul.top-nav li ul.sub-menu li a {}
+                    .top-nav li ul.sub-menu li a {}
 
-                    ul.top-nav li ul.sub-menu li a:after {
+                    .top-nav li ul.sub-menu li a:after {
                         content: '';
                     }
 
-                    ul.top-nav li:hover>ul {
+                    .top-nav li:hover>ul {
                         display: block;
                     }
 
-                        ul.top-nav li ul.children li a,
-                        ul.top-nav li ul.sub-menu li a {
+                        .top-nav li ul.children li a,
+                        .top-nav li ul.sub-menu li a {
                             padding: 7px 5px 7px 22px;
                             border-right: 0;
                             display: block;
@@ -242,8 +242,8 @@ a:hover {
                             list-style-type: disc;
                         }
 
-                        ul.top-nav li ul.children li a:hover,
-                        ul.top-nav li ul.sub-menu li a:hover {
+                        .top-nav li ul.children li a:hover,
+                        .top-nav li ul.sub-menu li a:hover {
                             background: none;
                             color:#DA1445;
                         }
@@ -620,9 +620,9 @@ aside.world_news {}
         .employee_entry .description {
             font-size: 14px;
             line-height: 20px;
-            background: transparent url('./images/hr.png') left bottom repeat-x;
-            padding-bottom: 30px;
-            margin-bottom: 30px;
+            background: transparent url('./images/hr.png') left bottom repeat-x; /* This is stupid */
+            padding-bottom: 30px; /* So is this */
+            margin-bottom: 30px;  /* And so is this */
         }
 
             .employee_entry .description  p {
