@@ -131,11 +131,8 @@ h1.entry-title {
         width: 100%
     }
 
-    nav#access h3.assistive-text {
-        visibility: hidden;
-    }
-	
-	.skip-link {
+    nav#access h3.assistive-text,
+    nav#access a.assistive-text {
         visibility: hidden;
     }
 		
