@@ -612,14 +612,16 @@ aside.world_news {}
         }
 
         .employee_entry .main_info .position {
-            display: block;
-            overflow: hidden;
             font-size: 16px;
             font-weight: bold;
             line-height: 20px;
         }
 
-	div.employee_entry div.description {background: transparent url('./images/hr.png') left bottom repeat-x; padding-bottom: 30px; margin-bottom: 30px;}
+        .employee_entry .description {
+            background: transparent url('./images/hr.png') left bottom repeat-x;
+            padding-bottom: 30px;
+            margin-bottom: 30px;
+        }
 	div.employee_entry div.description  p {font-size: 14px; line-height: 20px; margin: 1em 0;}
 	div.employee_entry div.contacts {font-size: 14px; margin-bottom: 30px;}
 	    div.employee_entry div.contacts span {display: block; overflow: hidden; line-height: 25px;}
