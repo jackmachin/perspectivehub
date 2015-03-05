@@ -135,10 +135,10 @@ a:hover {
             margin-bottom: 20px;
         }
 
-        h1#site-title a {
+        .site-title a {
+            height: 93px;
             overflow: hidden;
             width: 224px;
-            height: 93px;
         }
     
 /***** START NAV STUFF *****/
