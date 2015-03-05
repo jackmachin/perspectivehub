@@ -85,8 +85,15 @@ em {
     font-style: italic;
 }
 
-a {color:#DA1445; text-decoration: none; !important;}
-a:hover {color: #444750;}
+a {
+    color:#DA1445;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #444750;
+    text-decoration: underline;
+}
 
 /* common elements */
 h1.entry-title {
@@ -109,7 +116,6 @@ h1.entry-title {
     header.entry-header {
         margin-bottom: 20px;
     }
-    }
 
     h1#site-title a {
         display: block;
@@ -119,10 +125,19 @@ h1.entry-title {
     }
     
 	nav#access {
-        display: block; float: left; margin-top: 20px; width: 100%}
-	nav#access h3.assistive-text {display: none;}
+        display: block;
+        float: left;
+        margin-top: 20px;
+        width: 100%
+    }
+
+    nav#access h3.assistive-text {
+        visibility: hidden;
+    }
 	
-	.skip-link {display: none !important;}
+	.skip-link {
+        visibility: hidden;
+    }
 		
 	ul#menu-main-menu {position: relative; z-index:9999; margin-top: 70px;}
 /* 
