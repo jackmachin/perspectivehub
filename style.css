@@ -247,8 +247,6 @@ a:hover {
                             background: none;
                             color:#DA1445;
                         }
-
-/***** END NAV STUFF *****/
  
 /***** PAGE ELEMENTS *****/
 
@@ -1291,7 +1289,12 @@ form {
 
 .category-icon {width:15px;}
 
-#footer-hub-logo {margin-top: 20px; display: block; overflow: hidden; float: right;}
+#footer-hub-logo {
+    margin-top: 20px;
+    display: block;
+    overflow: hidden;
+    float: right;
+}
 
 #menu-footer-menu {display:block; overflow: hidden;}
 
