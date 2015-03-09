@@ -19,10 +19,23 @@
             </div>
 
             <div id="portal">
-            <?php
-                $menu_custom_counter=0;
-                wp_nav_menu( array( 'container_class' => 'menu-stamp', 'theme_location' =>'stamp-menu' , 'menu' => 'HomepageBlock', 'walker' => new Thumbnail_Walker) );
-            ?>
+                <?php wp_nav_menu(array(
+                    'container' => 'div',                           // contain the menu in a div
+                    'container_class' => 'home-menu-container cf',       // class of container (should you choose to use it)
+                    'menu' => __( 'Home Portal', 'bonestheme' ),  // nav name
+                    'menu_class' => 'nav home-nav cf',               // adding custom nav class
+                    'theme_location' => 'home-portal',                 // where it's located in the theme
+                    'before' => '',                                 // before the menu
+                    'after' => '',                                  // after the menu
+                    'link_before' => '',                            // before each link
+                    'link_after' => '',                             // after each link
+                    'depth' => 0,                                   // limit the depth of the nav
+                    'fallback_cb' => ''                             // fallback function (if there is one)
+                )); ?>
+            </div>
+
+            <div class="entry-content">
+                <?php the_content();?>
             </div>
 
             <div id="homelogos" class="rounded">
