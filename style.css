@@ -877,6 +877,15 @@ aside.world_news {}
 
     #menu-homepageblock li img {}
 
+/***** BETTER HOMEPAGE PORTAL *****/
+
+.home-nav {}
+
+    .home-nav li {}
+
+        .home-nav li a {}
+
+
 /***** BLOG PAGES *****/
 
 .blog a {color: #da1445; }
