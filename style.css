@@ -879,7 +879,9 @@ aside.world_news {}
 
 /***** BETTER HOMEPAGE PORTAL *****/
 
-.home-nav {}
+.home-nav {
+    background-color: #eee;
+}
 
     .home-nav li {
         width: 30%;
