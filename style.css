@@ -880,19 +880,24 @@ aside.world_news {}
 /***** BETTER HOMEPAGE PORTAL *****/
 
 .home-nav {
-    background-color: #eee;
 }
 
     .home-nav li {
+        display: inline-block;
         width: 30%;
+        text-align: center;
         margin-right: 1em;
+        background-color:#d41246;
     }
 
     .home-nav li:nth-of-type(3n) {
         margin-right: 0;
     }
 
-        .home-nav li a {}
+        .home-nav li a {
+            color: #fff;
+            text-transform: uppercase;
+        }
 
 
 /***** BLOG PAGES *****/
