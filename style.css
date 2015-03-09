@@ -880,6 +880,7 @@ aside.world_news {}
 /***** BETTER HOMEPAGE PORTAL *****/
 
 .home-nav {
+    text-align:center;
 }
 
     .home-nav li {
@@ -888,8 +889,11 @@ aside.world_news {}
         text-align: center;
         margin-right: 1em;
         margin-bottom: 1em;
-        padding: 2em;
+        padding: 2em 0;
         background-color:#d41246;
+        border-radius: 1em;
+        border: 5px solid #fff;
+        box-shadow: 0px 0px 15px #888888;
     }
 
     .home-nav li:nth-of-type(3n) {
@@ -898,6 +902,7 @@ aside.world_news {}
 
         .home-nav li a {
             color: #fff;
+            font-size:2em;
             text-transform: uppercase;
         }
 
