@@ -33,10 +33,11 @@
                     'fallback_cb' => ''                             // fallback function (if there is one)
                 )); ?>
             </div>
-
-            <div class="entry-content">
-                <?php the_content();?>
-            </div>
+            <?php if (have_posts()) : while (have_posts()) : the_post();?>
+                <div class="entry-content">
+                    <?php the_content();?>
+                </div>
+             <?php endwhile; endif; ?>
 
             <div id="homelogos" class="rounded">
                 <!-- to change this -->
