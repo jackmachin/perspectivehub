@@ -894,7 +894,7 @@ aside.world_news {}
         background-color:#d41246;
         border-radius: 1em;
         border: 5px solid #fff;
-        box-shadow: 0px 0px 15px #888888;
+        box-shadow: 0px 0px 15px #000;
     }
 
     .home-nav li:nth-of-type(3n) {
