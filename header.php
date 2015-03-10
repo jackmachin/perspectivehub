@@ -86,7 +86,8 @@
 <body <?php body_class(); ?>>
 
 <div class="container">
-	<header id="branding" role="banner">
+
+	<header id="branding" class="header" role="banner">
 
         <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri();?>/images/thehub-logo.jpg" alt="<?php bloginfo( 'name' ); ?>"  width="224" height="93"></a></h1>
 

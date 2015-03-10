@@ -125,7 +125,7 @@ a:hover {
 #page { /* Unbelievably pointless */
     margin: 0;
 }
-    header {
+    .header {
         margin: 0 auto;
         overflow: visible;
         width: 980px;
