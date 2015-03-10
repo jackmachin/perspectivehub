@@ -31,7 +31,6 @@
                     'link_after' => '',                             // after each link
                     'depth' => 0,                                   // limit the depth of the nav
                     'fallback_cb' => ''                             // fallback function (if there is one)
-                    'walker' => new Description_Walker              // description walker
                 )); ?>
             </div>
             <?php if (have_posts()) : while (have_posts()) : the_post();?>
