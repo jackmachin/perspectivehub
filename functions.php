@@ -766,7 +766,6 @@ add_image_size( 'companies-logos', 220, 100, true );
 add_image_size( 'subpages-thumbs', 230, 120, true );
 
 
-
 /* Custom "Walker" class (homepage menu) */
 class Thumbnail_Walker extends Walker_Nav_Menu {
  /**
@@ -1069,8 +1068,7 @@ function alphabetical_order_list($loop,$list_type)
 	}
     }
     return($xhtml);
-    
-    
+
 }
 
 // List all companies function

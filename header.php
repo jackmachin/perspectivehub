@@ -68,7 +68,7 @@
 	wp_head();
 ?>
 
-    <?php // GA ?>
+<?php // GA ?>
 <script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-20034801-18']);
@@ -85,7 +85,7 @@
 
 <body <?php body_class(); ?>>
 
-<div id="page" class="hfeed">
+<div class="container">
 	<header id="branding" role="banner">
 
         <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri();?>/images/thehub-logo.jpg" alt="<?php bloginfo( 'name' ); ?>"  width="224" height="93"></a></h1>
@@ -118,12 +118,14 @@
           // if is home page do nothing
         }
 
-        else { //do breadcrums
+        else { // if it isn't the home page
 
-          if(function_exists('bcn_display')) { ?>
+          if(function_exists('bcn_display')) { // and the breadcrumb functions exists ?>
+
             <div class="breadcrumbs">
-                <?php bcn_display(); ?>
+                <?php bcn_display(); //do breadcrumbs ?>
             </div>
+
           <?php }
         } ?>
 	</header><!-- #branding -->
