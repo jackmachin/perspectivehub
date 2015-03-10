@@ -1330,7 +1330,10 @@ form {
     float: right;
 }
 
-#menu-footer-menu {display:block; overflow: hidden;}
+#menu-footer-menu {
+    display:block;
+    overflow: hidden;
+}
 
 
 /***** PDF LIST *****/
