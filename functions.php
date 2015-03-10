@@ -836,6 +836,7 @@ class Thumbnail_Walker extends Walker_Nav_Menu {
    }
 }
 
+// Alphabetical order list
 function alphabetical_order_list($loop,$list_type)
 {
     $elements=array();
