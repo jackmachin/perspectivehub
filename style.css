@@ -906,7 +906,11 @@ aside.world_news {}
             text-transform: uppercase;
         }
 
-        .home-nav li a.tatton {
+        .home-nav li.tatton {
+            border: 5px solid #7ea088;
+        }
+
+        .home-nav li.tatton a {
             color: #7ea088;
         }
 
