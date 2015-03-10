@@ -906,6 +906,10 @@ aside.world_news {}
             text-transform: uppercase;
         }
 
+        .home-nav li a.tatton {
+            color: #7ea088;
+        }
+
 
 /***** BLOG PAGES *****/
 
