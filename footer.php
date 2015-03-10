@@ -29,8 +29,9 @@
     // & other admin-related objects
     if (!current_user_can('subscriber')) {
 	wp_footer();
-    } ?><span id="logoutButton"><?php echo wp_logout_url(); ?></span><?php
-?>
+    } ?>
+
+<span id="logoutButton"><?php echo wp_logout_url(); ?></span>
 
 <script type="text/javascript">
   var _gaq = _gaq || [];
