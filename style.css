@@ -43,7 +43,7 @@ main,
 nav,
 section,
 summary {
-    display: block;
+	display: block;
 }
 
 :focus {/* remember to define focus styles! */
@@ -74,19 +74,12 @@ blockquote, q {
 a img {
 	border: 0;
 }
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-
 
 /***** STRUCTURE *****/
-
 
 *+* { /* LOBOTOMISED OWL  */
     margin-top: 1.5em;
 }
-
 
 body {
     color: #444750;
@@ -122,9 +115,6 @@ a:hover {
     line-height: 25px;
 }
 
-#page { /* Unbelievably pointless */
-    margin: 0;
-}
     .header {
         margin: 0 auto;
         width: 980px;
