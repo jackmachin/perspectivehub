@@ -105,7 +105,6 @@ function twentyeleven_setup() {
     )
   );
 
-
 	// Add support for a variety of post formats
 	add_theme_support( 'post-formats', array( 'aside', 'link', 'gallery', 'status', 'quote', 'image' ) );
 
@@ -743,7 +742,7 @@ add_action( 'init', 'my_connection_types', 100 );
 
 function load_jsfiles() {
     wp_register_script( 'colors', get_template_directory_uri().'/js/color.js');
-    wp_enqueue_script( 'colors' );
+    //wp_enqueue_script( 'colors' );
     
     wp_register_script( 'innerfader', get_template_directory_uri().'/js/jquery.innerfade.js');
     wp_enqueue_script( 'innerfader' );
@@ -1073,7 +1072,7 @@ function alphabetical_order_list($loop,$list_type)
     
 }
 
-
+// List all companies function
 function get_companies_list($id)
 {
     $companies=array();
@@ -1089,7 +1088,7 @@ function get_companies_list($id)
     return($companies);
 }
 
-
+// Something to do with
 function display_auxbox_title($type, $reltype, $h='h2')
 {  
     $title='';
@@ -1140,10 +1139,7 @@ function display_auxbox_title($type, $reltype, $h='h2')
     
 }
 
-
-
-
-
+// Who knows?
 function pre($arr,$type='arr')
 {
     echo '<pre>';
@@ -1163,6 +1159,7 @@ function pre($arr,$type='arr')
     echo '</pre>';
 }
 
+// Hub Logo
 function hub_logo() { ?>
     <style type="text/css">
         body.login div#login h1 a {
@@ -1175,4 +1172,5 @@ function hub_logo() { ?>
         .login h1 a
     </style>
 <?php }
+
 add_action( 'login_enqueue_scripts', 'hub_logo' );
