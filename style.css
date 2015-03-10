@@ -262,10 +262,8 @@ a:hover {
     }
 
 	.entry-content p {
-        display: block;
-        overflow: hidden;
-        padding:0;
-        margin: 0 0 10px 0;
+        line-height: 1.4em;
+        margin-bottom: 20px;
     }
 
 	.entry-content ul {
