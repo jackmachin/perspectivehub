@@ -93,7 +93,6 @@
 
         <?php if ( is_page_template( 'page-home-new.php' ) ) {
             get_sidebar ('header');
-
         }?>
 
         <nav class="access" role="navigation">
