@@ -91,6 +91,11 @@
 
         <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri();?>/images/thehub-logo.jpg" alt="<?php bloginfo( 'name' ); ?>"  width="224" height="93"></a></h1>
 
+        <?php if ( is_page_template( 'page-home-new.php' ) ) {
+            get_sidebar ('header');
+
+        }?>
+
         <nav class="access" role="navigation">
 
             <h3 class="assistive-text"><?php _e( 'Main menu', 'twentyeleven' ); ?></h3>
