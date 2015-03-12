@@ -124,10 +124,21 @@ a:hover {
             margin-bottom: 20px;
         }
 
-        .site-title a {
-            height: 93px;
-            overflow: hidden;
+        .site-title {
             width: 224px;
+            float: left;
+        }
+
+            .site-title a {
+                height: 93px;
+                overflow: hidden;
+                width: 224px;
+            }
+
+        #sidebar-right {
+            width: 756px;
+            text-align: right;
+            float: right;
         }
     
 /***** START NAV STUFF *****/
