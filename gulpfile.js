@@ -11,9 +11,11 @@ var minifyCSS = require('gulp-minify-css');
 
 gulp.task('css', function () {
     "use strict";
-    return gulp.src('*.css')
+    return gulp.src('style.css')
+        .pipe(gulp.dest('./'))
         .pipe(minifyCSS())
-        .pipe(rename('style.min.css'));
+        .pipe(rename('style.min.css'))
+        .pipe(gulp.dest('./'));
 });
 
 // Concatenate & Minify JS
@@ -30,7 +32,7 @@ gulp.task('watch', function () {
     "use strict";
     gulp.watch('./js/*.js', ['lint', 'scripts']);
     gulp.watch('./js/**/*.js', ['lint', 'scripts']);
-    gulp.watch('/*.css', ['css']);
+    gulp.watch('style.css', ['css']);
 });
 
 // Default Task

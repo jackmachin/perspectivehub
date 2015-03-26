@@ -1365,11 +1365,12 @@ form {
   display: table;"
 }
 
-/* CLEAN UP */ 
+/***** CLEAN UP *****/
 
 .clearfix, .cf {
   zoom: 1;
 }
+
 .clearfix:before, 
 .cf:before, 
 .clearfix:after, 
@@ -1436,3 +1437,7 @@ form {
     opacity:0.9; 
     filter:alpha(opacity=90); /* For IE8 and earlier */
   }
+
+.test-element  {
+    background-color: #123456;
+}
