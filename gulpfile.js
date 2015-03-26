@@ -30,9 +30,8 @@ gulp.task('watch', function () {
     "use strict";
     gulp.watch('./js/*.js', ['lint', 'scripts']);
     gulp.watch('./js/**/*.js', ['lint', 'scripts']);
-    gulp.watch('./scss/*.scss', ['sass']);
-    gulp.watch('./scss/**/*.scss', ['sass']);
+    gulp.watch('/*.css', ['css']);
 });
 
 // Default Task
-gulp.task('default', ['lint', 'css', 'scripts', 'watch']);
+gulp.task('default', [ 'css', 'scripts', 'watch']);
