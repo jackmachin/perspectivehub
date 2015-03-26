@@ -1,3 +1,4 @@
+/*global $, jQuery, alert*/
 jQuery(window).load(function () {
     "use strict";
     
