@@ -1177,8 +1177,6 @@ function hub_logo() { ?>
 add_action( 'login_enqueue_scripts', 'hub_logo' );
 
 @ini_set( 'upload_max_size' , '64M' );
-2
 @ini_set( 'post_max_size', '64M');
-3
 @ini_set( 'max_execution_time', '300' );
 
