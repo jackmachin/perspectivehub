@@ -929,13 +929,21 @@ aside.world_news {}
             color: #7ea088;
         }
 
+
+        .home-nav li a span {
+            background-color: #d41246;
+            color: #fff;
+        }
+
     .menu-image {
         margin-right: auto;
         margin-left: auto;
-        margin-bottom: 1em;
+        margin-bottom: .5em;
         display: block;
         clear: both;
     }
+
+
 
 /***** BLOG PAGES *****/
 
