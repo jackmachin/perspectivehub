@@ -933,6 +933,7 @@ aside.world_news {}
         .home-nav li a span {
             background-color: #d41246;
             color: #fff;
+            padding: 5px 100px 0;
         }
 
     .menu-image {
