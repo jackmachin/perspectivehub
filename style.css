@@ -919,6 +919,8 @@ aside.world_news {}
         .home-nav li a {
             font-size:2em;
             text-transform: uppercase;
+            background-color: #d41246;
+            color: #fff;
         }
 
         .home-nav li.tatton {
@@ -931,8 +933,7 @@ aside.world_news {}
 
 
         .home-nav li a span {
-            background-color: #d41246;
-            color: #fff;
+            background-color: #fff;
         }
 
     .menu-image {
