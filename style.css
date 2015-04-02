@@ -937,14 +937,10 @@ aside.world_news {}
         }
 
     .menu-image {
-        margin-right: auto;
-        margin-left: auto;
-        margin-bottom: .5em;
+        margin: .25em auto;
         display: block;
         clear: both;
     }
-
-
 
 /***** BLOG PAGES *****/
 
