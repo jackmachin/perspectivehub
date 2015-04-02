@@ -736,9 +736,7 @@ function my_connection_types() {
 	) );
 }
 
-
 add_action( 'init', 'my_connection_types', 100 );
-
 
 /* JS queue */
 
@@ -755,7 +753,6 @@ function load_jsfiles() {
 
 add_action('wp_enqueue_scripts', 'load_jsfiles');
 
-
 /* Define thumbnails for homepage stories */
 add_image_size( 'hpos-1', 573, 344, true );
 add_image_size( 'hpos-2', 151, 179, true );
@@ -766,7 +763,6 @@ add_image_size( 'hpos-6', 348, 275, true );
 add_image_size( 'hpos-7', 222, 275, true );
 add_image_size( 'companies-logos', 220, 100, true );
 add_image_size( 'subpages-thumbs', 230, 120, true );
-
 
 /* Custom "Walker" class (homepage menu) */
 class Thumbnail_Walker extends Walker_Nav_Menu {

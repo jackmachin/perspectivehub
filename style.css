@@ -930,6 +930,11 @@ aside.world_news {}
             color: #7ea088;
         }
 
+    .menu-image {
+        max-width:100%;
+        height: auto;
+    }
+
 
 /***** BLOG PAGES *****/
 
