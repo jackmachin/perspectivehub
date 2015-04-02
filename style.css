@@ -906,7 +906,7 @@ aside.world_news {}
         font-weight: 700;
         margin-right: 1em;
         margin-bottom: 1em;
-        background-color:#fff;
+        background-color: #d41246;
         border-radius: 1em;
         border: 5px solid #d41246;
         box-shadow: 0px 0px 15px #000;
@@ -919,7 +919,6 @@ aside.world_news {}
         .home-nav li a {
             font-size:2em;
             text-transform: uppercase;
-            background-color: #d41246;
             color: #fff;
         }
 
@@ -933,7 +932,6 @@ aside.world_news {}
 
 
         .home-nav li a span {
-            background-color: #fff;
         }
 
     .menu-image {
