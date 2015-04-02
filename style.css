@@ -920,6 +920,7 @@ aside.world_news {}
             font-size:2em;
             text-transform: uppercase;
             color: #fff;
+            position: relative;
         }
 
         .home-nav li.tatton {
@@ -933,10 +934,11 @@ aside.world_news {}
 
         .home-nav li a span {
             background-color: #d41246;
+            position: absolute;
         }
 
     .menu-image {
-        margin: .25em auto;
+        margin: .25em auto 1.25em;
         display: block;
         clear: both;
     }
