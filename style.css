@@ -753,12 +753,21 @@ aside.world_news {}
   border-radius: 1em;
 }
 
-    .home-ticker {}
+    .home-ticker {
+        text-align:center;
+    }
 
         .home-ticker li {}
 
         .home-ticker li a {
             color:#fff;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .home-ticker .date {
+            font-style: italic;
+            color: #aaa;
         }
 
     #hpageTicker li {}
