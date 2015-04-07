@@ -10,7 +10,7 @@
             <div class="newsticker cf">
 			    <?php $loop = new WP_Query( array( 'post_type' => 'group-news', 'posts_per_page' => 2 ) ); ?>
 			    <?php if($loop->have_posts()): ?>
-				<ul id="hpageTicker">
+				<ul id="hpageTicker" class="home-ticker">
 				    <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 						<li><a class="title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a><span class="date"><?php the_date(); ?></span><?php the_excerpt(); ?></li>
 				    <?php endwhile; ?>

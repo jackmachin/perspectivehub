@@ -753,6 +753,14 @@ aside.world_news {}
   border-radius: 1em;
 }
 
+    .home-ticker {}
+
+        .home-ticker li {}
+
+        .home-ticker li a {
+            color:#fff;
+        }
+
     #hpageTicker li {}
 
     #hpageTicker li span.date {
