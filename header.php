@@ -127,7 +127,7 @@
           // if is home page do nothing
         }
 
-        <?php elseif(is_page_template( 'page-home-new.php' )) {
+        elseif(is_page_template( 'page-home-new.php' )) {
             // if is the home page template do nothing
         }
 
