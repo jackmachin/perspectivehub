@@ -46,7 +46,7 @@
 				    <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
                     <h2 class="beat-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
                     <p class="beat-date"><?php the_date(); ?></span>
-                    <p class="beat-excerpt"><?php the_excerpt(); ?></p>
+                    <div class="beat-excerpt"><?php the_excerpt(); ?></div>
 				    <?php endwhile; ?>
                 <?php endif; ?>
             </div>
