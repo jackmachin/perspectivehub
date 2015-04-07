@@ -39,7 +39,7 @@
                 </div>
 
                 <div class="pulse">
-                    <img src="/images/pulse.png" class="alignleft" width="224" height="169">
+                    <img src="<?php get_template_directory ()?>/images/pulse.png" class="alignleft" width="224" height="169">
                 </div>
              <?php endwhile; endif; ?>
 
