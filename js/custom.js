@@ -89,6 +89,14 @@ jQuery(window).load(function () {
 	    type: 'sequence',
 	    containerheight: '80px'
 	});
+
+    	// Homepage news ticker
+	jQuery('#home-ticker').innerfade({
+	    animationtype: 'fade',
+	    speed: 500,
+	    timeout: 7000,
+	    type: 'sequence',
+	});
 	
 	// LogOut Button/link
 	var logoutLink = jQuery('span#logoutButton').html();

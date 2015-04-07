@@ -12,7 +12,7 @@
 			    <?php if($loop->have_posts()): ?>
 				<ul class="home-ticker">
 				    <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
-						<li><a class="title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a><span class="date"><?php the_date(); ?></span><?php the_excerpt(); ?></li>
+						<li><a class="title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a> <span class="date"><?php the_date(); ?></span><?php the_excerpt(); ?></li>
 				    <?php endwhile; ?>
 				</ul>
                 <?php endif; ?>
