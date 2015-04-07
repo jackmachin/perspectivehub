@@ -34,11 +34,11 @@
                 )); ?>
             </div>
             <?php if (have_posts()) : while (have_posts()) : the_post();?>
-                <div class="entry-content">
+                <div class="entry-content cf">
                     <?php the_content();?>
                 </div>
 
-                <div class="pulse">
+                <div class="pulse cf">
                     <img src="<?php echo get_template_directory_uri();?>/images/pulse.png" class="alignleft" width="224" height="169">
                 </div>
              <?php endwhile; endif; ?>
