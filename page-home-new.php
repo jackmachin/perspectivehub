@@ -40,14 +40,13 @@
              <?php endwhile; endif; ?>
 
             <div class="pulse cf">
-                <img src="<?php echo get_template_directory_uri();?>/images/pulse.png" class="alignleft" width="224" height="169">
-
+                <img src="<?php echo get_template_directory_uri();?>/images/pulse-1.png" class="aligncenter">
                 <?php $loop = new WP_Query( array( 'post_type' => 'pulse', 'posts_per_page' => 1 ) ); ?>
 			    <?php if($loop->have_posts()): ?>
 				    <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
-                    <h2 class="beat-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a> <span class="date"><?php the_date(); ?></span></h2>
-
-                    <p><?php the_content(); ?></p>
+                    <h2 class="beat-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+                    <p class="beat-date"><?php the_date(); ?></span>
+                    <p class="beat-excerpt"><?php the_excerpt(); ?></p>
 				    <?php endwhile; ?>
                 <?php endif; ?>
             </div>

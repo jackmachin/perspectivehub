@@ -948,21 +948,22 @@ aside.world_news {}
 
 .pulse {
     padding: 1.5em;
+    text-align: center;
 }
 
-    .pulse h2 {
+    .beat-title {
         font-size: 1.5em;
         font-weight:bold;
         margin-bottom:.5em;
         margin-top: .5em;
     }
 
-    .pulse h2 span {
+    .beat-date {
         font-style: italic;
         font-size:12px;
     }
 
-    .pulse p {
+    .beat-excerpt {
         font-size:16px;
         margin-bottom:.5em;
     }
