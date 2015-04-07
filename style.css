@@ -1137,7 +1137,7 @@ header h1.page-title {
 
   .file-review-content {
     padding: 1.5em 1.5em 0;
-  }
+}
 
 /***** FOOTER *****/
 
@@ -1352,7 +1352,9 @@ form {
     text-decoration: underline !important;
 }
 
-.category-icon {width:15px;}
+.category-icon {
+    width:15px;
+}
 
 #footer-hub-logo {
     margin-top: 20px;
@@ -1451,7 +1453,3 @@ form {
     opacity:0.9; 
     filter:alpha(opacity=90); /* For IE8 and earlier */
   }
-
-.test-element  {
-    background-color: #123456;
-}
