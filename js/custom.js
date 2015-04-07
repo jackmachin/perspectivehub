@@ -91,7 +91,7 @@ jQuery(window).load(function () {
 	});
 
     	// Homepage news ticker
-	jQuery('#home-ticker').innerfade({
+	jQuery('.home-ticker').innerfade({
 	    animationtype: 'fade',
 	    speed: 500,
 	    timeout: 7000,
