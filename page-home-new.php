@@ -44,13 +44,11 @@
 
                 <?php $loop = new WP_Query( array( 'post_type' => 'pulse', 'posts_per_page' => 1 ) ); ?>
 			    <?php if($loop->have_posts()): ?>
-				<div class="beat">
 				    <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
-                    <h2><a class="beat-title" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
-                    <<p class="date"><?php the_date(); ?></p>
+                    <h2 class="beat-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+                    <p class="date"><?php the_date(); ?></p>
                     <p><?php the_content(); ?></p>
 				    <?php endwhile; ?>
-				<//div>
                 <?php endif; ?>
             </div>
 
