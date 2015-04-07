@@ -37,6 +37,10 @@
                 <div class="entry-content">
                     <?php the_content();?>
                 </div>
+
+                <div class="pulse">
+                    <img src="/images/pulse.png" class="alignleft" width="224" height="169">
+                </div>
              <?php endwhile; endif; ?>
 
         </div><!-- #content -->
