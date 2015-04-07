@@ -946,6 +946,19 @@ aside.world_news {}
         clear: both;
     }
 
+.pulse {
+    padding: 1.5em;
+}
+
+    .pulse h2 {
+        font-size: 1.5em;
+        font-weight:bold;
+    }
+
+    pulse p {
+        font-size:100%;
+    }
+
 /***** BLOG PAGES *****/
 
 .blog a {color: #da1445; }
