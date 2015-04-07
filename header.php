@@ -127,6 +127,10 @@
           // if is home page do nothing
         }
 
+        <?php elseif(is_page_template( 'page-home-new.php' )) {
+            // if is the home page template do nothing
+        }
+
         else { // if it isn't the home page
 
           if(function_exists('bcn_display')) { // and the breadcrumb functions exists ?>
