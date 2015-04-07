@@ -746,12 +746,13 @@ aside.world_news {}
 /***** HOMEPAGE *****/
 
 .newsticker {
-  color: #fff;
-  background-color: #DA1445;
-  margin: 1em;
-  padding: 1em;
-  border-radius: 1em;
-  border: 5px solid #acb9c8;
+    width: 400px;
+    color: #fff;
+    background-color: #DA1445;
+    margin: 1em auto;
+    padding: 1em;
+    border-radius: 1em;
+    border: 5px solid #acb9c8;
 }
 
     .home-ticker {
