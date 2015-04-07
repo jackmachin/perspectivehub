@@ -40,7 +40,7 @@
              <?php endwhile; endif; ?>
 
             <div class="pulse cf">
-                <img src="<?php echo get_template_directory_uri();?>/images/pulse-1.png" class="aligncenter">
+                <img src="<?php echo get_template_directory_uri();?>/images/pulse-1.png" width="400" height="133" class="aligncenter">
                 <?php $loop = new WP_Query( array( 'post_type' => 'pulse', 'posts_per_page' => 1 ) ); ?>
 			    <?php if($loop->have_posts()): ?>
 				    <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
