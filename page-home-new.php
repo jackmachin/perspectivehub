@@ -7,7 +7,7 @@
 <?php get_header(); ?>
     <div id="primary">
         <div id="content" role="main">
-            <div id="newsticker">
+            <div id="newsticker cf">
 			    <?php $loop = new WP_Query( array( 'post_type' => 'group-news', 'posts_per_page' => 2 ) ); ?>
 			    <?php if($loop->have_posts()): ?>
 				<ul id="hpageTicker">
@@ -18,7 +18,7 @@
                 <?php endif; ?>
             </div>
 
-            <div id="portal">
+            <div id="portal cf">
                 <?php wp_nav_menu(array(
                     'container' => 'div',                           // contain the menu in a div
                     'container_class' => 'home-menu-container cf',       // class of container (should you choose to use it)
