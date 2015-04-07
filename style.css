@@ -954,6 +954,12 @@ aside.world_news {}
         font-size: 1.5em;
         font-weight:bold;
         margin-bottom:.5em;
+        margin-top: .5em;
+    }
+
+    .pulse h2 span {
+        font-style: italic;
+        font-size:1.125em;
     }
 
     .pulse p {
