@@ -7,7 +7,7 @@
 <?php get_header(); ?>
     <div id="primary">
         <div id="content" role="main">
-            <div id="newsticker cf">
+            <div class="newsticker cf">
 			    <?php $loop = new WP_Query( array( 'post_type' => 'group-news', 'posts_per_page' => 2 ) ); ?>
 			    <?php if($loop->have_posts()): ?>
 				<ul id="hpageTicker">
