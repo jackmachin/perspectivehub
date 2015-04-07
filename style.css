@@ -959,7 +959,7 @@ aside.world_news {}
 
     .pulse h2 span {
         font-style: italic;
-        font-size:1.125em;
+        font-size:12px;
     }
 
     .pulse p {
@@ -968,6 +968,7 @@ aside.world_news {}
     }
 
 /***** BLOG PAGES *****/
+
 
 .blog a {color: #da1445; }
 
