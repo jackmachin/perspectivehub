@@ -741,32 +741,7 @@ aside.world_news {}
 	
 /***** HOMEPAGE *****/
 
-.newsticker {
-    width: 720px;
-    color: #fff;
-    background-color: #DA1445;
-    margin: 1em 0;
-    padding: 1em;
-    border-radius: 1em;
-    border: 5px solid #acb9c8;
-}
-
-    .home-ticker {
-        text-align:center;
-    }
-
-        .home-ticker li {}
-
-        .home-ticker li a {
-            color:#fff;
-            font-weight: bold;
-            font-size: 14px;
-        }
-
-        .home-ticker .date {
-            font-style: italic;
-            color: #aaa;
-        }
+    #portal {}
 
     #hpageTicker li {}
 
@@ -786,8 +761,6 @@ aside.world_news {}
         line-height: 17px;
         margin: 5px 0 10px 0;
     }
-    
-    #portal {}
 
     #homelogos {
         margin: 25px 0 0 0;
@@ -917,6 +890,33 @@ aside.world_news {}
     #menu-homepageblock li img {}
 
 /***** BETTER HOMEPAGE PORTAL *****/
+.newsticker {
+    width: 720px;
+    color: #fff;
+    background-color: #DA1445;
+    margin: 1em 0;
+    padding: 1em;
+    border-radius: 1em;
+    border: 5px solid #acb9c8;
+    float:left;
+}
+
+    .home-ticker {
+        text-align:center;
+    }
+
+        .home-ticker li {}
+
+        .home-ticker li a {
+            color:#fff;
+            font-weight: bold;
+            font-size: 14px;
+        }
+
+        .home-ticker .date {
+            font-style: italic;
+            color: #aaa;
+        }
 
 .portal {
     width:720px;
