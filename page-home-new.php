@@ -35,7 +35,7 @@
             </div>
 
             <div class="pulse cf">
-                <img src="<?php echo get_template_directory_uri();?>/images/pulse-1.png" width="400" height="133" class="alignleft">
+                <img src="<?php echo get_template_directory_uri();?>/images/pulse-1.png" width="270" class="aligncenter">
                 <div class="beat">
                 <?php $loop = new WP_Query( array( 'post_type' => 'pulse', 'posts_per_page' => 3 ) ); ?>
 			    <?php if($loop->have_posts()): ?>
