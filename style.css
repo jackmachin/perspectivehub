@@ -991,7 +991,6 @@ aside.world_news {}
 
     .beat-title {
         font-size: 1.5em;
-        font-weight:bold;
         margin-bottom:.5em;
         margin-top: .5em;
         font-family: 'Racing Sans One', sans-serif;
@@ -1000,7 +999,6 @@ aside.world_news {}
     .beat-date {
         font-style: italic;
         font-size:10px;
-        font-weight:400;
     }
 
     .beat-excerpt {
