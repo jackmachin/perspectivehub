@@ -90,7 +90,7 @@ jQuery(window).load(function () {
 	    containerheight: '80px'
 	});
 
-    	// Homepage news ticker
+    // Homepage news ticker
 	jQuery('.home-ticker').innerfade({
 	    animationtype: 'fade',
 	    speed: 500,
