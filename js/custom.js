@@ -96,7 +96,7 @@ jQuery(window).load(function () {
 	    speed: 500,
 	    timeout: 7000,
 	    type: 'sequence',
-        containerheight: '40px'
+        containerheight: '25px'
 	});
 	
 	// LogOut Button/link
