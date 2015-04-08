@@ -908,7 +908,9 @@ aside.world_news {}
         text-align:center;
     }
 
-        .home-ticker li {}
+        .home-ticker li {
+            width:686px;
+        }
 
         .home-ticker li a {
             color:#fff;
