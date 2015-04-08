@@ -742,10 +742,10 @@ aside.world_news {}
 /***** HOMEPAGE *****/
 
 .newsticker {
-    width: 400px;
+    width: 720px;
     color: #fff;
     background-color: #DA1445;
-    margin: 1em auto;
+    margin: 1em 0;
     padding: 1em;
     border-radius: 1em;
     border: 5px solid #acb9c8;
