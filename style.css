@@ -976,9 +976,8 @@ aside.world_news {}
     }
 
 .pulse {
-    padding: 1.5em;
     text-align: center;
-    width:270px;
+    width:250px;
     float:left;
     margin-right: 0;
 }
