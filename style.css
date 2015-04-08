@@ -1325,6 +1325,10 @@ form {
         padding: 4px;
     }
 
+#search-3 {
+    margin-top: 65px;
+}
+
 /***** HELPER CLASSES *****/
 
 .fancy-bar-title {
