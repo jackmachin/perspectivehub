@@ -23,7 +23,7 @@
  *	  speed: Fading-/Sliding-Speed in milliseconds or keywords (slow, normal or fast) (Default: 'normal'), 
  *	  timeout: Time between the fades in milliseconds (Default: '2000'), 
  *	  type: Type of slideshow: 'sequence', 'random' or 'random_start' (Default: 'sequence'), 
- * 		containerheight: Height of the containing element in any css-height-value (Default: 'auto'),
+ *    containerheight: Height of the containing element in any css-height-value (Default: 'auto'),
  *	  runningclass: CSS-Class which the container get’s applied (Default: 'innerfade'),
  *	  children: optional children selector (Default: null)
  *  }); 
@@ -32,17 +32,18 @@
 // ========================================================= */
 
 
-(function($) {
+(function ($) {
+    "use strict";
 
-    $.fn.innerfade = function(options) {
-        return this.each(function() {   
+    $.fn.innerfade = function (options) {
+        return this.each(function () {
             $.innerfade(this, options);
         });
     };
 
-    $.innerfade = function(container, options) {
+    $.innerfade = function (container, options) {
         var settings = {
-        		'animationtype':    'fade',
+            'animationtype':    'fade',
             'speed':            'normal',
             'type':             'sequence',
             'timeout':          2000,
@@ -50,10 +51,8 @@
             'runningclass':     'innerfade',
             'children':         null
         };
-        if (options)
-            $.extend(settings, options);
-        if (settings.children === null)
-            var elements = $(container).children();
+        if (options) $.extend(settings, options);
+        if (settings.children === null) var elements = $(container).children();
         else
             var elements = $(container).children(settings.children);
         if (elements.length > 1) {
