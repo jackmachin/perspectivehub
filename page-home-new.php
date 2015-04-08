@@ -20,7 +20,8 @@
 
             <div class="pulse cf">
                 <img src="<?php echo get_template_directory_uri();?>/images/pulse-1.png" width="400" height="133" class="alignleft">
-                <?php $loop = new WP_Query( array( 'post_type' => 'pulse', 'posts_per_page' => 1 ) ); ?>
+                <div class="beat">
+                                <?php $loop = new WP_Query( array( 'post_type' => 'pulse', 'posts_per_page' => 1 ) ); ?>
 			    <?php if($loop->have_posts()): ?>
 				    <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
                     <h2 class="beat-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
@@ -28,6 +29,7 @@
                     <div class="beat-excerpt"><?php the_excerpt(); ?></div>
 				    <?php endwhile; ?>
                 <?php endif; ?>
+                </div>
             </div>
 
             <div id="portal cf">
