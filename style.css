@@ -890,6 +890,11 @@ aside.world_news {}
     #menu-homepageblock li img {}
 
 /***** BETTER HOMEPAGE PORTAL *****/
+
+.home-content {
+    margin-top:-15px;
+}
+
 .home-wrap {
     width:720px;
     float:left;

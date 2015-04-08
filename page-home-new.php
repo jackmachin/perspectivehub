@@ -6,7 +6,7 @@
 
 <?php get_header(); ?>
     <div id="primary">
-        <div id="content" role="main">
+        <div id="content" class="home-content" role="main">
             <div class="home-wrap">
                 <div class="newsticker cf">
                     <?php $loop = new WP_Query( array( 'post_type' => 'group-news', 'posts_per_page' => 2 ) ); ?>
