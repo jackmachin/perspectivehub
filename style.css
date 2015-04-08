@@ -918,6 +918,11 @@ aside.world_news {}
 
 /***** BETTER HOMEPAGE PORTAL *****/
 
+.portal {
+    width:720px;
+    margin-right: 10px;
+}
+
 .home-nav {
     text-align:center;
 }

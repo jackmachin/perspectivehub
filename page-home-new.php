@@ -18,7 +18,7 @@
                 <?php endif; ?>
             </div>
 
-            <div id="portal cf">
+            <div class="portal cf">
                 <?php wp_nav_menu(array(
                     'container' => 'div',                           // contain the menu in a div
                     'container_class' => 'home-menu-container cf',       // class of container (should you choose to use it)
