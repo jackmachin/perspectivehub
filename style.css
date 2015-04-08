@@ -1000,6 +1000,7 @@ aside.world_news {}
         font-style: italic;
         font-size:10px;
         margin-bottom:1em;
+        font-weight:400;
     }
 
     .beat-excerpt {
