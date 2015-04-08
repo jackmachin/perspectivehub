@@ -101,12 +101,6 @@
 
         <nav class="access" role="navigation">
 
-            <h3 class="assistive-text"><?php _e( 'Main menu', 'twentyeleven' ); ?></h3>
-
-                <?php /*  Allow screen readers / text browsers to skip the navigation menu and get right to the good stuff. */ ?>
-                <a class="assistive-text" href="#content" title="<?php esc_attr_e( 'Skip to primary content', 'twentyeleven' ); ?>"><?php _e( 'Skip to primary content', 'twentyeleven' ); ?></a>
-                <a class="assistive-text" href="#secondary" title="<?php esc_attr_e( 'Skip to secondary content', 'twentyeleven' ); ?>"><?php _e( 'Skip to secondary content', 'twentyeleven' ); ?></a>
-
             <?php wp_nav_menu(array(
                 'container' => 'div',                           // contain the menu in a div
                 'container_class' => 'menu-container cf',       // class of container (should you choose to use it)
