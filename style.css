@@ -890,15 +890,18 @@ aside.world_news {}
     #menu-homepageblock li img {}
 
 /***** BETTER HOMEPAGE PORTAL *****/
+.home-wrap {
+    width:720px;
+    float:left;
+    margin-right:10px;
+}
 .newsticker {
-    width: 720px;
     color: #fff;
     background-color: #DA1445;
     margin: 1em 0;
     padding: 1em;
     border-radius: 1em;
     border: 5px solid #acb9c8;
-    float:left;
 }
 
     .home-ticker {
@@ -919,9 +922,6 @@ aside.world_news {}
         }
 
 .portal {
-    width:720px;
-    margin-right: 10px;
-    float:left;
 }
 
 .home-nav {
