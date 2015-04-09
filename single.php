@@ -124,11 +124,11 @@ get_header(); ?>
                                                     <?php endwhile; ?>
                                                 </ul>
                                             </div>
-							    <?php
-							    wp_reset_postdata();
-							    endif;
-							endif;
-						    ?>
+                                        <?php
+                                            wp_reset_postdata();
+                                            endif;
+                                        endif;
+                                        ?>
 						    <?php
 							// Display Employee/Specialities relations (and viceversa)
 							//if($spec = p2p_type( 'employees_to_specialities' )->get_connected( get_queried_object_id() ) ):
