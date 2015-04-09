@@ -558,7 +558,7 @@ function twentyeleven_footer_sidebar_class() {
 	}
 
 	if ( $class )
-		echo 'class="' . $class . '"';
+		echo 'class="' . $class . ' cf"';
 }
 
 if ( ! function_exists( 'twentyeleven_comment' ) ) :
