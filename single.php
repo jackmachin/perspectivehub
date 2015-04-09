@@ -85,38 +85,50 @@ get_header(); ?>
                                         </span>
                                     <?php endif; ?>
 
-						    <?php if(strlen(get_post_meta($postId,'cmp_phone',true))>0): ?><span class="phone"><?php echo get_post_meta($postId,'cmp_phone',true); ?></span><?php endif; ?>
-						    <?php /* <?php if(strlen(get_post_meta($postId,'cmp_mobile',true))>0): ?><span class="mobile"><?php echo get_post_meta($postId,'cmp_mobile',true); ?></span><?php endif; ?> */ ?>
-						</div>
+                                    <?php if(strlen(get_post_meta($postId,'cmp_phone',true))>0): ?>
+                                        <span class="phone"><?php echo get_post_meta($postId,'cmp_phone',true); ?></span>
+                                    <?php endif; ?>
+
+                                    <?php /* <?php if(strlen(get_post_meta($postId,'cmp_mobile',true))>0): ?>
+                                        <span class="mobile"><?php echo get_post_meta($postId,'cmp_mobile',true); ?></span>
+                                    <?php endif; ?> */ ?>
+
+                                </div>
 						
-						<div class="related comp-emp">
-						    <?php
-							// Display Employee/Companies relations (and viceversa)
-							//if($connected = p2p_type( 'employees_to_companies' )->get_connected( get_queried_object_id() )):
-							$connected = new WP_Query(array(
-							    'connected_type' => 'employees_to_companies',
-							    'connected_items' => get_queried_object_id(),
-							    'posts_per_page' => 1000,
-							    'orderby' => 'title',
-							    'order'=> 'ASC',
-							    ) 
-							);  
-							if($connected):
-							    if ( $connected->have_posts() ) :
-							    ?>
-							    <div class="block">
-							    <?php echo display_auxbox_title(get_post_type(),'emp-comp','h2'); ?>
-							    <ul>
-								<?php while ( $connected->have_posts() ) : $connected->the_post(); ?>
-								    <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
-								<?php endwhile; ?>
-							    </ul>
-							    </div>
-							    <?php
-							    wp_reset_postdata();
-							    endif;
-							endif;
-						    ?>
+                                <div class="related comp-emp">
+
+                                    <?php
+                                    // Display Employee/Companies relations (and viceversa)
+                                    //if($connected = p2p_type( 'employees_to_companies' )->get_connected( get_queried_object_id() )):
+                                    $connected = new WP_Query(array(
+                                        'connected_type' => 'employees_to_companies',
+                                        'connected_items' => get_queried_object_id(),
+                                        'posts_per_page' => 1000,
+                                        'orderby' => 'title',
+                                        'order'=> 'ASC',
+                                        )
+                                    );
+
+                                        if($connected):
+
+                                            if ( $connected->have_posts() ) :
+                                    ?>
+
+                                    <div class="block">
+
+                                        <?php echo display_auxbox_title(get_post_type(),'emp-comp','h2'); ?>
+
+                                        <ul>
+                                            <?php while ( $connected->have_posts() ) : $connected->the_post(); ?>
+                                                <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+                                            <?php endwhile; ?>
+                                        </ul>
+							         </div>
+                                    <?php
+                                            wp_reset_postdata();
+                                            endif;
+                                        endif;
+                                    ?>
 						    <?php
 							// Display Employee/Specialities relations (and viceversa)
 							//if($spec = p2p_type( 'companies_to_specialities' )->get_connected( get_queried_object_id() ) ):
