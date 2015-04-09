@@ -37,7 +37,6 @@ get_header(); ?>
                         <?php the_contennt() ;?>
                     </div><!-- .entry-content -->
 
-				<?php endwhile; ?>
                </article><!-- #post-<?php the_ID(); ?> -->
 
             <?php endwhile; ?>
