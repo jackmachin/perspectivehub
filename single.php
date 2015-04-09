@@ -36,7 +36,7 @@ get_header(); ?>
 
                 <?php else: ?>
 
-					 <?php elseif(get_post_type()=='companies'): /* COMPANIES */ ?>
+					 <?php if(get_post_type()=='companies'): /* COMPANIES */ ?>
 					    <div class="employee_container">
 					    <div class="gradient_gray_nohover rounded shadow employee_entry">
 						<header>
