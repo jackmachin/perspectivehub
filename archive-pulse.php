@@ -21,7 +21,7 @@ get_header(); ?>
 
             <header class="page-header">
                 <h1 class="page-title">
-                    <?php post_type_archive_title(); ?>
+                    <img src="http://www.perspectivehub.co.uk/wp-content/themes/perspectivehub/images/pulse-1.png" width="300" class="alignleft">
                 </h1>
             </header>
 

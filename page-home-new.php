@@ -37,7 +37,9 @@
             </div>
 
             <div class="beat-container cf">
-                <img src="<?php echo get_template_directory_uri();?>/images/pulse-1.png" width="250" class="aligncenter">
+                <a href="http://www.perspectivehub.co.uk/pulse">
+                    <img src="<?php echo get_template_directory_uri();?>/images/pulse-1.png" width="250" class="aligncenter">
+                </a>
                 <div class="beat">
                 <?php $loop = new WP_Query( array( 'post_type' => 'pulse', 'posts_per_page' => 3 ) ); ?>
 			    <?php if($loop->have_posts()): ?>
