@@ -11,22 +11,34 @@ $excluded_fields=array('_edit_lock','_edit_last',);
 $custom_types=array('companies','specialities','lists','employees');
 
 get_header(); ?>
-		<div id="primary">
-			<div id="content" role="main">
-				<?php while ( have_posts() ) : the_post(); ?>
-					<?php if(!in_array(get_post_type(),$custom_types)): ?>
-					    <nav id="nav-single">
-						<?php /*<h3 class="assistive-text"><?php _e( 'Post navigation', 'twentyeleven' ); ?></h3>*/ ?>
-						<span class="nav-previous"><?php previous_post_link( '%link', __( '<span class="meta-nav">&larr;</span> Previous', 'twentyeleven' ) ); ?></span>
+
+    <div id="primary">
+
+        <div id="content" role="main">
+
+            <?php while ( have_posts() ) : the_post(); ?>
+
+                <?php if(!in_array(get_post_type(),$custom_types)): ?>
+
+                    <nav id="nav-single">
+
+                        <?php /*<h3 class="assistive-text"><?php _e( 'Post navigation', 'twentyeleven' ); ?></h3>*/ ?>
+
+                        <span class="nav-previous"><?php previous_post_link( '%link', __( '<span class="meta-nav">&larr;</span> Previous', 'twentyeleven' ) ); ?></span>
 						<span class="nav-next"><?php next_post_link( '%link', __( 'Next <span class="meta-nav">&rarr;</span>', 'twentyeleven' ) ); ?></span>
-					    </nav>
-					    <?php get_template_part( 'content', 'single' ); ?>
-					    <?php if(get_post_type()=='post'): ?>
+                    </nav>
+
+                    <?php get_template_part( 'content', 'single' ); ?>
+
+                    <?php if(get_post_type()=='post'): ?>
 					    <?php comments_template( '', true ); ?>
-					    <?php endif; ?>
-					<?php else: ?>
+                    <?php endif; ?>
+
+                <?php else: ?>
+
 					<?php $postId=get_the_ID(); ?>
-					<?php if(get_post_type()=='employees'): /* EMPLOYEES */ ?>
+
+                <?php if(get_post_type()=='employees'): /* EMPLOYEES */ ?>
 					    <div class="employee_container">
 					    <p class="single_letter gradient rounded"><?php echo strtoupper(substr(get_post_meta($postId,'emp_lastname',true),0,1)) ?></h2>
 					    <div class="gradient_gray_nohover rounded shadow employee_entry">
