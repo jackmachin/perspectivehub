@@ -18,6 +18,8 @@ get_header(); ?>
 
             <?php while ( have_posts() ) : the_post(); ?>
 
+            <?php $postId=get_the_ID(); ?>
+
                 <div class="employee_container">
 
                     <p class="single_letter gradient rounded">
