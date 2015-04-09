@@ -45,17 +45,28 @@ get_header(); ?>
                                 <p class="single_letter gradient rounded">
                                     <?php echo strtoupper(substr(get_post_meta($postId,'emp_lastname',true),0,1)) ?>
                                 </p>
-					    <div class="gradient_gray_nohover rounded shadow employee_entry">
-               <div class="main_info">
-                <?php if(strlen(get_post_meta($postId,'emp_profile',true))>0): ?>
-                  <img  class="alignleft" src="<?php echo get_post_meta($postId,'emp_profile',true) ?>" alt="" title="<?php echo get_post_meta($postId,'emp_lastname',true).', '.get_post_meta($postId,'emp_firstname',true) ?>" />
-                <?php endif; ?>
-							<h1><?php echo get_post_meta($postId,'emp_lastname',true).', '.get_post_meta($postId,'emp_firstname',true) ?></h1>
-							<span class="position"><?php echo get_post_meta($postId,'emp_position',true) ?></span>
-                          <?php if(strlen(get_post_meta($postId,'emp_description',true))>0): ?>
-						    <div class="description">
-							<?php echo get_post_meta($postId,'emp_description',true) ?>
-						    </div>
+
+                                <div class="gradient_gray_nohover rounded shadow employee_entry">
+
+                                    <div class="main_info">
+
+                                        <?php if(strlen(get_post_meta($postId,'emp_profile',true))>0): ?>
+
+                                            <img class="alignleft" src="<?php echo get_post_meta($postId,'emp_profile',true) ?>" alt="" title="<?php echo get_post_meta($postId,'emp_lastname',true).', '.get_post_meta($postId,'emp_firstname',true) ?>" />
+
+                                        <?php endif; ?>
+
+                                        <h1>
+                                            <?php echo get_post_meta($postId,'emp_lastname',true).', '.get_post_meta($postId,'emp_firstname',true) ?>
+                                        </h1>
+
+                                        <span class="position"><?php echo get_post_meta($postId,'emp_position',true) ?></span>
+
+                                        <?php if(strlen(get_post_meta($postId,'emp_description',true))>0): ?>
+
+                                            <div class="description">
+                                                <?php echo get_post_meta($postId,'emp_description',true) ?>
+                                            </div>
 						<?php endif; ?>
 						    </div>
 						<div class="contacts  block third">
