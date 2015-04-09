@@ -38,7 +38,7 @@ get_header(); ?>
 
 					 <?php if(get_post_type()=='companies'): /* COMPANIES */ ?>
 
-                        <?php $postId=get_the_ID(); ?>
+                        <?php //$postId=get_the_ID(); ?>
 
                         <div class="employee_container">
 
