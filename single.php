@@ -67,9 +67,12 @@ get_header(); ?>
                                             <div class="description">
                                                 <?php echo get_post_meta($postId,'emp_description',true) ?>
                                             </div>
-						<?php endif; ?>
-						    </div>
-						<div class="contacts  block third">
+
+                                        <?php endif; ?>
+
+                                    </div>
+
+                                    <div class="contacts">
 						<?php if(strlen(get_post_meta($postId,'emp_email',true))>0): ?><span class="email"><a href="mailto:<?php echo get_post_meta($postId,'emp_email',true); ?>?subject=The HUB Directory Contact"><?php echo get_post_meta($postId,'emp_email',true); ?></a></span><?php endif; ?>
 						    <?php if(strlen(get_post_meta($postId,'emp_phone',true))>0): ?><span class="phone"><?php echo get_post_meta($postId,'emp_phone',true); ?></span><?php endif; ?>
 						    <?php if(strlen(get_post_meta($postId,'emp_mobile',true))>0): ?><span class="mobile"><?php echo get_post_meta($postId,'emp_mobile',true); ?></span><?php endif; ?>
