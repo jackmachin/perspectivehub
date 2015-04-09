@@ -38,9 +38,13 @@ get_header(); ?>
 
 					<?php $postId=get_the_ID(); ?>
 
-                <?php if(get_post_type()=='employees'): /* EMPLOYEES */ ?>
-					    <div class="employee_container">
-					    <p class="single_letter gradient rounded"><?php echo strtoupper(substr(get_post_meta($postId,'emp_lastname',true),0,1)) ?></h2>
+                        <?php if(get_post_type()=='employees'): /* EMPLOYEES */ ?>
+
+                            <div class="employee_container">
+
+                                <p class="single_letter gradient rounded">
+                                    <?php echo strtoupper(substr(get_post_meta($postId,'emp_lastname',true),0,1)) ?>
+                                </p>
 					    <div class="gradient_gray_nohover rounded shadow employee_entry">
                <div class="main_info">
                 <?php if(strlen(get_post_meta($postId,'emp_profile',true))>0): ?>
