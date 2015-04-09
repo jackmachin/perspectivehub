@@ -145,14 +145,17 @@ get_header(); ?>
 
                                                 if ( $spec->have_posts() ) :
                                         ?>
-							    <div class="block">
-							    <?php echo display_auxbox_title(get_post_type(),'emp-spec','h2'); ?>
-							    <ul>
-								<?php while ( $spec->have_posts() ) : $spec->the_post(); ?>
-								    <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
-								<?php endwhile; ?>
-							    </ul>
-							    </div>
+                                                <div class="block">
+
+                                                    <?php echo display_auxbox_title(get_post_type(),'emp-spec','h2'); ?>
+
+                                                    <ul>
+                                                        <?php while ( $spec->have_posts() ) : $spec->the_post(); ?>
+                                                            <li><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></li>
+                                                        <?php endwhile; ?>
+                                                    </ul>
+
+                                                </div>
 							    <?php
 							    wp_reset_postdata();
 							    endif;
