@@ -129,21 +129,23 @@ get_header(); ?>
                                             endif;
                                         endif;
                                         ?>
-						    <?php
-							// Display Employee/Specialities relations (and viceversa)
-							//if($spec = p2p_type( 'employees_to_specialities' )->get_connected( get_queried_object_id() ) ):
-							$spec = new WP_Query(array(
-							    'connected_type' => 'employees_to_specialities',
-							    'connected_items' => get_queried_object_id(),
-							    'posts_per_page' => 1000,
-							    'orderby' => 'title',
-							    'order'=> 'ASC',
-							    ) 
-							);  
-							if($spec):
-							    if ( $spec->have_posts() ) :
-							    ?>
-							    <div class="block third">
+                                        <?php
+                                            // Display Employee/Specialities relations (and viceversa)
+                                            //if($spec = p2p_type( 'employees_to_specialities' )->get_connected( get_queried_object_id() ) ):
+                                            $spec = new WP_Query(array(
+                                                'connected_type' => 'employees_to_specialities',
+                                                'connected_items' => get_queried_object_id(),
+                                                'posts_per_page' => 1000,
+                                                'orderby' => 'title',
+                                                'order'=> 'ASC',
+                                                )
+                                            );
+
+                                            if($spec):
+
+                                                if ( $spec->have_posts() ) :
+                                        ?>
+							    <div class="block">
 							    <?php echo display_auxbox_title(get_post_type(),'emp-spec','h2'); ?>
 							    <ul>
 								<?php while ( $spec->have_posts() ) : $spec->the_post(); ?>
