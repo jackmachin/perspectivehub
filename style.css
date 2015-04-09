@@ -1217,7 +1217,6 @@ footer {
     
     footer #supplementary {
         display: block;
-        overflow: hidden;
         width: 980px;
         margin: 0 auto;
     }
