@@ -277,9 +277,7 @@ get_header(); ?>
 <?php
     //echo $post->post_type;
     //if(empty($connected) && empty($spec))
-    //if($post->post_type=='post')
-    //{
-	get_sidebar();
-    //}
-?>
+    if($post->post_type=='post') {
+	   get_sidebar();
+    }?>
 <?php get_footer(); ?>

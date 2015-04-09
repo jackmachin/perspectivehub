@@ -138,4 +138,4 @@
         } ?>
 	</header><!-- #branding -->
 
-<div id="main" class="cf <?php echo (get_post_type()=='post'? 'blog':''); ?>">
+<div id="main" class="cf<?php echo (get_post_type()=='post'? ' blog':''); ?>">
