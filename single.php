@@ -37,22 +37,39 @@ get_header(); ?>
                 <?php else: ?>
 
 					 <?php if(get_post_type()=='companies'): /* COMPANIES */ ?>
-					    <div class="employee_container">
-					    <div class="gradient_gray_nohover rounded shadow employee_entry">
-						<header>
-						<?php if(get_the_post_thumbnail( $postId, 'companies-logos' )): ?>
-						<p class="icon"><?php echo get_the_post_thumbnail( $postId, 'companies-logos' ) ?></p>
-						<?php endif; ?>
-						    <div class="main_info">
-							<h1><?php echo get_post_meta($postId,'emp_company',true) ?></h1>
-							<?php if(strlen(get_post_meta($postId,'cmp_address',true))>0): ?><span class="address"><?php echo get_post_meta($postId,'cmp_address',true); ?></span><?php endif; ?>
-							<?php if(strlen(get_post_meta($postId,'cmp_postcode',true))>0): ?><span class="postcode"><?php echo get_post_meta($postId,'cmp_postcode',true); ?></span><?php endif; ?>
-						    </div>
-						</header>
-						<?php if(strlen(get_post_meta($postId,'cmp_description',true))>0): ?>
-						    <div class="description">
-							<?php echo get_post_meta($postId,'cmp_description',true) ?>
-						    </div>
+
+                        <?php $postId=get_the_ID(); ?>
+
+                        <div class="employee_container">
+
+                            <div class="gradient_gray_nohover rounded shadow employee_entry">
+
+                                <header>
+
+                                    <?php if(get_the_post_thumbnail( $postId, 'companies-logos' )): ?>
+                                        <p class="icon"><?php echo get_the_post_thumbnail( $postId, 'companies-logos' ) ?></p>
+                                    <?php endif; ?>
+
+                                    <div class="main_info">
+
+                                        <h1><?php echo get_post_meta($postId,'emp_company',true) ?></h1>
+
+                                        <?php if(strlen(get_post_meta($postId,'cmp_address',true))>0): ?>
+                                            <span class="address"><?php echo get_post_meta($postId,'cmp_address',true); ?></span>
+                                        <?php endif; ?>
+
+                                        <?php if(strlen(get_post_meta($postId,'cmp_postcode',true))>0): ?>
+                                            <span class="postcode"><?php echo get_post_meta($postId,'cmp_postcode',true); ?></span>
+                                        <?php endif; ?>
+
+                                    </div>
+                                </header>
+
+                                <?php if(strlen(get_post_meta($postId,'cmp_description',true))>0): ?>
+
+                                    <div class="description">
+                                        <?php echo get_post_meta($postId,'cmp_description',true) ?>
+                                    </div>
 						<?php endif; ?>
 						<div class="contacts">
 						    <?php if(strlen(get_post_meta($postId,'cmp_email',true))>0): ?><span class="email"><a href="mailto:<?php echo get_post_meta($postId,'cmp_email',true); ?>?subject=The HUB Directory Contact"><?php echo get_post_meta($postId,'cmp_email',true); ?></a></span><?php endif; ?>
