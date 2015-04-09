@@ -34,7 +34,7 @@ get_header(); ?>
                       </header><!-- .entry-header -->
 
                     <div class="entry-content">
-                        <?php the_contennt() ;?>
+                        <?php the_content() ;?>
                     </div><!-- .entry-content -->
 
                </article><!-- #post-<?php the_ID(); ?> -->
