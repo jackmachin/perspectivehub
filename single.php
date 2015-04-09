@@ -66,14 +66,25 @@ get_header(); ?>
                                 </header>
 
                                 <?php if(strlen(get_post_meta($postId,'cmp_description',true))>0): ?>
-
                                     <div class="description">
                                         <?php echo get_post_meta($postId,'cmp_description',true) ?>
                                     </div>
-						<?php endif; ?>
-						<div class="contacts">
-						    <?php if(strlen(get_post_meta($postId,'cmp_email',true))>0): ?><span class="email"><a href="mailto:<?php echo get_post_meta($postId,'cmp_email',true); ?>?subject=The HUB Directory Contact"><?php echo get_post_meta($postId,'cmp_email',true); ?></a></span><?php endif; ?>
-						    <?php if(strlen(get_post_meta($postId,'cmp_website',true))>0): ?><span class="website"><a href="<?php echo get_post_meta($postId,'cmp_website',true); ?>" target="_blank"><?php echo get_post_meta($postId,'cmp_website',true); ?></a></span><?php endif; ?>
+                                <?php endif; ?>
+
+                                <div class="contacts">
+
+                                    <?php if(strlen(get_post_meta($postId,'cmp_email',true))>0): ?>
+                                        <span class="email">
+                                            <a href="mailto:<?php echo get_post_meta($postId,'cmp_email',true); ?>?subject=The HUB Directory Contact"><?php echo get_post_meta($postId,'cmp_email',true); ?></a>
+                                        </span>
+                                    <?php endif; ?>
+
+                                    <?php if(strlen(get_post_meta($postId,'cmp_website',true))>0): ?>
+                                        <span class="website">
+                                            <a href="<?php echo get_post_meta($postId,'cmp_website',true); ?>" target="_blank"><?php echo get_post_meta($postId,'cmp_website',true); ?></a>
+                                        </span>
+                                    <?php endif; ?>
+
 						    <?php if(strlen(get_post_meta($postId,'cmp_phone',true))>0): ?><span class="phone"><?php echo get_post_meta($postId,'cmp_phone',true); ?></span><?php endif; ?>
 						    <?php /* <?php if(strlen(get_post_meta($postId,'cmp_mobile',true))>0): ?><span class="mobile"><?php echo get_post_meta($postId,'cmp_mobile',true); ?></span><?php endif; ?> */ ?>
 						</div>
