@@ -1171,8 +1171,20 @@ function hub_logo() { ?>
 <?php }
 
 function google_fonts() {
-  wp_register_style('googleFonts', 'http://fonts.googleapis.com/css?family=Racing+Sans+One');
-  wp_enqueue_style( 'googleFonts');
+
 }
 
 add_action('wp_print_styles', 'google_fonts');
+
+/**
+ * Proper way to enqueue scripts and styles
+ */
+function hub_scripts() {
+    wp_register_style('google-fonts', 'http://fonts.googleapis.com/css?family=Racing+Sans+One');
+    wp_register_style( 'hub-stylesheet', get_stylesheet_directory_uri() . '/style.min.css', array(), '', 'all' );
+
+    wp_enqueue_style( 'google-fonts');
+	wp_enqueue_style( 'hub-stylesheet', get_stylesheet_uri() );
+}
+
+add_action( 'wp_enqueue_scripts', 'hub_scripts' );
