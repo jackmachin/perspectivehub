@@ -1180,6 +1180,9 @@ add_action('wp_print_styles', 'google_fonts');
  * Proper way to enqueue scripts and styles
  */
 function hub_scripts() {
+
+    global $wp_styles; // call global $wp_styles variable to add conditional wrapper around ie stylesheet the WordPress way
+
     wp_register_style('google-fonts', 'http://fonts.googleapis.com/css?family=Racing+Sans+One');
     wp_register_style( 'hub-stylesheet', get_stylesheet_directory_uri() . '/style.min.css', array(), '', 'all' );
     wp_register_style( 'hub-ie-only', get_stylesheet_directory_uri() . '/ie.css', array(), '' );
@@ -1188,7 +1191,7 @@ function hub_scripts() {
 	wp_enqueue_style( 'hub-stylesheet', get_stylesheet_uri() );
     wp_enqueue_style( 'hub-ie-only' );
 
-
+	   $wp_styles->add_data( 'guybrush-ie-only', 'conditional', 'lt IE 9' ); // add conditional wrapper around ie stylesheet
 
 }
 
