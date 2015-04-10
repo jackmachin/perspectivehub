@@ -12,7 +12,7 @@
 
 	</div><!-- #main -->
 
-	<footer id="colophon" class="cf" role="contentinfo">
+	<footer id="colophon" class="cf footer" role="contentinfo">
 
         <?php
             /* A sidebar in the footer? Yep. You can can customize

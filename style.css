@@ -1202,7 +1202,7 @@ header h1.page-title {
 
 /***** FOOTER *****/
 
-footer {
+.footer {
     clear: both;
     color: #fff;
     padding: 20px 0;
