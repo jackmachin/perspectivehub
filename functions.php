@@ -1182,9 +1182,13 @@ add_action('wp_print_styles', 'google_fonts');
 function hub_scripts() {
     wp_register_style('google-fonts', 'http://fonts.googleapis.com/css?family=Racing+Sans+One');
     wp_register_style( 'hub-stylesheet', get_stylesheet_directory_uri() . '/style.min.css', array(), '', 'all' );
+    wp_register_style( 'hub-ie-only', get_stylesheet_directory_uri() . '/ie.css', array(), '' );
 
     wp_enqueue_style( 'google-fonts');
 	wp_enqueue_style( 'hub-stylesheet', get_stylesheet_uri() );
+    wp_enqueue_style( 'hub-ie-only' );
+
+		$wp_styles->add_data( 'hub-ie-only', 'conditional', 'lt IE 9' ); // add conditional wrapper around ie stylesheet
 }
 
 add_action( 'wp_enqueue_scripts', 'hub_scripts' );
