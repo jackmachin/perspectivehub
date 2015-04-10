@@ -1006,6 +1006,10 @@ aside.world_news {}
         margin-bottom:.5em;
     }
 
+    .soon {
+        text-align: center;
+    }
+
 /***** BLOG PAGES *****/
 
 

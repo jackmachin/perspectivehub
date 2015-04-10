@@ -50,7 +50,7 @@
 
                     <?php else : ?>
 
-                    <h2 class="beat-title">Coming soon!</h2>
+                    <h2 class="beat-title soon">Coming soon!</h2>
                 <?php endif; ?>
                 </div>
             </div>
