@@ -223,7 +223,7 @@ a:hover {
                     background: #fff;
                     z-index: 8999;
                     position: absolute;
-                    width:219px;
+                    width:220px;
                     padding: 20px 20px 20px 0;
                     border-bottom-left-radius: 1em;
                     border-bottom-right-radius: 1em;
@@ -937,7 +937,8 @@ aside.world_news {}
 
     .home-nav li {
         display: inline-block;
-        width: 220px;
+        width: 219px;
+        width: 219px;
         height:180px;
         text-align: center;
         font-weight: 700;
@@ -971,7 +972,7 @@ aside.world_news {}
         .home-nav li a span {
           background-color: #d41246;
           position: absolute;
-          width: 220px;
+          width: 219px;
           line-height: 2em;
           bottom: -15px;
           left: -110px;
