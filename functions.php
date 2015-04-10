@@ -1170,9 +1170,9 @@ function hub_logo() { ?>
     </style>
 <?php }
 
-add_action( 'login_enqueue_scripts', 'hub_logo' );
+function google_fonts() {
+  wp_register_style('googleFonts', 'http://fonts.googleapis.com/css?family=Racing+Sans+One');
+  wp_enqueue_style( 'googleFonts');
+}
 
-@ini_set( 'upload_max_size' , '64M' );
-@ini_set( 'post_max_size', '64M');
-@ini_set( 'max_execution_time', '300' );
-
+add_action('wp_print_styles', 'google_fonts');
