@@ -1186,9 +1186,7 @@ function hub_scripts() {
 
     wp_enqueue_style( 'google-fonts');
 	wp_enqueue_style( 'hub-stylesheet', get_stylesheet_uri() );
-    wp_enqueue_style( 'hub-ie-only' );
 
-		$wp_styles->add_data( 'hub-ie-only', 'conditional', 'lt IE 9' ); // add conditional wrapper around ie stylesheet
 }
 
 add_action( 'wp_enqueue_scripts', 'hub_scripts' );
