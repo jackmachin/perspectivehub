@@ -87,7 +87,7 @@
 
 <div class="container">
 
-	<header id="branding" class="header" role="banner">
+	<header id="branding" class="header cf" role="banner">
 
         <div class="cf">
 
