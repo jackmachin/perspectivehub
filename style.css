@@ -1440,31 +1440,8 @@ form {
   padding-left: 45px !important;
 }
 
-/***** HACKY DIVIDERS *****/
+/***** SPECIALITY LIST *****/
 
-.article {
-  float: left;
-  width: 74.5%;
-  margin-right: 2%;
-  background-color: #eee;
-  margin-bottom: 1.125em;
-}
-
-.article-sidebar {
-  float: right;
-  width: 23.5%;
-  margin-right: 0;
-}
-
-.file-review-footer {
-  width: 100%;
-  -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
-  box-sizing: border-box;
-  content: "";
-  display: table;"
-}
-    
 ul.speciality {
     display: block; 
     overflow: hidden;
@@ -1518,3 +1495,30 @@ ul.speciality {
     opacity:0.9; 
     filter:alpha(opacity=90); /* For IE8 and earlier */
   }
+
+
+/***** HACKY DIVIDERS *****/
+
+.article {
+  float: left;
+  width: 74.5%;
+  margin-right: 2%;
+  background-color: #eee;
+  margin-bottom: 1.125em;
+}
+
+.article-sidebar {
+  float: right;
+  width: 23.5%;
+  margin-right: 0;
+}
+
+.file-review-footer {
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  content: "";
+  display: table;"
+}
+
