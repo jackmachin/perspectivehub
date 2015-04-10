@@ -1465,10 +1465,10 @@ form {
   display: table;"
 }
     
-  ul.speciality {
+ul.speciality {
     display: block; 
     overflow: hidden;
-  }
+}
 	
     ul.speciality-list li.speciality {
       display: block; 
