@@ -50,7 +50,7 @@
 <link rel="profile" href="http://gmpg.org/xfn/11" />
 <link rel="stylesheet" type="text/css" media="all" href="<?php echo get_stylesheet_directory_uri(); ?>/style.min.css" />
 
-<!--[if lt IE 9]>
+<!--[if lte IE 9]>
     <link rel="stylesheet" type="text/css" media="all" href="<?php echo get_stylesheet_directory_uri(); ?>/ie.css" />
 <![endif]-->
 
