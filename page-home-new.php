@@ -47,6 +47,10 @@
                     <h2 class="beat-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a> <span class="beat-date"><?php the_date(); ?></span></h2>
                     <div class="beat-excerpt"><?php the_excerpt(); ?></div>
 				    <?php endwhile; ?>
+
+                    <?php else : ?>
+
+                    <h2 class="beat-title">Coming soon!</h2>
                 <?php endif; ?>
                 </div>
             </div>
