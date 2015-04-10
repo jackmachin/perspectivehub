@@ -940,7 +940,7 @@ aside.world_news {}
 
         display: inline-block;
         width: 219px;
-        height:180px;
+        height:190px;
 
         text-align: center;
         font-weight: 700;
@@ -957,10 +957,11 @@ aside.world_news {}
     }
 
         .home-nav li a {
+            width: 219px;
+            height:190px;
+
             text-transform: uppercase;
             color: #fff;
-            position: relative;
-            width:219px;
         }
 
         .home-nav li a span {
