@@ -85,7 +85,7 @@
 
 <body <?php body_class(); ?>>
 
-<div class="container">
+<div class="container cf">
 
 	<header id="branding" class="header cf" role="banner">
 
