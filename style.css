@@ -960,15 +960,6 @@ aside.world_news {}
             position: relative;
         }
 
-        .home-nav li.tatton {
-            border: 5px solid #7ea088;
-        }
-
-        .home-nav li.tatton a {
-            color: #7ea088;
-        }
-
-
         .home-nav li a span {
           background-color: #d41246;
           position: absolute;
