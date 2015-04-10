@@ -969,8 +969,8 @@ aside.world_news {}
           position: absolute;
           width: 219px;
           line-height: 2em;
-          bottom: -15px;
-          left: -110px;
+          bottom:0;
+          left: 0;
         }
 
     .menu-image {
