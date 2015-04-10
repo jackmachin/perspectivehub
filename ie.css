@@ -1,5 +1,10 @@
 /* IE FIXS LETS GET HACKY */
 
+.header-container {
+    width:980px;
+    height: 100px;
+}
+
 .home-nav li {
     width:215px;
 }

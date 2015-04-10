@@ -89,7 +89,7 @@
 
 	<header id="branding" class="header cf" role="banner">
 
-        <div class="cf">
+        <div class="cf header-container">
 
             <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><img src="<?php echo get_template_directory_uri();?>/images/thehub-logo.jpg" alt="<?php bloginfo( 'name' ); ?>"  width="224" height="93"></a></h1>
 
