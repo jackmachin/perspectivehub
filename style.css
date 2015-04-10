@@ -34,6 +34,7 @@ table, caption, tbody, tfoot, thead, tr, th, td {
 article,
 aside,
 details,
+div,
 figcaption,
 figure,
 footer,
@@ -43,7 +44,7 @@ main,
 nav,
 section,
 summary {
-	display: block;
+    display: block;
 }
 
 :focus {/* remember to define focus styles! */
