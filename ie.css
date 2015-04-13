@@ -9,6 +9,14 @@
     min-height: 541px;
 }
 
+.newsticker {
+    height:25px;
+}
+
+    .home-ticker {
+        float:left;
+    }
+
 .home-nav li {
     width:215px;
     float:left;
