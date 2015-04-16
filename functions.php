@@ -1170,6 +1170,8 @@ function hub_logo() { ?>
     </style>
 <?php }
 
+add_action( 'login_enqueue_scripts', 'hub_logo' );
+
 function google_fonts() {
 
 }
