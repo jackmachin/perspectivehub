@@ -993,6 +993,10 @@ aside.world_news {}
         font-family: 'Racing Sans One', sans-serif;
     }
 
+    .pulse-title {
+        font-family: 'Racing Sans One', sans-serif;
+    }
+
     .beat-date {
         font-style: italic;
         font-size:10px;
