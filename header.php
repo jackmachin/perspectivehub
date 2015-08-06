@@ -53,6 +53,8 @@
 <!--[if lt IE 9]>
 <script src="<?php echo get_template_directory_uri(); ?>/js/html5.js" type="text/javascript"></script>
 <![endif]-->
+
+<script type="text/javascript" src="http://www.perspectivehub.co.uk/wp-includes/js/jquery/jquery.js?ver=1.11.2"></script>
 <?php
 	/* We add some JavaScript to pages with the comment form
 	 * to support sites with threaded comments (when in use).
