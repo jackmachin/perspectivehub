@@ -192,7 +192,7 @@ a:hover {
         }
 
         .top-nav li.menu-item-has-children a:after {
-            content: ' &#9660;';
+            content: ' >\#9660;';
         }
 
             .top-nav li a {
