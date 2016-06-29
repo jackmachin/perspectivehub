@@ -23,7 +23,7 @@ get_header(); ?>
       <h2><strong>Hints &amp; Tips</strong></h2>
                             <ul class="quick-links">
 <?php $args = array(
-	'posts_per_page'   => 50,
+	'posts_per_page'   => -1,
 	'orderby'          => 'date',
 	'order'            => 'DESC',
 	'post_type'        => 'file-review-hint',
