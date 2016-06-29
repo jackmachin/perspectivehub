@@ -24,22 +24,10 @@ get_header(); ?>
                             <ul class="quick-links">
 <?php $args = array(
 	'posts_per_page'   => 50,
-	'offset'           => 0,
-	'category'         => '',
-	'category_name'    => '',
 	'orderby'          => 'date',
 	'order'            => 'DESC',
-	'include'          => '',
-	'exclude'          => '',
-	'meta_key'         => '',
-	'meta_value'       => '',
 	'post_type'        => 'file-review-hint',
-	'post_mime_type'   => '',
-	'post_parent'      => '',
-	'author'	   => '',
-	'author_name'	   => '',
 	'post_status'      => 'publish',
-	'suppress_filters' => true
 );
 
 $postslist = get_posts( $args );
