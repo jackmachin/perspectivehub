@@ -1446,6 +1446,12 @@ form {
   padding-left: 45px !important;
 }
 
+/***** WEBINAR LIST *****/
+.webinar-list {
+  list-style-image: url('http://www.perspectivehub.co.uk/wp-content/uploads/2013/11/web.png');
+  padding-left: 45px !important;
+}
+
 /***** SPECIALITY LIST *****/
 
 ul.speciality {
