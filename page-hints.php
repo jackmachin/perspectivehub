@@ -43,13 +43,29 @@ wp_reset_postdata();?>
                             </ul>
                         </div>
 
+
+<?php $args = array(
+	'posts_per_page'   => -1,
+	'orderby'          => 'date',
+	'order'            => 'DESC',
+	'post_type'        => 'file-review-hint',
+	'post_status'      => 'publish',
+);
+
+$postslist = get_posts( $args );
+foreach ( $postslist as $post ) :
+  setup_postdata( $post ); ?>
+
                         <section class="article entry-content">
-                            <h2  class="file-review-title"><strong>Title</strong></h2>
+                            <h2 id="<?php the_ID();?>" class="file-review-title"><strong><?php the_title();?></strong></h2>
                             <div class="file-review-content">
-                                <p>Content</p>
+                                <?php the_content();?>
                                 <p><a href="#top">Back to top...</a></p>
                             </div>
                         </section>
+<?php
+endforeach;
+wp_reset_postdata();?>
                     </div><!-- .entry-content -->
                 </article><!-- #post-<?php the_ID(); ?> -->
 			</div><!-- #content -->
