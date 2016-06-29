@@ -24,15 +24,15 @@ get_header(); ?>
                                 <h2><strong>Hints &amp; Tips</strong></h2>
 
                                 <li>
-                                    <a href="<?php echo get_permalink(); ?>#<?php echo $anchor;?>" title="<?php echo $headline;?>"><?php echo $headline; ?></a>
+                                    Hold
                                 </li>
                             </ul>
                         </div>
 
                         <section class="article entry-content">
-                            <h2 id="<?php echo $anchor;?>" class="file-review-title"><strong><?php echo $headline; ?> - <?php echo $date->format('d.m.Y');?></strong></h2>
+                            <h2  class="file-review-title"><strong>Title</strong></h2>
                             <div class="file-review-content">
-                            <p><a href="#top">Back to top...</a></p>
+                                <p><a href="#top">Back to top...</a></p>
                             </div>
                         </section>
 
