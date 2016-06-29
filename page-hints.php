@@ -47,7 +47,7 @@ foreach ( $postslist as $post ) :
   setup_postdata( $post ); ?>
 
                                 <li>
-                                    <?php the_title();?>
+                                    <a href=""><?php the_title();?></a>
                                 </li>
 <?php
 endforeach;
