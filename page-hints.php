@@ -16,7 +16,7 @@ get_header(); ?>
                     </header><!-- .entry-header -->
 
                     <div class="entry-content">
-                        <p><a href="http://www.perspectivehub.co.uk/wp-content/uploads/2013/08/hints-n-tips.png"><img class="alignleft wp-image-2605 size-full" title="hints-n-tips" src="http://www.perspectivehub.co.uk/wp-content/uploads/2013/08/hints-n-tips.png" alt="" width="138" height="200" /></a></p>
+                        <p><img class="alignleft wp-image-2605 size-full" title="hints-n-tips" src="http://www.perspectivehub.co.uk/wp-content/uploads/2013/08/hints-n-tips.png" alt="" width="138" height="200" /><strong>If you have any queries regarding the hints and tips please do not hesitate to contact Richard Heywood, Business Monitoring Manager, on 0161 244 9759 or at <a href="mailto:richard.heywood@pfgl.co.uk">richard.heywood@pfgl.co.uk</a>.</strong></p>
 
                         <div class="article-sidebar">
 
@@ -34,11 +34,7 @@ get_header(); ?>
                             <div class="file-review-content">
                                 <p><a href="#top">Back to top...</a></p>
                             </div>
-                        </section>
-
-                        <div class="file-review-footer">
-                            <p><strong>If you have any queries regarding the hints and tips please do not hesitate to contact Richard Heywood, Business Monitoring Manager, on 0161 244 9759 or at <a href="mailto:richard.heywood@pfgl.co.uk">richard.heywood@pfgl.co.uk</a>.</strong></p>
-                        </div>
+                        </section>>
                     </div><!-- .entry-content -->
                 </article><!-- #post-<?php the_ID(); ?> -->
 			</div><!-- #content -->
