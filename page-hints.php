@@ -15,8 +15,10 @@ get_header(); ?>
                         <h1 class="entry-title"><?php the_title(); ?></h1>
                     </header><!-- .entry-header -->
 
-                    <div class="entry-content">
+                    <div class="entry-content cf">
                         <p><img class="alignleft wp-image-2605 size-full" title="hints-n-tips" src="http://www.perspectivehub.co.uk/wp-content/uploads/2013/08/hints-n-tips.png" alt="" width="138" height="200" /><strong>If you have any queries regarding the hints and tips please do not hesitate to contact Richard Heywood, Business Monitoring Manager, on 0161 244 9759 or at <a href="mailto:richard.heywood@pfgl.co.uk">richard.heywood@pfgl.co.uk</a>.</strong></p>
+                    </div>
+                    <div class="post-container">
 
                         <div class="article-sidebar">
 
