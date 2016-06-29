@@ -32,9 +32,10 @@ get_header(); ?>
                         <section class="article entry-content">
                             <h2  class="file-review-title"><strong>Title</strong></h2>
                             <div class="file-review-content">
+                                <p>Content</p>
                                 <p><a href="#top">Back to top...</a></p>
                             </div>
-                        </section>>
+                        </section>
                     </div><!-- .entry-content -->
                 </article><!-- #post-<?php the_ID(); ?> -->
 			</div><!-- #content -->
