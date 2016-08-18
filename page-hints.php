@@ -57,7 +57,7 @@ foreach ( $postslist as $post ) :
   setup_postdata( $post ); ?>
 
                         <section class="article entry-content">
-                            <h2 id="<?php the_ID();?>" class="file-review-title"><strong><?php the_title();?> -  <?php the_date();?></strong></h2>
+                            <h2 id="<?php the_ID();?>" class="file-review-title"><strong><?php the_title();?> -  <?php the_time( get_option( 'date_format' ) ); ?></strong></h2>
                             <div class="file-review-content">
                                 <?php the_content();?>
                                 <p><a href="#top">Back to top...</a></p>
