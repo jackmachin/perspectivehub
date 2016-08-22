@@ -81,7 +81,7 @@ get_header(); ?>
 
                                     <?php if(strlen(get_post_meta($postId,'cmp_website',true))>0): ?>
                                         <span class="website">
-                                            <a href="<?php echo get_post_meta($postId,'cmp_website',true); ?>" target="_blank"><?php echo get_post_meta($postId,'cmp_website',true); ?></a>
+                                            <a href="http://<?php echo get_post_meta($postId,'cmp_website',true); ?>" target="_blank"><?php echo get_post_meta($postId,'cmp_website',true); ?></a>
                                         </span>
                                     <?php endif; ?>
 
