@@ -10,7 +10,7 @@ get_header(); ?>
         
         <?php get_template_part( 'content', 'page' );
         
-          $args = array( 'post_type' => 'specialities', 'posts_per_page' => 10 );
+          $args = array( 'post_type' => 'specialities', 'posts_per_page' => 15 );
           $loop = new WP_Query( $args ); ?>
             <ul class="speciality-list">
             <?php while ( $loop->have_posts() ) : $loop->the_post();?>
