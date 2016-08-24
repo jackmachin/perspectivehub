@@ -46,7 +46,9 @@ section,
 summary {
     display: block;
 }
-
+ol, ul {
+    list-style: none;
+}
 :focus {/* remember to define focus styles! */
 	outline: 0;
 }
@@ -153,6 +155,12 @@ a:hover {
             text-align: right;
             float: right;
         }
+
+ol {
+    list-style-type: decimal;
+    margin-left:2em;
+
+}
     
 /***** START NAV STUFF *****/
 
