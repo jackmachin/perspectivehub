@@ -211,8 +211,8 @@ get_header(); ?>
                             </div>
                         <?php } else { ?>
                             <div class="description">
-                                <?php if(strlen(get_post_meta($postId,'cmp_description',true))>0): ?>
-                                    <?php echo get_post_meta($postId,'cmp_description',true); ?>
+                                <?php if(strlen(get_post_meta($postId,'spc_description',true))>0): ?>
+                                    <?php echo get_post_meta($postId,'spc_description',true); ?>
                                 <?php endif; ?>
                             </div>
                         <?php } ?>
