@@ -118,16 +118,18 @@ get_header(); ?>
 							<?php if(strlen(get_post_meta($postId,'cmp_postcode',true))>0): ?><span class="postcode"><?php echo get_post_meta($postId,'cmp_postcode',true); ?></span><?php endif; ?>
 						    </div>
 						</header>
-						<?php if(strlen(get_post_meta($postId,'cmp_description',true))>0): ?>
+
+                        <?php if (get_field('specialities-wysiwyg')) { ?>
+                            <div class="description acf">
+                                <?php the_field('specialities-wysiwyg'); ?>
+                            </div>
+                        <?php } else { ?>
                             <div class="description">
-                                <?php   if (get_field('specialities-wysiwyg')) {
-                                            the_field('specialities-wysiwyg');
-                                        } else {
-                                            echo get_post_meta($postId,'cmp_description',true);
-                                        }
-                                ?>
-						    </div>
-						<?php endif; ?>
+                                <?php if(strlen(get_post_meta($postId,'cmp_description',true))>0): ?>
+                                    <?php echo get_post_meta($postId,'cmp_description',true); ?>
+                                <?php endif; ?>
+                            </div>
+                        <?php } ?>
 						<div class="contacts">
 						    <?php if(strlen(get_post_meta($postId,'cmp_email',true))>0): ?><span class="email"><a href="mailto:<?php echo get_post_meta($postId,'cmp_email',true); ?>?subject=The HUB Directory Contact"><?php echo get_post_meta($postId,'cmp_email',true); ?></a></span><?php endif; ?>
 						    <?php if(strlen(get_post_meta($postId,'cmp_website',true))>0): ?><span class="website"><a href="<?php echo get_post_meta($postId,'cmp_website',true); ?>" target="_blank"><?php echo get_post_meta($postId,'cmp_website',true); ?></a></span><?php endif; ?>
