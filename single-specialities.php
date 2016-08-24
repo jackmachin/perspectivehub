@@ -119,8 +119,12 @@ get_header(); ?>
 						    </div>
 						</header>
 						<?php if(strlen(get_post_meta($postId,'cmp_description',true))>0): ?>
-						    <div class="description">
-							<?php echo get_post_meta($postId,'cmp_description',true) ?>
+                            <div class="description">
+                                <?php   if (get_field('specialities-wysiwyg')):
+                                            the_field('specialities-wysiwyg');
+                                        else
+                                            echo get_post_meta($postId,'cmp_description',true);
+                                ?>
 						    </div>
 						<?php endif; ?>
 						<div class="contacts">
