@@ -205,11 +205,17 @@ get_header(); ?>
 							<h1><?php the_title() ?></h1>
 						    </div>
 						</header>
-						<?php if(strlen(get_post_meta($postId,'spc_description',true))>0): ?>
-						    <div class="description">
-							<?php echo get_post_meta($postId,'spc_description',true) ?>
-						    </div>
-						<?php endif; ?>
+                        <?php if (get_field('specialities-wysiwyg')) { ?>
+                            <div class="description acf">
+                                <?php the_field('specialities-wysiwyg'); ?>
+                            </div>
+                        <?php } else { ?>
+                            <div class="description">
+                                <?php if(strlen(get_post_meta($postId,'cmp_description',true))>0): ?>
+                                    <?php echo get_post_meta($postId,'cmp_description',true); ?>
+                                <?php endif; ?>
+                            </div>
+                        <?php } ?>
 						<div class="contacts">
 						<?php if(strlen(get_post_meta($postId,'emp_email',true))>0): ?><span class="email"><a href="mailto:<?php echo get_post_meta($postId,'emp_email',true); ?>?subject=The HUB Directory Contact"><?php echo get_post_meta($postId,'emp_email',true); ?></a></span><?php endif; ?>
 						    <?php if(strlen(get_post_meta($postId,'emp_phone',true))>0): ?><span class="phone"><?php echo get_post_meta($postId,'emp_phone',true); ?></span><?php endif; ?>
