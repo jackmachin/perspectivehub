@@ -173,7 +173,7 @@ get_header(); ?>
 						    </div>
 						</header>
 						<?php if(strlen(get_post_meta($postId,'spc_description',true))>0): ?>
-						    <div class="description">
+						    <div class="description test">
 							<?php echo get_post_meta($postId,'spc_description',true) ?>
 						    </div>
 						<?php endif; ?>
