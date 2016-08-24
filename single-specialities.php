@@ -120,10 +120,11 @@ get_header(); ?>
 						</header>
 						<?php if(strlen(get_post_meta($postId,'cmp_description',true))>0): ?>
                             <div class="description">
-                                <?php   if (get_field('specialities-wysiwyg')):
+                                <?php   if (get_field('specialities-wysiwyg')) {
                                             the_field('specialities-wysiwyg');
-                                        else
+                                        } else {
                                             echo get_post_meta($postId,'cmp_description',true);
+                                        }
                                 ?>
 						    </div>
 						<?php endif; ?>
