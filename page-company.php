@@ -10,6 +10,18 @@ get_header(); ?>
         <div id="content" role="main">
             <?php the_post(); ?>
             <?php get_template_part( 'content', 'page' ); ?>
+                 <div class="company-map">
+                    <?php
+                        $args = array( 'post_type' => 'companies', 'posts_per_page' => 1000 );
+                        $loop = new WP_Query( $args );
+                    ?>
+                    <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+                        <p>Glarghaey</p>
+                    <?php endwhile; ?>
+                </div>
+
+                <?php wp_reset_query(); // RESETTING THE QUERY TO SET IT TO THE SAME THING SEEMS SMART ?>
+
                 <div class="company-content">
 				    <?php
                         $args = array( 'post_type' => 'companies', 'posts_per_page' => 1000 );
@@ -43,11 +55,6 @@ get_header(); ?>
 
                         </div>
 
-                    <?php endwhile; ?>
-                </div>
-                <div class="company-map">
-                    <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
-                        <p>Glarghaey</p>
                     <?php endwhile; ?>
                 </div>
         </div><!-- #content -->
