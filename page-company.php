@@ -13,9 +13,8 @@ get_header(); ?>
 				<?php
 				    $post_type='page';
 				    $special_posts=array('companies');
-				    if(in_array($post->post_name,$special_posts))
-				    {
-					$post_type=$post->post_name;
+				    if(in_array($post->post_name,$special_posts)) {
+					   $post_type=$post->post_name;
 					?>
                     <?php $loop = new WP_Query( array(
                         'post_type' => 'companies',
@@ -29,6 +28,7 @@ get_header(); ?>
                             </a>
                         <?php endif; ?>
                     </div><!--ifa-map-->
+                    <?php } ?>
 			</div><!-- #content -->
 		</div><!-- #primary -->
 <?php get_footer(); ?>
