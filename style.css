@@ -746,7 +746,7 @@ aside.world_news {}
         position: absolute;
 	}
 
-	.active .bullet {
+	.active.bullet {
 	   background: url(/wp-content/themes/perspectivehub/images/bullets.png) no-repeat bottom!important;
 	}
 
