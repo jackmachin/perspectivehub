@@ -18,7 +18,7 @@ get_header(); ?>
                     <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
                         <?php if (get_field ('map')) { ?>
                             <a id="<?php the_field('id');?>" onclick="selectThis('<?php the_field('id');?>')" href="javascript:void(0);" class="bullet preview" style="top:<?php the_field('y-coords');?>;left:<?php the_field('x-coords');?>"><?php the_title();?>
-                                <img class="map-logo" id="map-logo-ad" src="http://www.perspectivecorporate.co.uk/files/2016/02/AdValorem-Logo.png" alt="<?php the_field('id');?>-Logo" width="220" height="55">
+                                <img class="map-logo" id="map-logo-<?php the_field ('id');?>" src="<?php the_field('company-logo');?>" alt="<?php the_field('id');?>-Logo" width="220" height="55">
                             </a>
                         <?php } ?>
                     <?php endwhile; ?>
