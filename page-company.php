@@ -23,7 +23,6 @@ get_header(); ?>
                             </a>
                         <?php endif; ?>
                     </div><!--ifa-map-->
-                <?php } ?>
 			</div><!-- #content -->
 		</div><!-- #primary -->
 <?php get_footer(); ?>
