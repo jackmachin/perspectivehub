@@ -38,8 +38,6 @@ jQuery(window).load(function () {
 	    jQuery(this).parent().find('a').stop(true,true).animate({ backgroundColor: "#444444" }, "fast");
 	});
 	*/
-
-	
 	
 	// Alphabetical Index
 	jQuery('ul.letter_index > li').hide();
