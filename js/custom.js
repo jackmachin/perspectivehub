@@ -137,3 +137,24 @@ function grayscale(src) {
 	ctx.putImageData(imgPixels, 0, 0, 0, 0, imgPixels.width, imgPixels.height);
 	return canvas.toDataURL();
 }
+
+function selectThis(id) {
+    "use strict";
+    //Off to a fine start, could search the DOM Element and do a .each function on the divs inside, or just hide all of that class...
+    jQuery('.ifa-details').fadeOut(500);
+    // ID of Body plus whatever param we pass down,
+    jQuery('#details-' + id).delay(500).fadeIn(500);
+    //Remove that pesky selected from all
+}
+
+jQuery('.bullet').hover(
+    function () {
+        $(this).addClass('active');
+        $(this).children('.map-logo').fadeIn(200);
+    },
+
+    function () {
+        $(this).removeClass('active');
+        $(this).children('.map-logo').fadeOut(200);
+    }
+);
