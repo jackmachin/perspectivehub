@@ -10,7 +10,7 @@ get_header(); ?>
         <div id="content" role="main">
             <?php the_post(); ?>
             <?php get_template_part( 'content', 'page' ); ?>
-                <div class="ifa-content">
+                <div class="company-content">
 				    <?php
                         $args = array( 'post_type' => 'companies', 'posts_per_page' => 1000 );
                         $loop = new WP_Query( $args );
