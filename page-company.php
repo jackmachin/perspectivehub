@@ -11,19 +11,18 @@ get_header(); ?>
             <?php the_post(); ?>
             <?php get_template_part( 'content', 'page' ); ?>
             <?php // get the posts from the current post_type (well, page slug actually) ?>
-                <?php
-				    $post_type='page';
-				    $special_posts=array('companies');
-				    if(in_array($post->post_name,$special_posts))
-				    {
-					$post_type=$post->post_name;
-                ?>
-                    <?php $loop = new WP_Query( array( 'post_type' => $post_type, 'posts_per_page' => 1000 ) ); ?>
-					<?php if($loop->have_posts()): ?>
-					   <div class="directoryElements">
-						  <?php echo alphabetical_order_list($loop,$post_type); ?>
-					    </div>
-					<?php endif; ?>
+                    <?php $loop = new WP_Query( array(
+                        'post_type' => 'companies',
+                        'posts_per_page' => 1000 )
+                    ); ?>
+                    <div class="ifa-map">
+					   <?php if($loop->have_posts()): ?>
+
+                            <a id="<?php the_field('id');?>" onclick="selectThis('<?php the_field('id');?>')" href="javascript:void(0);" class="bullet preview"><?php the_title();?>
+                                <img class="map-logo" id="map-logo-ad" src="<?php the_field('company-logo');?>" alt="<?php the_title();?>-Logo" width="220" height="55">
+                            </a>
+                        <?php endif; ?>
+                    </div><!--ifa-map-->
                 <?php } ?>
 			</div><!-- #content -->
 		</div><!-- #primary -->
