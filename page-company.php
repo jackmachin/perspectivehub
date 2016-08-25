@@ -8,7 +8,6 @@
 get_header(); ?>
     <div id="primary">
         <div id="content" role="main">
-
             <?php the_post(); ?>
             <?php get_template_part( 'content', 'page' ); ?>
             <?php // get the posts from the current post_type (well, page slug actually) ?>
