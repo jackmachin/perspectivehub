@@ -54,7 +54,7 @@ get_header(); ?>
                                 <p><strong>Website:</strong> <a href="<?php the_field ('company-website');?>" target="_blank"><?php the_field ('company-website');?></a></p>
                             <?php endif;?>
                             <?php if( get_field('company-email') ): ?>
-                                <p><strong>Email:</strong>  <a href="mailto:<?php the_field ('company-email');?></a></p>
+                                <p><strong>Email:</strong>  <a href="mailto:<?php the_field ('company-email');?>"><?php the_field ('company-email');?></a></p>
                             <?php endif;?>
 
                         </div>
