@@ -35,11 +35,11 @@ get_header(); ?>
                     <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
                         <div class="company-details" id="details-<?php the_field('id');?>">
-                            <h2 class="company-name"><?php the_title(); ?></h2>
-
                             <?php if( get_field('company-logo') ): ?>
-                                <img class="company-logo" src="<?php the_field('company-logo');?>">
+                                <img class="company-logo aligncenter" src="<?php the_field('company-logo');?>">
                             <?php endif;?>
+
+                            <h2 class="company-name"><?php the_title(); ?></h2>
 
                             <?php if( get_field('company-address') ): ?>
                                 <address>
