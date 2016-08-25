@@ -18,7 +18,7 @@ get_header(); ?>
 
                     <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
-                        <div class="company-details" id="<?php the_field('id');?>-details">
+                        <div class="company-details" id="details-<?php the_field('id');?>">
                             <h2 class="company-name"><?php the_title(); ?></h2>
 
                             <?php if( get_field('company-logo') ): ?>
