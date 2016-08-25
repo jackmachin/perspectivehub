@@ -697,6 +697,18 @@ aside.world_news {}
 
     .company-details {
         display:none;
+        padding: 1em;
+        border: 1px solid #dadada;
+        background: #f4f4f4;
+        background: -moz-linear-gradient(top,#eee 0,#fefefe 100%);
+        background: -webkit-gradient(linear,left top,left bottom,color-stop(0,#eee),color-stop(100%,#fefefe));
+        background: -webkit-linear-gradient(top,#eee 0,#fefefe 100%);
+        background: -o-linear-gradient(top,#eee 0,#fefefe 100%);
+        background: -ms-linear-gradient(top,#eee 0,#fefefe 100%);
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#eeeeee', endColorstr='#fefefe', GradientType=0 );
+        background: linear-gradient(top,#eee 0,#fefefe 100%);
+        box-shadow: 2px 0 4px #ddd;
+        border-radius: 1em;
     }
 
 .company-name {
