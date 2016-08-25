@@ -18,7 +18,7 @@ get_header(); ?>
 					   $post_type=$post->post_name;
 					?>
                     <?php $loop = new WP_Query( array(
-                        'post_type' => 'company',
+                        'post_type' => 'companies',
                         'posts_per_page' => 1000 )
                     ); ?>
                     <div class="ifa-map">
