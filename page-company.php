@@ -36,10 +36,10 @@ get_header(); ?>
 
                         <div class="company-details" id="details-<?php the_field('id');?>">
                             <?php if( get_field('company-logo') ): ?>
-                                <img class="company-logo aligncenter" src="<?php the_field('company-logo');?>">
+                            <a href="<?php the_permalink(); ?>"><img class="company-logo aligncenter" src="<?php the_field('company-logo');?>"></a>
                             <?php endif;?>
 
-                            <h2 class="company-name"><?php the_title(); ?></h2>
+                            <h2 class="company-name"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
 
                             <?php if( get_field('company-address') ): ?>
                                 <address>
