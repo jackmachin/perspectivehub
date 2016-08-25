@@ -47,14 +47,14 @@ get_header(); ?>
                                 </address>
                             <?php endif;?>
 
-                            <?php if( get_field('company-website') ): ?>
-                                <p><strong>Website:</strong> <?php the_field ('company-website');?></p>
-                            <?php endif;?>
                             <?php if( get_field('company-phone') ): ?>
-                                <p><strong>Phone:</strong></p>
+                                <p><strong>Phone:</strong>  <?php the_field ('company-phone');?></p>
+                            <?php endif;?>
+                            <?php if( get_field('company-website') ): ?>
+                                <p><strong>Website:</strong> <a href="<?php the_field ('company-website');?>" target="_blank"><?php the_field ('company-website');?></a></p>
                             <?php endif;?>
                             <?php if( get_field('company-email') ): ?>
-                                <p><strong>Email:</strong></p>
+                                <p><strong>Email:</strong>  <a href="mailto:<?php the_field ('company-email');?></a></p>
                             <?php endif;?>
 
                         </div>
