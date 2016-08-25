@@ -45,6 +45,11 @@ get_header(); ?>
 
                     <?php endwhile; ?>
                 </div>
+                <div class="company-map">
+                    <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+                        <p>Glarghaey</p>
+                    <?php endwhile; ?>
+                </div>
         </div><!-- #content -->
     </div><!-- #primary -->
 <?php get_footer(); ?>
