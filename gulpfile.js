@@ -6,14 +6,14 @@ var gulp = require('gulp');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var rename = require('gulp-rename');
-var minifyCSS = require('gulp-minify-css');
+var cleanCSS = require('gulp-clean-css');
 
 
 gulp.task('css', function () {
     "use strict";
     return gulp.src('style.css')
         .pipe(gulp.dest('./'))
-        .pipe(minifyCSS())
+        .pipe(cleanCSS())
         .pipe(rename('style.min.css'))
         .pipe(gulp.dest('./'));
 });

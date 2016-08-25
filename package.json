@@ -1,0 +1,21 @@
+{
+  "name": "PerspectiveHub",
+  "version": "0.0.1",
+  "description": "Hub theme.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/pfgl/perspectivehub.git"
+  },
+  "keywords": [
+    "Pirate"
+  ],
+  "author": "Jack Machin",
+  "license": "WTFPL",
+  "bugs": {
+    "url": "https://github.com/pfgl/perspectivehub/issues"
+  }
+}
