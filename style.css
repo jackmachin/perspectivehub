@@ -699,12 +699,17 @@ aside.world_news {}
         display:none;
     }
 
+.company-name {
+    font-weight:bold;
+    font-size:2em;
+}
+
         .company-details-active {
             display:block;
         }
 
     .company-map {
-        float: right;
+        float: left;
         width: 474px;
         height: 542px;
         display: inline;
