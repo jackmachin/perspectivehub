@@ -97,6 +97,18 @@ jQuery(window).load(function () {
         containerheight: '25px'
 	});
 	
+    jQuery('.bullet').hover(
+        function () {
+            jQuery(this).addClass('active');
+            jQuery(this).children('.map-logo').fadeIn(200);
+        },
+
+        function () {
+            jQuery(this).removeClass('active');
+            jQuery(this).children('.map-logo').fadeOut(200);
+        }
+    );
+
 	// LogOut Button/link
 	var logoutLink = jQuery('span#logoutButton').html();
 	jQuery('.menu-footer-menu-container').
@@ -145,14 +157,3 @@ function selectThis(id) {
     //Remove that pesky selected from all
 }
 
-jQuery('.bullet').hover(
-    function () {
-        $(this).addClass('active');
-        $(this).children('.map-logo').fadeIn(200);
-    },
-
-    function () {
-        $(this).removeClass('active');
-        $(this).children('.map-logo').fadeOut(200);
-    }
-);
