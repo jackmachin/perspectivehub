@@ -714,6 +714,10 @@ aside.world_news {}
         border-radius: 1em;
     }
 
+.company-details * + * {
+    margin-top: 1.5em;
+}
+
 .company-name {
     font-weight:bold;
     font-size:2em;
