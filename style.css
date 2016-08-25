@@ -713,6 +713,20 @@ aside.world_news {}
         background-size: cover;
     }
 
+    .bullet {
+        display: block;
+        width: 24px;
+        height: 24px;
+        background: url(/wp-content/themes/perspectivehub/images/bullets.png) no-repeat top;
+        text-indent: -9999px;
+        position: absolute;
+	}
+
+	.active.bullet {
+	   background: url(/wp-content/themes/perspectivehub/images/bullets.png) no-repeat bottom!important;
+	}
+
+
 /***** CALENDAR STUFF - ALMOST DEFINITIELY POINTLESS *****/
 	aside.widget_my_calendar_upcoming_widget {display: block; overflow: hidden; padding: 0px; margin: 20px 0; color: #555;}
 	aside.widget_my_calendar_upcoming_widget h3 {font-size: 17px; font-weight: bold;}
