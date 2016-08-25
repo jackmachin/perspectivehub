@@ -691,6 +691,21 @@ aside.world_news {}
 
 	.employee_entry .related .block ul li {}
 	
+/***** MAPS! THEY DON'T LOVE YOU LIKE I LOVE YOU *****/
+
+.company-details {}
+
+.company-map {
+    float: right;
+    width: 474px;
+    height: 542px;
+    display: inline;
+    position: relative;
+    margin: 25px 0 50px 0;
+    background: url(/wp-content/themes/pcs/library/images/map-1.png) no-repeat;
+    background-size: cover;
+}
+
 /***** CALENDAR STUFF - ALMOST DEFINITIELY POINTLESS *****/
 	aside.widget_my_calendar_upcoming_widget {display: block; overflow: hidden; padding: 0px; margin: 20px 0; color: #555;}
 	aside.widget_my_calendar_upcoming_widget h3 {font-size: 17px; font-weight: bold;}
