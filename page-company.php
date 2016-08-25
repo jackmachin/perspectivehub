@@ -10,6 +10,7 @@ get_header(); ?>
         <div id="content" role="main">
             <?php the_post(); ?>
             <?php get_template_part( 'content', 'page' ); ?>
+
 				<?php
 				    $post_type='page';
 				    $special_posts=array('companies');
@@ -17,7 +18,7 @@ get_header(); ?>
 					   $post_type=$post->post_name;
 					?>
                     <?php $loop = new WP_Query( array(
-                        'post_type' => 'companies',
+                        'post_type' => 'company',
                         'posts_per_page' => 1000 )
                     ); ?>
                     <div class="ifa-map">
