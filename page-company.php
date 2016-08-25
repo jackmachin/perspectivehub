@@ -24,7 +24,7 @@ get_header(); ?>
 					   <?php if($loop->have_posts()): ?>
 
                             <a id="<?php the_field('id');?>" onclick="selectThis('<?php the_field('id');?>')" href="javascript:void(0);" class="bullet preview"><?php the_title();?>
-                                <img class="map-logo" id="map-logo-ad" src="<?php the_field('company-logo');?>" alt="<?php the_title();?>-Logo" width="220" height="55">
+                                <img class="map-logo" id="map-logo-ad" src="<?php the_field('company-logo');?>" alt="<?php the_title();?>-Logo" width="220" height="55" style="top:<?php the_field('y-coord');?>;left:<?php the_field('x-coord');?>;">
                             </a>
                         <?php endif; ?>
                     </div><!--ifa-map-->
