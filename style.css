@@ -723,6 +723,10 @@ aside.world_news {}
     font-size:2em;
 }
 
+.company-logo {
+    max-width:100%;
+    height:auto;
+}
         .company-details-active {
             display:block;
         }
