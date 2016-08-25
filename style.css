@@ -693,7 +693,10 @@ aside.world_news {}
 	
 /***** MAPS! THEY DON'T LOVE YOU LIKE I LOVE YOU *****/
 
-.company-content {}
+.company-content {
+    float: left;
+    width: 506px;
+}
 
     .company-details {
         display:none;
