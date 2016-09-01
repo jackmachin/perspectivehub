@@ -765,7 +765,26 @@ aside.world_news {}
     background-color:#fff;
 }
 
-#rutherford-wilkinson:hover #map-logo-rutherford-wilkinson {
+#rutherford-wilkinson:hover #map-logo-rutherford-wilkinson,
+#ad-valorem:hover #map-logo-ad-valorem,
+#keypi:hover #map-logo-keypi,
+#platinum:hover #map-logo-platinum,
+#winghams:hover #map-logo-winghams,
+#warnes:hover #map-logo-warnes,
+#shirebrook:hover #map-logo-shirebrook,
+#pims:hover #map-logo-pims,
+#perspective:hover #map-logo-perspective,
+#multiplex:hover #map-logo-multiplex,
+#mcgrath-rathbone:hover #map-logo-mcgrath-rathbone,
+#leedhams:hover #map-logo-leedhams,
+#harrogate:hover #map-logo-harrogate,
+#equilibrium:hover #map-logo-equilibrium,
+#chessman:hover #map-logo-chessman,
+#cambridge:hover #map-logo-cambridge,
+#austyn:hover #map-logo-austyn,
+#applewood-1:hover #map-logo-applewood-1,
+#applewood-2:hover #map-logo-applewood-2,
+#pfgl:hover #map-logo-pfgl {
     display:block;
     max-width:150px;
     z-index: 1;
