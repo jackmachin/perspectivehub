@@ -754,7 +754,7 @@ aside.world_news {}
 	   background: url(/wp-content/themes/perspectivehub/images/bullets.png) no-repeat bottom!important;
 	}
 
-#rutherford-wilkinson:hover #map-logo-rutherford {
+#rutherford-wilkinson:hover #map-logo-rutherford-wilkinson {
     display:block;
     max-width:150px;
     z-index: 1;
