@@ -37,8 +37,8 @@
             </div>
 
             <div class="beat-container cf">
-                                <div class="offices" style="margin-bottom:1em;">
-                    <a href="http://www.perspectivehub.co.uk/contacts/companies/"><img src="http://www.perspectivehub.co.uk/wp-content/uploads/2016/09/offices-3.png" width="250" alt="Find our offices"></a>
+                                <div class="offices" style="margin:1em 0;">
+                    <a href="http://www.perspectivehub.co.uk/contacts/companies/"><img src="http://www.perspectivehub.co.uk/wp-content/uploads/2016/09/offices-4.png" width="250" alt="Find our offices"></a>
                 </div>
                 <a href="http://www.perspectivehub.co.uk/pulse">
                     <img src="<?php echo get_template_directory_uri();?>/images/pulse-1.png" width="250" class="aligncenter">
