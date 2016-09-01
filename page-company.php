@@ -36,7 +36,7 @@ get_header(); ?>
 
                         <div class="company-details <?php if ( $post->ID == '385' ) echo 'company-details-active'; ?>" id="details-<?php the_field('id');?>">
                             <?php if( get_field('company-logo') ): ?>
-                            <a href="<?php the_permalink(); ?>"><img class="company-logo aligncenter" src="<?php the_field('company-logo');?>"></a>
+                                <a href="<?php the_permalink(); ?>"><img class="company-logo aligncenter" src="<?php the_field('company-logo');?>" <?php if ( $post->ID == '407' ) echo 'style="max-width:200px;"'; ?> <?php if ( $post->ID == '406' ) echo 'style="max-width:200px;"'; ?>  ></a>
                             <?php endif;?>
 
                             <h2 class="company-name"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
