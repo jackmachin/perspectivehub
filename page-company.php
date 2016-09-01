@@ -34,7 +34,7 @@ get_header(); ?>
 
                     <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
 
-                        <div class="company-details <?php // if (is_single('385')) { echo 'company-details-active';}?>" id="details-<?php the_field('id');?>">
+                        <div class="company-details <?php if ( $post->ID == '385' ) echo 'company-details-active'; ?>" id="details-<?php the_field('id');?>">
                             <?php if( get_field('company-logo') ): ?>
                             <a href="<?php the_permalink(); ?>"><img class="company-logo aligncenter" src="<?php the_field('company-logo');?>"></a>
                             <?php endif;?>
