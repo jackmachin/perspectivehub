@@ -53,10 +53,10 @@
                     <h2 class="beat-title soon">Coming soon!</h2>
                 <?php endif; ?>
                 </div>
-            </div>
 
-            <div class="offices" style="margin-top:1.5em;">
-                <a href="http://www.perspectivehub.co.uk/contacts/companies/"><img src="http://www.perspectivehub.co.uk/wp-content/uploads/2016/09/offices-3.png" width="250" alt="Find our offices"></a>
+                <div class="offices" style="margin-top:1.5em;">
+                    <a href="http://www.perspectivehub.co.uk/contacts/companies/"><img src="http://www.perspectivehub.co.uk/wp- content/uploads/2016/09/offices-3.png" width="250" alt="Find our offices"></a>
+                </div>
             </div>
 
         </div><!-- #content -->
