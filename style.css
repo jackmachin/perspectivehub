@@ -754,6 +754,11 @@ aside.world_news {}
 	   background: url(/wp-content/themes/perspectivehub/images/bullets.png) no-repeat bottom!important;
 	}
 
+#rutherford-wilkinson:hover #map-logo-rutherford {
+    display:block;
+    max-width:150px;
+    z-index: 1;
+}
 
 /***** CALENDAR STUFF - ALMOST DEFINITIELY POINTLESS *****/
 	aside.widget_my_calendar_upcoming_widget {display: block; overflow: hidden; padding: 0px; margin: 20px 0; color: #555;}
