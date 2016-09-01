@@ -763,6 +763,7 @@ aside.world_news {}
     transition-timing-function: linear;
     padding: .25em;
     background-color:#fff;
+    height:auto;
 }
 
 #rutherford-wilkinson:hover #map-logo-rutherford-wilkinson,
