@@ -69,7 +69,7 @@ get_header();
 
                         foreach ( $postslist as $post ) : // For each post that matches the argument do the following
 
-                        setup_postdata( $post ); Grab the individual post data
+                        setup_postdata( $post ); //Grab the individual post data
                 ?>
 
                     <section class="article entry-content">
