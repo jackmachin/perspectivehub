@@ -74,15 +74,15 @@ get_header();
 
                         <h2 id="<?php the_ID();?>" class="file-review-title">
 
-                            <strong><?php the_title();?> -  <?php the_time( get_option( 'date_format' ) ); ?></strong>
+                            <strong><a href="<?php the_permalink()?>"><?php the_title();?> -  <?php the_time( get_option( 'date_format' ) ); ?></a></strong>
 
                         </h2>
 
                         <div class="file-review-content">
 
-                            <?php the_content();?>
+                            <?php the_excerpt();?>
 
-                            <p><a href="#top">Back to top...</a></p>
+                            <!-- p><a href="#top">Back to top...</a></p-->
 
                         </div>
 
