@@ -22,13 +22,17 @@ get_header(); ?>
                               <div class="entry-content article-sidebar">
       <h2><strong>Hints &amp; Tips</strong></h2>
                             <ul class="quick-links">
-<?php $args = array(
+<?php
+
+    $tax = the_title();
+
+    $args = array(
 	'posts_per_page'   => -1,
 	'orderby'          => 'date',
 	'order'            => 'DESC',
 	'post_type'        => 'file-review-hint',
 	'post_status'      => 'publish',
-    'taxonomy'      => 'legislation',
+    'taxonomy'      => $tax,
 );
 
 $postslist = get_posts( $args );
@@ -51,7 +55,7 @@ wp_reset_postdata();?>
 	'order'            => 'DESC',
 	'post_type'        => 'file-review-hint',
 	'post_status'      => 'publish',
-    'taxonomy'      => 'legislation',
+    'taxonomy'      =>$tax,
 );
 
 $postslist = get_posts( $args );
