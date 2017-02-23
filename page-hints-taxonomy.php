@@ -9,6 +9,7 @@ get_header();
 <a name="top"></a>
     <div id="primary">
         <div id="content" role="main">
+            <?php the_post();?>
 
             <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                 <header class="entry-header">
