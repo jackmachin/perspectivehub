@@ -32,7 +32,7 @@ get_header(); ?>
 	'order'            => 'DESC',
 	'post_type'        => 'file-review-hint',
 	'post_status'      => 'publish',
-    'taxonomy'      => $tax,
+    'hint_category'      => $tax,
 );
 
 $postslist = get_posts( $args );
@@ -55,7 +55,7 @@ wp_reset_postdata();?>
 	'order'            => 'DESC',
 	'post_type'        => 'file-review-hint',
 	'post_status'      => 'publish',
-    'taxonomy'      =>$tax,
+    'hint_category'      =>$tax,
 );
 
 $postslist = get_posts( $args );
