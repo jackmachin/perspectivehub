@@ -21,44 +21,48 @@ get_header();
                 </div>
 
                 <div class="post-container">
+
                     <div class="entry-content article-sidebar">
+
                         <h2><strong>Hints &amp; Tips</strong></h2>
-                    <ul class="quick-links">
-<?php
 
-    $tax = get_the_title();
+                        <ul class="quick-links">
+                            <?php
 
-    $args = array(
-	'posts_per_page'   => -1,
-	'orderby'          => 'date',
-	'order'            => 'DESC',
-	'post_type'        => 'file-review-hint',
-	'post_status'      => 'publish',
-    'hint_category'      => $tax,
-);
+                                $tax = get_the_title();     // Set the page title
 
-$postslist = get_posts( $args );
-foreach ( $postslist as $post ) :
-  setup_postdata( $post ); ?>
+                                $args = array(
+                                    'posts_per_page'   => -1,                   // Unlimited Posts Per Page
+                                    'orderby'          => 'date',               // Order by Date
+                                    'order'            => 'DESC',               // In descending order
+                                    'post_type'        => 'file-review-hint',   // But only file review hints and tips
+                                    'post_status'      => 'publish',            // Also, only if it is published
+                                    'hint_category'      => $tax,               // Finally, only if it is from the page titles taxonomy
+                                );
+
+                                $postslist = get_posts( $args ); // Get the posts from the argument above
+
+                                    foreach ( $postslist as $post ) : // For each post that matches the argument
+
+                                        setup_postdata( $post );  // Get the post data to use template tags
+
+                            ?>
 
                                 <li>
                                     <a href="#<?php the_ID();?>"><?php the_title();?></a>
                                 </li>
+
+                            <?php
+                                endforeach; // End the for each
+
+                                wp_reset_postdata(); // Reset the postdata to the page
+                            ?>
+
+                        </ul>
+
+                    </div>
+
 <?php
-endforeach;
-wp_reset_postdata();?>
-                            </ul>
-                        </div>
-
-
-<?php $args = array(
-	'posts_per_page'   => -1,
-	'orderby'          => 'date',
-	'order'            => 'DESC',
-	'post_type'        => 'file-review-hint',
-	'post_status'      => 'publish',
-    'hint_category'      =>$tax,
-);
 
 $postslist = get_posts( $args );
 foreach ( $postslist as $post ) :
