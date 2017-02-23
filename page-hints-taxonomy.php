@@ -75,7 +75,7 @@ get_header();
                     <section class="article entry-content">
 
                         <h2 id="<?php the_ID();?>" class="file-review-title">
-                            	    <span class="date gradient"><span class="day">'.get_the_date('d').'</span><span class="month">'.get_the_date('M').'</span></span>
+                            	    <span class="date gradient"><span class="day"><?phph get_the_date('d');?>'</span><span class="month"><?phph get_the_date('M');?></span></span>
                             <strong><a href="<?php the_permalink()?>"><?php the_title();?> -  <?php the_time( get_option( 'date_format' ) ); ?></a></strong>
 
                         </h2>
