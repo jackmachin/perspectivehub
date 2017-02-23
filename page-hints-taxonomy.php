@@ -9,7 +9,6 @@ get_header();
 <a name="top"></a>
     <div id="primary">
         <div id="content" role="main">
-            <?php the_post(); ?>
 
             <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                 <header class="entry-header">
@@ -62,25 +61,45 @@ get_header();
 
                     </div>
 
-<?php
+                <?php
 
-$postslist = get_posts( $args );
-foreach ( $postslist as $post ) :
-  setup_postdata( $post ); ?>
+                    $postslist = get_posts( $args ); // Get the posts from the same argument as before
 
-                        <section class="article entry-content">
-                            <h2 id="<?php the_ID();?>" class="file-review-title"><strong><?php the_title();?> -  <?php the_time( get_option( 'date_format' ) ); ?></strong></h2>
-                            <div class="file-review-content">
-                                <?php the_content();?>
-                                <p><a href="#top">Back to top...</a></p>
-                            </div>
-                        </section>
-<?php
-endforeach;
-wp_reset_postdata();?>
-                    </div><!-- .entry-content -->
-                </article><!-- #post-<?php the_ID(); ?> -->
-			</div><!-- #content -->
-		</div><!-- #primary -->
-<?php //get_sidebar(); ?>
+                        foreach ( $postslist as $post ) : // For each post that matches the argument do the following
+
+                        setup_postdata( $post ); Grab the individual post data
+                ?>
+
+                    <section class="article entry-content">
+
+                        <h2 id="<?php the_ID();?>" class="file-review-title">
+
+                            <strong><?php the_title();?> -  <?php the_time( get_option( 'date_format' ) ); ?></strong>
+
+                        </h2>
+
+                        <div class="file-review-content">
+
+                            <?php the_content();?>
+
+                            <p><a href="#top">Back to top...</a></p>
+
+                        </div>
+
+                    </section>
+                <?php
+
+                    endforeach; // Stop the for each
+
+                    wp_reset_postdata(); // Revert back to the pages post data
+
+                ?>
+                </div><!-- .post-container -->
+
+            </article><!-- #post-<?php the_ID(); ?> -->
+
+        </div><!-- #content -->
+
+    </div><!-- #primary -->
+
 <?php get_footer(); ?>
