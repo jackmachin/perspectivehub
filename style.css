@@ -857,6 +857,10 @@ aside.world_news {}
     padding: 10px;
 }
 
+.file-review-title .date span {
+    display:block;
+}
+
 .file-review-title .day {
     font-weight: 700;
     font-size: 22px;
