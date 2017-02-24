@@ -855,6 +855,7 @@ aside.world_news {}
     color: #fff;
     margin: 0 15px 0 0;
     padding: 10px;
+    text-align:center;
 }
 
 .file-review-title .date span {
