@@ -845,6 +845,17 @@ aside.world_news {}
 
 	.group-news-list li .content p.short_desc a {}
 	.group-news-list li .content p.short_desc a span {display: none;} /* WTF IS THIS? */
+
+.file-review-title .date {
+    display: block;
+    overflow: hidden;
+    width: 35px;
+    float: left;
+    font-size: 14px;
+    color: #fff;
+    margin: 0 15px 0 0;
+    padding: 10px;
+}
 	
 /***** HOMEPAGE *****/
 
