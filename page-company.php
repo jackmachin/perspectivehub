@@ -11,9 +11,9 @@ get_header(); ?>
             <?php the_post(); ?>
             <?php get_template_part( 'content', 'page' ); ?>
 
-                <div class="companies-container">
+                <div class="companies-container cf">
 
-                                   <div class="company-map">
+               <div class="company-map">
                     <?php
                         $args = array( 'post_type' => 'companies', 'posts_per_page' => 1000 );
                         $loop = new WP_Query( $args );
