@@ -762,7 +762,7 @@ add_image_size( 'hpos-5', 158, 165, true );
 add_image_size( 'hpos-6', 348, 275, true );
 add_image_size( 'hpos-7', 222, 275, true );
 add_image_size( 'companies-logos', 220, 100, true );
-add_image_size( 'subpages-thumbs', 230, 120, true );
+add_image_size( 'subpages-thumbs', 265, 138, true );
 
 /* Custom "Walker" class (homepage menu) */
 class Thumbnail_Walker extends Walker_Nav_Menu {
