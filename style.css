@@ -348,16 +348,16 @@ ol {
     .subpages li {
         position: relative;
         float: left;
-        width:230px;
-        height: 120px;
+        width:265px;
+        height: 138px;
         margin: 0 20px 20px 0;
    }
 
     .subpages li:nth-child(4n) { margin-right: 0;}
 
         .subpages li a.subpage-title {
-            width: 230px;
-            height: 120px;
+            width: 265px;
+            height: 138px;
             color: #fff;
             font-weight: bold;
             font-size: 16px;
@@ -368,15 +368,15 @@ ol {
         }
 
         .subpages li a.subpage-title img {
-            width: 230px;
-            height: 120px;
+            width: 265px;
+            height: 138px;
             position:absolute;
             z-index:9;
         }
 
         .subpages li a.subpage-title span {
-            width: 210px;
-            padding: 5px 10px;
+            width: 255px;
+            padding: 5px 0 5px 10px;
             background: #222;
             position: absolute;
             bottom: 0px;
