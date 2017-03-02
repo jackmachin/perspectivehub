@@ -10,7 +10,10 @@ get_header(); ?>
         <div id="content" role="main">
             <?php the_post(); ?>
             <?php get_template_part( 'content', 'page' ); ?>
-                <div class="company-map">
+
+                <div class="companies-container">
+
+                                   <div class="company-map">
                     <?php
                         $args = array( 'post_type' => 'companies', 'posts_per_page' => 1000 );
                         $loop = new WP_Query( $args );
@@ -60,6 +63,8 @@ get_header(); ?>
                         </div>
 
                     <?php endwhile; ?>
+                </div>
+
                 </div>
         </div><!-- #content -->
     </div><!-- #primary -->
