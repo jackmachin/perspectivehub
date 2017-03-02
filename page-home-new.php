@@ -38,10 +38,10 @@
 
             <div class="beat-container cf">
                                 <div class="offices" style="margin:1em 0;">
-                    <a href="http://www.perspectivehub.co.uk/contacts/companies/"><img src="http://www.perspectivehub.co.uk/wp-content/uploads/2016/09/offices-4.png" width="250" alt="Find our offices"></a>
+                    <a href="http://www.perspectivehub.co.uk/contacts/companies/"><img src="http://www.perspectivehub.co.uk/wp-content/uploads/2016/09/offices-4.png" width="265" alt="Find our offices"></a>
                 </div>
                 <a href="http://www.perspectivehub.co.uk/pulse">
-                    <img src="<?php echo get_template_directory_uri();?>/images/pulse-1.png" width="250" class="aligncenter">
+                    <img src="<?php echo get_template_directory_uri();?>/images/pulse-1.png" width="265" class="aligncenter">
                 </a>
                 <div class="beat">
                 <?php $loop = new WP_Query( array( 'post_type' => 'pulse', 'posts_per_page' => 3 ) ); ?>
