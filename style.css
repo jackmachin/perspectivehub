@@ -1033,11 +1033,10 @@ aside.world_news {}
 .newsticker {
     color: #fff;
     background-color: #DA1445;
-    margin: 20px auto;
+    margin: 12px auto;
     padding: 1em;
     border-radius: 1em;
     border: 5px solid #acb9c8;
-    width:700px
 }
 
     .home-ticker {
@@ -1045,7 +1044,7 @@ aside.world_news {}
     }
 
         .home-ticker li {
-            width:700px;
+            width:820px;
         }
 
         .home-ticker li a {
