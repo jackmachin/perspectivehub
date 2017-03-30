@@ -18,7 +18,7 @@ get_header();
                 </header><!-- .entry-header -->
 
                 <div class="entry-content cf">
-                    Placeholder intro text
+                    <?php the_content ();?>
                 </div>
 
                 <div class="post-container">
