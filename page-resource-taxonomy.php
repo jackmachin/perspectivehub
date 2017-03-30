@@ -46,6 +46,9 @@ get_header();
                     <section class="article entry-content">
 
                         <h2 id="<?php the_ID();?>" class="resource-title">
+
+                            <?php if (the_field('file_format') == 'pdf' ) { echo 'pdf icon';}?>
+
                             <strong><a href="<?php the_field('file'); ?>"><?php the_title();?></a></strong>
 
                         </h2>
