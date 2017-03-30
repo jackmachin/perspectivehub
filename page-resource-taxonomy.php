@@ -43,7 +43,7 @@ get_header();
                         setup_postdata( $post ); //Grab the individual post data
                 ?>
 
-                    <section class="article entry-content">
+                    <section class="article entry-content resource-content">
 
                         <h2 id="<?php the_ID();?>" class="resource-title">
 
@@ -58,7 +58,7 @@ get_header();
 
                         </h2>
 
-                        <div class="resource-content">
+                        <div class="resource-description">
 
                             <p><?php the_field('description'); ?></p>
 

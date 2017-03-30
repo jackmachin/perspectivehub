@@ -1357,6 +1357,19 @@ header h1.page-title {
     padding: 1.5em 1.5em 0;
 }
 
+/***** Resources *****/
+
+.resource-content {
+    padding:1.5em;
+}
+
+.resource-title {
+        line-height: 1.5em;
+    margin-bottom: .5em;
+    font-size: 1.25em;
+    padding: 1.5em 1.5em 0;
+}
+
 /***** FOOTER *****/
 
 .footer {
