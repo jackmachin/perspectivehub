@@ -36,9 +36,9 @@ get_header();
                                     'posts_per_page'   => -1,                   // Unlimited Posts Per Page
                                     'orderby'          => 'date',               // Order by Date
                                     'order'            => 'DESC',               // In descending order
-                                    'post_type'        => 'file-review-hint',   // But only file review hints and tips
+                                    'post_type'        => 'resource',   // But only file review hints and tips
                                     'post_status'      => 'publish',            // Also, only if it is published
-                                    'hint_category'      => $tax,               // Finally, only if it is from the page titles taxonomy
+                                    'resource_category'      => $tax,               // Finally, only if it is from the page titles taxonomy
                                 );
 
                                 $postslist = get_posts( $args ); // Get the posts from the argument above
