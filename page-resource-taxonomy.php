@@ -50,8 +50,8 @@ get_header();
                             <?php
                             $icon = get_field('file_format');
 
-                            if ($icon == "PDF" ) { ?>
-                                <img src="" class="icon" alt="PDF Icon" width="30" height="30">
+                            if ($icon == 'PDF' ) { ?>
+                                <img src="image.png" class="icon" alt="PDF Icon" width="30" height="30">
                             <?php } else {} ?>
 
                             <strong><a href="<?php the_field('file'); ?>"><?php the_title();?></a></strong>
