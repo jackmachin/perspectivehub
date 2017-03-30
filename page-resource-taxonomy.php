@@ -61,6 +61,7 @@ get_header();
                                 <p><strong>PLEASE NOTE:The compliance signoff for this resource has expired. To use it with clients it must be resubmitted to Financial Promotions.</strong></p>
                             <?php } else {} ?>
 
+                            <a href="<?php the_field('file'); ?>">Download File</a>
                             <!-- p><a href="#top">Back to top...</a></p-->
 
                         </div>
