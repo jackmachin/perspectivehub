@@ -49,7 +49,7 @@ get_header();
 
                             <?php if (get_field('file_format') == 'PDF' ) { ?>
                                 <img src="" class="icon" alt="PDF Icon" width="30" height="30">
-                            } ?>
+                            } else {} ?>
 
                             <strong><a href="<?php the_field('file'); ?>"><?php the_title();?></a></strong>
 
