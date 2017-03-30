@@ -52,12 +52,12 @@ get_header();
 
                         <div class="resource-content">
 
-                            <?php the_field('description'); ?>
+                            <p><?php the_field('description'); ?></p>
 
                             <?php
                             $expiry_date = DateTime::createFromFormat('Ymd', get_field('expiry_date'));
 
-                            if ( $expiry_date->format('Ymd') < date('Ymd') ) {?>
+                            if ( $expiry_date->format('Ymd') < date('Ymd') ) { ?>
                                 <p>The compliance signoff for this resource has expired. To use it with clients it must be resubmitted to Financial Promotions.</p>
                             <?php } else {} ?>
 
