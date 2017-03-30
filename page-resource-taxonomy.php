@@ -46,7 +46,7 @@ get_header();
                     <section class="article entry-content">
 
                         <h2 id="<?php the_ID();?>" class="resource-title">
-                            <strong><a href="<?php the_field('file'); ?>"><?php the_title();?> -  <?php the_time( get_option( 'date_format' ) ); ?></a></strong>
+                            <strong><a href="<?php the_field('file'); ?>"><?php the_title();?></a></strong>
 
                         </h2>
 
