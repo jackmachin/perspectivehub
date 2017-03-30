@@ -47,7 +47,7 @@ get_header();
 
                         <h2 id="<?php the_ID();?>" class="resource-title">
 
-                            <?php if (get_field('file_format') == 'pdf' ) { echo 'pdf icon'; }?>
+                            <?php if (get_field('file_format') == 'PDF' ) { echo 'pdf icon'; }?>
 
                             <strong><a href="<?php the_field('file'); ?>"><?php the_title();?></a></strong>
 
