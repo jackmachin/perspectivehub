@@ -61,7 +61,7 @@ get_header();
                             $expiry_date = DateTime::createFromFormat('Ymd', get_field('expiry_date'));
 
                             if ( $expiry_date->format('Ymd') < date('Ymd') ) { ?>
-                                <p><strong>PLEASE NOTE:The compliance signoff for this resource has expired. To use it with clients it must be resubmitted to Financial Promotions.</strong></p>
+                                <p><strong>PLEASE NOTE: The compliance signoff for this resource has expired. To use it with clients it must be resubmitted to Financial Promotions.</strong></p>
                             <?php } else {} ?>
 
                             <a href="<?php the_field('file'); ?>">Download File</a>
