@@ -45,15 +45,14 @@ get_header();
 
                     <section class="article entry-content">
 
-                        <h2 id="<?php the_ID();?>" class="file-review-title">
-                            	    <span class="date gradient"><span class="day"><?php echo get_the_date('d');?></span><span class="month"><?php echo get_the_date('M');?></span></span>
+                        <h2 id="<?php the_ID();?>" class="resource-title">
                             <strong><a href="<?php the_permalink()?>"><?php the_title();?> -  <?php the_time( get_option( 'date_format' ) ); ?></a></strong>
 
                         </h2>
 
                         <div class="file-review-content">
 
-                            <?php the_excerpt();?>
+                            <?php the_field('description'); ?>
 
                             <!-- p><a href="#top">Back to top...</a></p-->
 
