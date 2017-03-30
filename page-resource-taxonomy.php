@@ -46,11 +46,11 @@ get_header();
                     <section class="article entry-content">
 
                         <h2 id="<?php the_ID();?>" class="resource-title">
-                            <strong><a href="<?php the_permalink()?>"><?php the_title();?> -  <?php the_time( get_option( 'date_format' ) ); ?></a></strong>
+                            <strong><a href="<?php the_field('description'); ?>"><?php the_title();?> -  <?php the_time( get_option( 'date_format' ) ); ?></a></strong>
 
                         </h2>
 
-                        <div class="file-review-content">
+                        <div class="resource-content">
 
                             <?php the_field('description'); ?>
 
