@@ -47,7 +47,10 @@ get_header();
 
                         <h2 id="<?php the_ID();?>" class="resource-title">
 
-                            <?php if (get_field('file_format') == "PDF" ) { ?>
+                            <?php
+                            $icon = get_field('file_format')
+
+                            if ($icon == "PDF" ) { ?>
                                 <img src="" class="icon" alt="PDF Icon" width="30" height="30">
                             <?php } else {} ?>
 
