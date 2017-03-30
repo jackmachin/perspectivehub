@@ -59,7 +59,7 @@ get_header();
 
                             if ( $expiry_date->format('Ymd') < date('Ymd') ) {?>
                                 <p>The compliance signoff for this resource has expired. To use it with clients it must be resubmitted to Financial Promotions.</p>
-                            <?php} else {} ?>
+                            <?php } else {} ?>
 
                             <!-- p><a href="#top">Back to top...</a></p-->
 
