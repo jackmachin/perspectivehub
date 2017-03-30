@@ -46,13 +46,20 @@ get_header();
                     <section class="article entry-content">
 
                         <h2 id="<?php the_ID();?>" class="resource-title">
-                            <strong><a href="<?php the_field('description'); ?>"><?php the_title();?> -  <?php the_time( get_option( 'date_format' ) ); ?></a></strong>
+                            <strong><a href="<?php the_field('file'); ?>"><?php the_title();?> -  <?php the_time( get_option( 'date_format' ) ); ?></a></strong>
 
                         </h2>
 
                         <div class="resource-content">
 
                             <?php the_field('description'); ?>
+
+                            <?php
+                            $expiry_date = DateTime::createFromFormat('Ymd', get_field('expiry_date'));
+
+                            if ( $expiry_date->format('Ymd') < date('Ymd') ) {} else { ?>
+                              This resources compliance sign off has expired. To use it with clients it must be resubmitted to Financial Promotions.
+                            <?php } ?>
 
                             <!-- p><a href="#top">Back to top...</a></p-->
 
