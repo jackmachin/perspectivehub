@@ -57,9 +57,9 @@ get_header();
                             <?php
                             $expiry_date = DateTime::createFromFormat('Ymd', get_field('expiry_date'));
 
-                            if ( $expiry_date->format('Ymd') < date('Ymd') ) {} else { ?>
-                              This resources compliance sign off has expired. To use it with clients it must be resubmitted to Financial Promotions.
-                            <?php } ?>
+                            if ( $expiry_date->format('Ymd') < date('Ymd') ) {?>
+                                <p>The compliance signoff for this resource has expired. To use it with clients it must be resubmitted to Financial Promotions.</p>
+                            <?php} else {} ?>
 
                             <!-- p><a href="#top">Back to top...</a></p-->
 
