@@ -19,7 +19,8 @@ get_header();
 
                 <div class="entry-content cf">
                     <?php the_content ();?>
-
+                </div>
+                <div class="subpages-container">
                     <?php
                         $xhtml = '';
                         $args = array(
@@ -29,7 +30,6 @@ get_header();
                             'hierarchical' => false,
                         );
                         $pages=get_pages( $args );
-
 
                         if(is_array($pages) && !empty($pages))
                         {
@@ -55,7 +55,7 @@ get_header();
                         }
                         print($xhtml);
 					?>
-
+                </div>
                 <div class="post-container">
 
                 <?php
