@@ -19,7 +19,42 @@ get_header();
 
                 <div class="entry-content cf">
                     <?php the_content ();?>
-                </div>
+
+                    <?php
+                        $xhtml = '';
+                        $args = array(
+                            'child_of' => $post->ID,
+                            'sort_column' => 'page_title',
+                            'parent' => $post->ID,
+                            'hierarchical' => false,
+                        );
+                        $pages=get_pages( $args );
+
+
+                        if(is_array($pages) && !empty($pages))
+                        {
+                            $xhtml .= '<ul class="subpages">
+                            ';
+                            $incr=1;
+                            foreach($pages as $subpage)
+                            {
+                            //'.(strlen($subpage->post_content)>0?'<p class="description">'.substr(strip_tags($subpage->post_content),0,150).' <span class="read-more"><a href="'.$subpage->guid.'">...read more</a></span></p>':'').'
+                            // subpages-thumbs
+                            $xhtml .= '<li class="mod_2_'.($incr%2).' mod_3_'.($incr%3).' mod_4_'.($incr%4).' mod_5_'.($incr%5).' ">
+
+                                <a href="'.$subpage->guid.'" class="subpage-title">
+                                '.(strlen(get_the_post_thumbnail( $subpage->ID, 'subpages-thumbs' ))>0?get_the_post_thumbnail( $subpage->ID, 'subpages-thumbs' ):'<img src="'.get_bloginfo('template_url').'/images/noimg.jpg" />').'
+                                    <span>'.$subpage->post_title.'</span>
+                                </a>
+
+                            </li>';
+                            $incr++;
+                            }
+
+                            $xhtml .= '</ul>';
+                        }
+                        print($xhtml);
+					?>
 
                 <div class="post-container">
 
@@ -33,7 +68,7 @@ get_header();
                         'order'            => 'DESC',               // In descending order
                         'post_type'        => 'resource',           // But only resources
                         'post_status'      => 'publish',            // Also, only if it is published
-                        'resource_category'      => $tax,               // Finally, only if it is from the page titles taxonomy
+                        'resource_type'    => $tax,               // Finally, only if it is from the page titles taxonomy
                     );
 
                     $postslist = get_posts( $args ); // Get the posts from the same argument as before
