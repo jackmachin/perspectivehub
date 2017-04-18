@@ -83,6 +83,7 @@
   })();
 </script>
 
+    	<link rel="icon" href="<?php echo get_template_directory_uri(); ?>/favicon.png">
 </head>
 
 <body <?php body_class(); ?>>
