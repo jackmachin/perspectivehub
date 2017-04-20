@@ -39,7 +39,7 @@
             <div class="beat-container cf">
                 <?php if (is_front_page()) {} else {?>
                     <div class="your-thoughts cf">
-                        <a href="http://www.perspectivehub.co.uk/tools/your-thoughts/">Your Thoughts <img src="http://www.perspectivehub.co.uk/wp-content/uploads/2017/04/idea-48.png" alt="Your Thoughts"></a>
+                        <a href="http://www.perspectivehub.co.uk/tools/your-thoughts/">Your Thoughts</a>
                     </div>
                 <?php }?>
                 <div class="offices" style="margin:1em 0;">
