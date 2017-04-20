@@ -101,7 +101,7 @@ get_header();
                             $expiry_date = DateTime::createFromFormat('Ymd', get_field('expiry_date'));
 
                             if ( $expiry_date->format('Ymd') < date('Ymd') ) { ?>
-                            <p><strong>WARNING: The Paradigm Compliance Confirmation for this item has expired.  To use it with clients it must be reviewed, amended if appropriate and resubmitted to <a href="http://www.perspectivehub.co.uk/group-compliance/financial-promotions/f-resubmission/">Financial Promotions</a>.</strong></p>
+                            <p><strong>WARNING: The Paradigm Compliance Confirmation for this item has expired.  To use it with clients it must be reviewed, amended if appropriate and resubmitted to <a href="http://www.perspectivehub.co.uk/group-compliance/financial-promotions/new-fp-submission/">Financial Promotions</a>.</strong></p>
                             <?php } else {} ?>
 
                             <a class="download-link" href="<?php the_field('file'); ?>">Download File</a>

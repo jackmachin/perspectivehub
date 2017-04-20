@@ -1163,6 +1163,19 @@ aside.world_news {}
         text-align: center;
     }
 
+.your-thoughts {
+    color: #fff;
+    background-color: #DA1445;
+    margin: 12px auto;
+    padding: 1em;
+    border-radius: 1em;
+    border: 5px solid #acb9c8;
+    text-align:center;
+    font-weight:700;
+    font-size:2em;
+    text-transform: uppercase;
+}
+
 /***** BLOG PAGES *****/
 
 

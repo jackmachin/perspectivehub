@@ -37,14 +37,17 @@
             </div>
 
             <div class="beat-container cf">
-                                <div class="offices" style="margin:1em 0;">
+                <div class="your-thoughts cf">
+                    <a href="http://www.perspectivehub.co.uk/tools/your-thoughts/">Your Thoughts</a>
+                </div>
+                <div class="offices" style="margin:1em 0;">
                     <a href="http://www.perspectivehub.co.uk/contacts/companies/"><img src="http://www.perspectivehub.co.uk/wp-content/uploads/2016/09/offices-4.png" width="265" alt="Find our offices"></a>
                 </div>
                 <a href="http://www.perspectivehub.co.uk/pulse">
                     <img src="<?php echo get_template_directory_uri();?>/images/pulse-1.png" width="265" class="aligncenter">
                 </a>
                 <div class="beat">
-                <?php $loop = new WP_Query( array( 'post_type' => 'pulse', 'posts_per_page' => 3 ) ); ?>
+                <?php $loop = new WP_Query( array( 'post_type' => 'pulse', 'posts_per_page' => 2 ) ); ?>
 			    <?php if($loop->have_posts()): ?>
 				    <?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
                     <h2 class="beat-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a> <span class="beat-date"><?php the_date(); ?></span></h2>
