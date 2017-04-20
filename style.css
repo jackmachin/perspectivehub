@@ -1174,6 +1174,10 @@ aside.world_news {}
     font-weight:700;
     font-size: 1.375em;
     text-transform: uppercase;
+    background-image: url(http://www.perspectivehub.co.uk/wp-content/uploads/2017/04/idea-48.png);
+    background-repeat: no-repeat;
+    background-size: 45px;
+    background-position-y: 3px;
 }
 
 .your-thoughts a,
