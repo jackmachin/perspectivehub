@@ -37,9 +37,11 @@
             </div>
 
             <div class="beat-container cf">
-                <div class="your-thoughts cf">
-                    <a href="http://www.perspectivehub.co.uk/tools/your-thoughts/">Your Thoughts</a>
-                </div>
+                <?php if (is_front_page()) {} else {?>
+                    <div class="your-thoughts cf">
+                        <a href="http://www.perspectivehub.co.uk/tools/your-thoughts/">Your Thoughts</a>
+                    </div>
+                <?php }?>
                 <div class="offices" style="margin:1em 0;">
                     <a href="http://www.perspectivehub.co.uk/contacts/companies/"><img src="http://www.perspectivehub.co.uk/wp-content/uploads/2016/09/offices-4.png" width="265" alt="Find our offices"></a>
                 </div>
