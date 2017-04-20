@@ -734,6 +734,12 @@ function my_connection_types() {
 		'from' => 'companies',
 		'to' => 'specialities'
 	) );
+
+    p2p_register_connection_type( array(
+		'id' => 'companies_to_resources',
+		'from' => 'companies',
+		'to' => 'resources'
+	) );
 }
 
 add_action( 'init', 'my_connection_types', 100 );
