@@ -738,7 +738,7 @@ function my_connection_types() {
     p2p_register_connection_type( array(
 		'id' => 'companies_to_resources',
 		'from' => 'companies',
-		'to' => 'resources'
+		'to' => 'resource'
 	) );
 }
 
