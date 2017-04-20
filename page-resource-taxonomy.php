@@ -104,32 +104,6 @@ get_header();
                             <a class="download-link" href="<?php the_field('file'); ?>">Download File</a>
                             <!-- p><a href="#top">Back to top...</a></p-->
 
-                              <?php
-                                // Display Employee/Companies relations (and viceversa)
-                                //if($connected = p2p_type( 'employees_to_companies' )->get_connected( get_queried_object_id() )):
-                                $connected = new WP_Query(array(
-                                    'connected_type' => 'companies_to_resources',
-                                    'connected_items' => get_queried_object_id(),
-                                    'posts_per_page' => 1000,
-                                    'orderby' => 'title',
-                                    'order'=> 'ASC',
-                                    )
-                                );
-
-                            if($connected):
-
-                                if ( $connected->have_posts() ) :
-                            ?>
-
-                                <?php while ( $connected->have_posts() ) : $connected->the_post(); ?>
-                                   <img class="company-logo alignright" src="<?php the_field('company-logo');?>">
-                                <?php endwhile; ?>
-                            <?php
-                                wp_reset_postdata();
-                                endif;
-                            endif;
-                            ?>
-
                         </div>
 
                     </section>
