@@ -1390,6 +1390,29 @@ header h1.page-title {
     font-size: 1.25em;
 }
 
+.resource-title .date {
+    display: block;
+    overflow: hidden;
+    width: 35px;
+    float: left;
+    font-size: 14px;
+    color: #fff;
+    margin: 0 15px 0 0;
+    padding: 10px;
+    text-align:center;
+}
+
+.resource-title .date span {
+    display:block;
+}
+
+.resource-title .day {
+    font-weight: 700;
+    font-size: 22px;
+    margin-bottom: 5px;
+}
+
+
 .download-link {
         background-color: #DA1445;
     padding: 1em;
