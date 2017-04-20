@@ -88,7 +88,7 @@ get_header();
                             // if ($icon == 'PDF' ) { ?>
                                 <!--img src="image.png" class="icon" alt="PDF Icon" width="30" height="30"-->
                             <?php // } else {} ?>
-
+  <span class="date gradient"><span class="day"><?php echo get_the_date('d');?></span><span class="month"><?php echo get_the_date('M');?></span></span>
                             <strong><a href="<?php the_field('file'); ?>"><?php the_title();?></a></strong>
 
                         </h2>
