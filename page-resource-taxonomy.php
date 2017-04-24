@@ -102,6 +102,7 @@ get_header();
                             <?php } else {} ?>
 
                             <a class="download-link" href="<?php the_field('file'); ?>">Download File</a>
+                            <a class="download-link" href="<?php the_field('compliance-approval');?>">Compliance Approval</a>
                             <!-- p><a href="#top">Back to top...</a></p-->
 
                         </div>
