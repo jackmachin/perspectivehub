@@ -1417,7 +1417,7 @@ header h1.page-title {
     font-size: 22px;
 }
 
-.comments {
+.resource-content .half .comments {
     background-color:#fff;
     padding:1em;
     float:right;
