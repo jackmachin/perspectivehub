@@ -111,6 +111,7 @@ get_header();
                         <?php if( get_field('comments') ): ?>
 
                             <div class="half comments">
+                                <h2>Comments</h2>
                                 <?php the_field('comments'); ?>
                             </div>
 
