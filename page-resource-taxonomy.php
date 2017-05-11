@@ -79,33 +79,42 @@ get_header();
                 ?>
 
                     <section class="article entry-content resource-content">
+                        <div class="half">
+                            <h2 id="<?php the_ID();?>" class="resource-title">
 
-                        <h2 id="<?php the_ID();?>" class="resource-title">
+                                <span class="date gradient">
+                                    <span class="day"><?php echo get_the_date('d');?></span>
+                                    <span class="month"><?php echo get_the_date('M');?></span>
+                                </span>
+                                <strong><a href="<?php the_field('file'); ?>"><?php the_title();?></a></strong>
 
-                            <span class="date gradient">
-                                <span class="day"><?php echo get_the_date('d');?></span>
-                                <span class="month"><?php echo get_the_date('M');?></span>
-                            </span>
-                            <strong><a href="<?php the_field('file'); ?>"><?php the_title();?></a></strong>
+                            </h2>
 
-                        </h2>
+                            <div class="resource-description">
 
-                        <div class="resource-description">
+                                <p><?php the_field('description'); ?></p>
 
-                            <p><?php the_field('description'); ?></p>
+                                <?php
+                                $expiry_date = DateTime::createFromFormat('Ymd', get_field('expiry_date'));
 
-                            <?php
-                            $expiry_date = DateTime::createFromFormat('Ymd', get_field('expiry_date'));
+                                if ( $expiry_date->format('Ymd') < date('Ymd') ) { ?>
+                                <p><strong>WARNING: The Paradigm Compliance Confirmation for this item has expired.  To use it with clients it must be reviewed, amended if appropriate and resubmitted to <a href="http://www.perspectivehub.co.uk/group-compliance/financial-promotions/new-fp-submission/">Financial Promotions</a>.</strong></p>
+                                <?php } else {} ?>
 
-                            if ( $expiry_date->format('Ymd') < date('Ymd') ) { ?>
-                            <p><strong>WARNING: The Paradigm Compliance Confirmation for this item has expired.  To use it with clients it must be reviewed, amended if appropriate and resubmitted to <a href="http://www.perspectivehub.co.uk/group-compliance/financial-promotions/new-fp-submission/">Financial Promotions</a>.</strong></p>
-                            <?php } else {} ?>
+                                <a class="download-link" href="<?php the_field('file'); ?>">Download File</a>
+                                <a class="download-link" href="<?php the_field('compliance_approval');?>">Compliance Confirmation</a>
+                                <!-- p><a href="#top">Back to top...</a></p-->
 
-                            <a class="download-link" href="<?php the_field('file'); ?>">Download File</a>
-                            <a class="download-link" href="<?php the_field('compliance_approval');?>">Compliance Confirmation</a>
-                            <!-- p><a href="#top">Back to top...</a></p-->
-
+                            </div>
                         </div>
+
+                        <?php if( get_field('comments') ): ?>
+
+                            <div class="half comments">
+                                <?php the_field('comments'); ?>
+                            </div>
+
+                        <?php endif; ?>
 
                     </section>
                 <?php
