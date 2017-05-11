@@ -1381,10 +1381,17 @@ header h1.page-title {
 
 /***** Resources *****/
 
+
 .resource-content {
     padding:1.5em;
 }
 
+
+.resource-content .half {
+    width:50%;
+    padding: 0 1em;
+    float:left;
+}
 .resource-title {
     line-height: 1.5em;
     margin-bottom: .5em;
@@ -1410,6 +1417,11 @@ header h1.page-title {
 .resource-title .day {
     font-weight: 700;
     font-size: 22px;
+}
+
+.comments {
+    background-color:#fff;
+    padding:1em;
 }
 
 
