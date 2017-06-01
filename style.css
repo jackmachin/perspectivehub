@@ -786,7 +786,8 @@ aside.world_news {}
 #austyn:hover #map-logo-austyn,
 #applewood-1:hover #map-logo-applewood-1,
 #applewood-2:hover #map-logo-applewood-2,
-#pfgl:hover #map-logo-pfgl {
+#pfgl:hover #map-logo-pfgl,
+#pse:hover #map-logo-pse {
     display:block;
     max-width:150px;
     z-index: 1;
