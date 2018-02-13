@@ -85,6 +85,7 @@ get_header();
                                 <span class="date gradient">
                                     <span class="day"><?php echo get_the_date('d');?></span>
                                     <span class="month"><?php echo get_the_date('M');?></span>
+					<span class="year"><?php echo get_the_date('Y');?></span>
                                 </span>
                                 <strong><a href="<?php the_field('file'); ?>"><?php the_title();?></a></strong>
 
