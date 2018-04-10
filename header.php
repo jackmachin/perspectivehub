@@ -74,6 +74,7 @@
 <script type="text/javascript">
   var _gaq = _gaq || [];
   _gaq.push(['_setAccount', 'UA-20034801-18']);
+  _gaq.push(['_gat._anonymizeIp']);
   _gaq.push(['_trackPageview']);
 
   (function() {
