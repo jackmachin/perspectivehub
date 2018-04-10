@@ -72,8 +72,22 @@
 
 <?php // GA ?>
 <script type="text/javascript">
+  var gaProperty = 'UA-20034801-18'
+  var disableStr = 'ga-disable-' + gaProperty;
+
+  // Disable tracking if the opt-out cookie exists.
+  if (document.cookie.indexOf(disableStr + '=true') > -1) {
+    window[disableStr] = true;
+  }
+
+  // Opt-out function
+  function gaOptout() {
+    document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+    window[disableStr] = true;
+  }
+
   var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-20034801-18']);
+  _gaq.push(['_setAccount', gaProperty]);
   _gaq.push(['_gat._anonymizeIp']);
   _gaq.push(['_trackPageview']);
 
