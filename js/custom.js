@@ -157,3 +157,16 @@ function selectThis(id) {
     //Remove that pesky selected from all
 }
 
+
+jQuery(document).ready(function() {
+	jQuery('.ga-opt-out').on('click', function(e) {
+		$this = jQuery(this);
+		e.preventDefault();
+		jQuery('.ga-opt-out-message').remove();
+		if (typeof __gaTrackerOptout == 'function') {
+			__gaTrackerOptout();
+			$this.after('<div class="ga-opt-out-message" style="padding: 0.5em; background:#ffdede;">Thank you, You have now been opted out of Google Analytics.</div>');
+		} else {
+			$this.after('<div class="ga-opt-out-message" style="padding: 0.5em; background:#ffdede;">We was unable to opt you out of Google Analytics tracking.</div>');
+		}
+	});
